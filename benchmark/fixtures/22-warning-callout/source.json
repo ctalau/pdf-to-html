@@ -1,0 +1,1064 @@
+{
+  "Transcoder": "pdf2json@4.0.2 [https://github.com/modesty/pdf2json]",
+  "Meta": {
+    "PDFFormatVersion": "1.4",
+    "IsAcroFormPresent": false,
+    "IsXFAPresent": false,
+    "Title": "Warning Callout Fixtures",
+    "Creator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "Producer": "Skia/PDF m127",
+    "CreationDate": "D:20260221083756+00'00'",
+    "ModDate": "D:20260221083756+00'00'",
+    "Metadata": {}
+  },
+  "Pages": [
+    {
+      "Width": 37.245,
+      "Height": 52.68,
+      "HLines": [],
+      "VLines": [],
+      "Fills": [
+        {
+          "x": 3.492,
+          "y": 12.258,
+          "w": 30.375,
+          "h": 9.047,
+          "oc": "#fff2cc"
+        },
+        {
+          "x": 3.375,
+          "y": 12.234,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#ffc107"
+        },
+        {
+          "x": 3.492,
+          "y": 27.211,
+          "w": 30.375,
+          "h": 9.047,
+          "oc": "#d0ecf1"
+        },
+        {
+          "x": 3.375,
+          "y": 27.187,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#bee4eb"
+        },
+        {
+          "x": 3.375,
+          "y": 27.187,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#bee4eb"
+        },
+        {
+          "x": 3.375,
+          "y": 27.187,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#bee4eb"
+        },
+        {
+          "x": 3.375,
+          "y": 27.187,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#17a2b8"
+        }
+      ],
+      "Texts": [
+        {
+          "x": 3.125,
+          "y": 5.297,
+          "w": 346.703,
+          "oc": "#212121",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Important Notices and ",
+              "S": -1,
+              "TS": [
+                2,
+                36,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 19.321,
+          "y": 5.297,
+          "w": 90.703,
+          "oc": "#212121",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Alerts",
+              "S": -1,
+              "TS": [
+                2,
+                36,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 7.641,
+          "w": 15.102,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "W",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.819,
+          "y": 7.641,
+          "w": 270.352,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "elcome to our documentation system. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 16.479,
+          "y": 7.641,
+          "w": 362.875,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Throughout this guide, you will encounter important",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 8.812,
+          "w": 634.141,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "notices that require your attention. Below are examples of the three types of callout boxes",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 10.031,
+          "w": 270.352,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "we use to highlight critical information.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 13.125,
+          "w": 15.102,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "W",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 7.227,
+          "y": 13.125,
+          "w": 216.945,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "arning: System Maintenance",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 15.094,
+          "w": 529.227,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "The application will undergo scheduled maintenance on Sunday from 2:00 ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 31.313,
+          "y": 15.094,
+          "w": 24,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "AM",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 16.312,
+          "w": 53.375,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "to 4:00 ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 9.007,
+          "y": 16.312,
+          "w": 494.437,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "AM UTC. During this time, the service will be unavailable. Please plan",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 17.484,
+          "w": 556.789,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "your work accordingly and save any unsaved changes before the maintenance",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 18.703,
+          "w": 53.359,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "window",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 9.007,
+          "y": 18.703,
+          "w": 4.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ".",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 22.547,
+          "w": 627.937,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This is standard body text between the callout boxes. It provides context and explanation",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 23.766,
+          "w": 593.273,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "for the surrounding content. Regular paragraphs help break up the visual space and",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 24.984,
+          "w": 302.383,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "improve readability of the entire document.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 28.078,
+          "w": 197.352,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Information: New Feature ",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 15.77,
+          "y": 28.078,
+          "w": 11.555,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "A",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 16.284,
+          "y": 28.078,
+          "w": 58.703,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "vailable",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 30.047,
+          "w": 10.672,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "A",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 7.006,
+          "y": 30.047,
+          "w": 532.773,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " new integration feature has been released that allows you to connect third-",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 31.219,
+          "w": 322.812,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "party applications directly to your workspace. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 21.665,
+          "y": 31.219,
+          "w": 211.656,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This feature is available for all",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 32.437,
+          "w": 298.805,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "premium tier users at no additional cost. V",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 20.54,
+          "y": 32.437,
+          "w": 248.156,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "isit the integrations page to explore",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 33.656,
+          "w": 317.531,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "available connections and setup instructions.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 37.5,
+          "w": 458.039,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Additional context continues here with normal paragraph styling. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 24.582,
+          "y": 37.5,
+          "w": 161.859,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "The information callout",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 38.719,
+          "w": 491.859,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "above highlights a positive notification that users should be aware of. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 26.167,
+          "y": 38.719,
+          "w": 149.406,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "These messages are",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 39.891,
+          "w": 514.016,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "typically less urgent than warnings but still important for user awareness.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "Fields": [],
+      "Boxsets": []
+    },
+    {
+      "Width": 37.245,
+      "Height": 52.68,
+      "HLines": [],
+      "VLines": [],
+      "Fills": [
+        {
+          "x": 3.492,
+          "y": 1.898,
+          "w": 30.375,
+          "h": 9.047,
+          "oc": "#f7d6d9"
+        },
+        {
+          "x": 3.375,
+          "y": 1.875,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#f5c6cb"
+        },
+        {
+          "x": 3.375,
+          "y": 1.875,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#f5c6cb"
+        },
+        {
+          "x": 3.375,
+          "y": 1.875,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#f5c6cb"
+        },
+        {
+          "x": 3.375,
+          "y": 1.875,
+          "w": 30.516,
+          "h": 9.094,
+          "oc": "#db3445"
+        }
+      ],
+      "Texts": [
+        {
+          "x": 6.547,
+          "y": 2.766,
+          "w": 319.187,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Danger: Critical Security Update Required",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 4.734,
+          "w": 10.672,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "A",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 7.006,
+          "y": 4.734,
+          "w": 499.797,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " critical security vulnerability has been identified in the current version. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 30.392,
+          "y": 4.734,
+          "w": 17.781,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "All",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 5.906,
+          "w": 538.062,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "users must update to the latest version immediately to protect their data and",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 7.125,
+          "w": 523.836,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "accounts. Failure to update may result in unauthorized access to sensitive",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.547,
+          "y": 8.297,
+          "w": 83.594,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "information.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 12.187,
+          "w": 627.031,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Thank you for reviewing these important notices. Please ensure you have acknowledged",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 13.406,
+          "w": 244.617,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "and understood each callout type. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 14.578,
+          "y": 13.406,
+          "w": 128.953,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "They represent dif",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 20.609,
+          "y": 13.406,
+          "w": 196.562,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ferent levels of urgency and",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 14.578,
+          "w": 619.867,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "importance in our documentation system, helping you prioritize your actions accordingly",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 32.126,
+          "y": 14.578,
+          "w": 4.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ".",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "Fields": [],
+      "Boxsets": []
+    }
+  ]
+}

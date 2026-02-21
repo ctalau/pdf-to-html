@@ -1,0 +1,602 @@
+{
+  "Transcoder": "pdf2json@4.0.2 [https://github.com/modesty/pdf2json]",
+  "Meta": {
+    "PDFFormatVersion": "1.4",
+    "IsAcroFormPresent": false,
+    "IsXFAPresent": false,
+    "Title": "Glossary of Terms",
+    "Creator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "Producer": "Skia/PDF m127",
+    "CreationDate": "D:20260221083715+00'00'",
+    "ModDate": "D:20260221083715+00'00'",
+    "Metadata": {}
+  },
+  "Pages": [
+    {
+      "Width": 37.245,
+      "Height": 52.68,
+      "HLines": [],
+      "VLines": [],
+      "Fills": [
+        {
+          "x": 2.906,
+          "y": 9.516,
+          "w": 31.547,
+          "h": 30.375,
+          "clr": 1
+        },
+        {
+          "x": 2.812,
+          "y": 9.516,
+          "w": 31.641,
+          "h": 30.375,
+          "oc": "#3398da"
+        }
+      ],
+      "Texts": [
+        {
+          "x": 11.853,
+          "y": 6.609,
+          "w": 204.5,
+          "oc": "#2b3d4f",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Glossary of T",
+              "S": -1,
+              "TS": [
+                2,
+                36,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 21.327,
+          "y": 6.609,
+          "w": 76.5,
+          "oc": "#2b3d4f",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "erms",
+              "S": -1,
+              "TS": [
+                2,
+                36,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.687,
+          "y": 11.109,
+          "w": 75.547,
+          "oc": "#2980b9",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Algorithm",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 12.328,
+          "w": 10.672,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "A",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.646,
+          "y": 12.328,
+          "w": 550.477,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " step-by-step procedure or formula for solving a problem or completing a task,",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 13.547,
+          "w": 176.086,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "especially by a computer",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 13.4,
+          "y": 13.547,
+          "w": 4.445,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ".",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.687,
+          "y": 15.328,
+          "w": 88.898,
+          "oc": "#2980b9",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Abstraction",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 16.547,
+          "w": 538.984,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "The process of hiding implementation details and showing only the essential",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 17.719,
+          "w": 223.219,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "features of an object or system.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.687,
+          "y": 19.547,
+          "w": 78.242,
+          "oc": "#2980b9",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Recursion",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 20.719,
+          "w": 10.672,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "A",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.646,
+          "y": 20.719,
+          "w": 573.609,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " programming technique where a function calls itself to solve smaller instances of",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 21.937,
+          "w": 322.852,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "the same problem until reaching a base case.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 23.578,
+          "w": 592.289,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Also refers to the mathematical concept where a function is defined in terms of itself",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 24.797,
+          "w": 183.187,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "with modified parameters.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.687,
+          "y": 26.578,
+          "w": 111.133,
+          "oc": "#2980b9",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Polymorphism",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 27.797,
+          "w": 597.633,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "The ability of objects or functions to take multiple forms, allowing the same operation",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 29.016,
+          "w": 91.625,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "to behave dif",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 9.469,
+          "y": 29.016,
+          "w": 96.93,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ferently for dif",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 13.999,
+          "y": 29.016,
+          "w": 88.047,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ferent types.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.687,
+          "y": 30.797,
+          "w": 109.352,
+          "oc": "#2980b9",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Encapsulation",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 32.016,
+          "w": 559.453,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "The bundling of data and methods into a single unit (class) while hiding internal",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 33.187,
+          "w": 379.781,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "details and protecting data from unauthorized access.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.687,
+          "y": 35.016,
+          "w": 66.695,
+          "oc": "#2980b9",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Interface",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 36.187,
+          "w": 10.672,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "A",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.646,
+          "y": 36.187,
+          "w": 566.531,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " contract that defines a set of methods and properties that implementing classes",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.187,
+          "y": 37.406,
+          "w": 408.219,
+          "oc": "#545454",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "must provide, enabling consistent interaction with objects.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "Fields": [],
+      "Boxsets": []
+    }
+  ]
+}

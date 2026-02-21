@@ -1,0 +1,1642 @@
+{
+  "Transcoder": "pdf2json@4.0.2 [https://github.com/modesty/pdf2json]",
+  "Meta": {
+    "PDFFormatVersion": "1.4",
+    "IsAcroFormPresent": false,
+    "IsXFAPresent": false,
+    "Title": "Info Note Callout Fixtures",
+    "Creator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/127.0.0.0 Safari/537.36",
+    "Producer": "Skia/PDF m127",
+    "CreationDate": "D:20260221083758+00'00'",
+    "ModDate": "D:20260221083758+00'00'",
+    "Metadata": {}
+  },
+  "Pages": [
+    {
+      "Width": 37.245,
+      "Height": 52.68,
+      "HLines": [],
+      "VLines": [],
+      "Fills": [
+        {
+          "x": 3.492,
+          "y": 13.453,
+          "w": 30.398,
+          "h": 6,
+          "oc": "#d0ecf1"
+        },
+        {
+          "x": 3.375,
+          "y": 13.453,
+          "w": 0.234,
+          "h": 6,
+          "oc": "#17a2b8"
+        },
+        {
+          "x": 3.492,
+          "y": 33.234,
+          "w": 30.398,
+          "h": 6,
+          "oc": "#d4ecd9"
+        },
+        {
+          "x": 3.375,
+          "y": 33.234,
+          "w": 0.234,
+          "h": 6,
+          "oc": "#28a645"
+        }
+      ],
+      "Texts": [
+        {
+          "x": 3.125,
+          "y": 5.297,
+          "w": 606.391,
+          "oc": "#212121",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Software Documentation Best Practices",
+              "S": -1,
+              "TS": [
+                2,
+                36,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 7.641,
+          "w": 78.266,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Creating ef",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.78,
+          "y": 7.641,
+          "w": 508.727,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "fective software documentation is essential for user adoption, support ef",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 30.613,
+          "y": 7.641,
+          "w": 53.352,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ficiency",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 33.058,
+          "y": 7.641,
+          "w": 4.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ",",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 8.812,
+          "w": 170.742,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "and product success. W",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 11.115,
+          "y": 8.812,
+          "w": 480.219,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ell-structured documentation reduces support tickets, improves user",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 10.031,
+          "w": 482.937,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "satisfaction, and accelerates the onboarding process for new users. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 25.749,
+          "y": 10.031,
+          "w": 152.078,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This guide covers the",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 11.203,
+          "w": 574.516,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "key principles and strategies for building comprehensive documentation systems.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 14.156,
+          "w": 40.883,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Note:",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.026,
+          "y": 14.156,
+          "w": 4.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.193,
+          "y": 14.156,
+          "w": 461.609,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Always maintain a clear table of contents at the beginning of your",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 15.328,
+          "w": 583.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "documentation. Users should be able to quickly navigate to the specific topics they",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 16.547,
+          "w": 44.484,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "need. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.153,
+          "y": 16.547,
+          "w": 10.672,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "A",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 6.612,
+          "y": 16.547,
+          "w": 544.289,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " well-organized index significantly improves the user experience and reduces",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 17.766,
+          "w": 258.789,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "time spent searching for information.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 20.672,
+          "w": 589.711,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "The foundation of good documentation starts with understanding your audience. Dif",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 30.754,
+          "y": 20.672,
+          "w": 40.914,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ferent",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 21.891,
+          "w": 200.094,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "user segments may have dif",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 12.491,
+          "y": 21.891,
+          "w": 363.82,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ferent needs: developers need technical depth and ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 29.504,
+          "y": 21.891,
+          "w": 25.789,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "API",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 23.062,
+          "w": 555.031,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "references, end-users need step-by-step guides and troubleshooting help, and",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 24.281,
+          "w": 447.367,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "administrators need deployment and configuration information. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 24.082,
+          "y": 24.281,
+          "w": 9.773,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "T",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 24.457,
+          "y": 24.281,
+          "w": 87.156,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ailoring your",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 25.453,
+          "w": 443.781,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "documentation to these distinct personas ensures maximum ef",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 23.914,
+          "y": 25.453,
+          "w": 84.484,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "fectiveness.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 27.422,
+          "w": 10.672,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "V",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.612,
+          "y": 27.422,
+          "w": 408.219,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "isual elements play a crucial role in documentation quality",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 22.691,
+          "y": 27.422,
+          "w": 208.109,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ". Screenshots, diagrams, and",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 28.641,
+          "w": 626.109,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "flowcharts help users understand complex processes more quickly than text alone. Keep",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 29.812,
+          "w": 603.906,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "images up-to-date with your product, as outdated screenshots can confuse users and",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 31.031,
+          "w": 323.758,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "undermine confidence in your documentation.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 33.937,
+          "w": 9.773,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "T",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.554,
+          "y": 33.937,
+          "w": 19.547,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ip:",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.47,
+          "y": 33.937,
+          "w": 531.867,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " Use consistent terminology throughout your documentation and maintain a",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 35.156,
+          "w": 198.297,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "glossary of technical terms. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 13.391,
+          "y": 35.156,
+          "w": 404.633,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This consistency helps users build mental models of your",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 36.328,
+          "w": 318.422,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "product and reduces confusion. If you use dif",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 19.022,
+          "y": 36.328,
+          "w": 257.914,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ferent names for the same feature in",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 37.547,
+          "w": 16.898,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "dif",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.888,
+          "y": 37.547,
+          "w": 362.344,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "ferent places, users may not realize they're related.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 40.453,
+          "w": 605.664,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Documentation should be a living resource that evolves with your product. Establish a",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 41.672,
+          "w": 619.047,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "process for reviewing and updating documentation with each product release. Outdated",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 42.844,
+          "w": 639.492,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "documentation is often worse than no documentation at all, as it can lead users astray and",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 44.062,
+          "w": 284.617,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "damage trust in your brand and product.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 46.031,
+          "w": 534.477,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Consider implementing version control for your documentation source files. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 28.165,
+          "y": 46.031,
+          "w": 109.375,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This allows you",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 47.203,
+          "w": 620.773,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "to track changes, collaborate with team members, and even maintain documentation for",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 48.422,
+          "w": 287.242,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "multiple product versions simultaneously",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 16.534,
+          "y": 48.422,
+          "w": 356.648,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ". Many teams find it helpful to keep documentation",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 49.594,
+          "w": 269.492,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "alongside code in the same repository",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 15.702,
+          "y": 49.594,
+          "w": 4.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ".",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "Fields": [],
+      "Boxsets": []
+    },
+    {
+      "Width": 37.245,
+      "Height": 52.68,
+      "HLines": [],
+      "VLines": [],
+      "Fills": [
+        {
+          "x": 3.492,
+          "y": 1.875,
+          "w": 30.398,
+          "h": 6,
+          "oc": "#fff2cc"
+        },
+        {
+          "x": 3.375,
+          "y": 1.875,
+          "w": 0.234,
+          "h": 6,
+          "oc": "#856404"
+        }
+      ],
+      "Texts": [
+        {
+          "x": 4.109,
+          "y": 2.578,
+          "w": 79.102,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Important:",
+              "S": -1,
+              "TS": [
+                2,
+                20,
+                1,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 7.818,
+          "y": 2.578,
+          "w": 4.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": " ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 8.012,
+          "y": 2.578,
+          "w": 9.773,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "T",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 8.387,
+          "y": 2.578,
+          "w": 490.07,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "est your documentation by having new users follow the guides before",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 3.75,
+          "w": 609.195,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "publishing. What seems obvious to the product expert may confuse actual users. User",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 4.969,
+          "w": 567.406,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "testing reveals gaps, unclear instructions, and missing prerequisites that internal",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 4.109,
+          "y": 6.187,
+          "w": 149.383,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "review often misses. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 11.098,
+          "y": 6.187,
+          "w": 316.594,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This feedback is invaluable for improvement.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 9.094,
+          "w": 642.164,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Documentation should include not just how to use features, but why they exist and when to",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 10.312,
+          "w": 624.336,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "use them. Context helps users make better decisions about which features apply to their",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 11.484,
+          "w": 138.727,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "specific use cases. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 9.614,
+          "y": 11.484,
+          "w": 452.719,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This deeper understanding also helps users troubleshoot issues",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 12.703,
+          "w": 220.594,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "independently when they arise.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 14.625,
+          "w": 46.234,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "Finally",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.237,
+          "y": 14.625,
+          "w": 477.609,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": ", monitor your documentation through analytics and user feedback. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 27.611,
+          "y": 14.625,
+          "w": 9.773,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "T",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 28.041,
+          "y": 14.625,
+          "w": 75.578,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "rack which",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 15.844000000000001,
+          "w": 163.648,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "pages get the most traf",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 10.782,
+          "y": 15.844000000000001,
+          "w": 433.109,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "fic, which search queries users perform, and gather feedback",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 17.062,
+          "w": 219.641,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "through comments or surveys. ",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 13.407,
+          "y": 17.062,
+          "w": 431.367,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "This data guides your documentation priorities and helps you",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 3.125,
+          "y": 18.234,
+          "w": 56.031,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "focus ef",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        {
+          "x": 5.738,
+          "y": 18.234,
+          "w": 422.445,
+          "oc": "#333333",
+          "sw": 0.36175,
+          "A": "left",
+          "R": [
+            {
+              "T": "forts on the areas that provide the most value to your users.",
+              "S": -1,
+              "TS": [
+                2,
+                19,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "Fields": [],
+      "Boxsets": []
+    }
+  ]
+}

@@ -7,9 +7,17 @@
   "scripts": {
     "test": "echo \"No tests yet\""
   },
-  "keywords": ["pdf", "html", "converter", "semantic"],
+  "keywords": [
+    "pdf",
+    "html",
+    "converter",
+    "semantic"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "pdf2json": "^4.0.2"
   }
 }
