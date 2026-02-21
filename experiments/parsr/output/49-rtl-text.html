@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>49-rtl-text</title>
+</head>
+<body>
+<h2><strong>Bilingual</strong> <strong>Text</strong> <strong>Direction:</strong> <strong>LTR</strong> <strong>and</strong></h2>
+
+<h2><strong>RTL</strong></h2>
+
+<p><strong>Section</strong> <strong>1:</strong> <strong>Understanding</strong> <strong>Text</strong> <strong>Direction</strong></p>
+
+<p>Text direction is a fundamental property of written language that determines how text flows on the page. Left-to-right (LTR) is the default direction for English and most European languages. Right-to-left (RTL) is used for languages such as Arabic, Hebrew, Farsi, and Urdu. Understanding bidirectional text is essential for creating truly international web applications and documents.</p>
+
+<p>When implementing bilingual or multilingual documents, web developers must carefully consider how text direction affects layout, alignment, and user experience. The HTML dir attribute and the CSS direction property provide powerful tools for managing text flow. These tools allow designers and developers to create documents that properly support readers of different languages, even when those languages use opposite text directions.</p>
+
+<p>The concept of bidirectional text becomes important when LTR and RTL text appear together in the same document. For example, when an RTL paragraph contains an English name or code snippet, that portion should flow left-to-right within the RTL context. Modern web standards provide the bdo element and various Unicode directional marks to handle these scenarios elegantly.</p>
+
+<p>Proper text direction implementation affects more than just visual presentation. Screen readers and other assistive technologies rely on correct markup to present content in the proper reading order. When text direction is incorrectly specified, users with visual impairments may experience confusing or backwards content. This makes proper implementation of RTL text not just a design concern, but an accessibility imperative.</p>
+
+<p><strong>Key</strong> <strong>Concept:</strong> The HTML5 specification defines the dir attribute for block-level elements and the bdo element for bidirectional text override.</p>
+
+<p>These tools allow precise control over text direction throughout your document.</p>
+
+<p><strong>Section</strong> <strong>2:</strong> <strong>Right-to-Left</strong> <strong>(RTL)</strong> <strong>Text</strong> <strong>Demonstration</strong></p>
+
+<p>ﺦﻳرﺎﺗ تاذ ﺔﻠﻴﻤﺟ ﺔﻐﻟ ﻲﻫ ﺔﻴﺑﺮﻌﻟا ﺔﻐﻠﻟا .رﺎﺒﺘﺧﻼﻟ ﻲﺑﺮﻋ ﺺﻧ اﺬﻫ ،ﻢﻟﺎﻌﻟﺎﺑ ﺎﺒﺣﺮﻣ ﻦﻣ ﻖﻓﺪﺘﺗ ﺔﻴﺑﺮﻌﻟا صﻮﺼﻨﻟا .ﻢﻟﺎﻌﻟا لﻮﺣ صﺎﺨﺷﻷا ﻦﻴﻳﻼﻣ ﺎﻬﻣﺪﺨﺘﺴﺗو ،ﻖﻳﺮﻋ .ﺚﻳﺪﺤﻟا ﺐﻳﻮﻟا ﻢﻴﻤﺼﺗ ﻲﻓ ﺔﺻﺎﺧ ﺔﺠﻟﺎﻌﻣ ﺐﻠﻄﺘﻳ اﺬﻫو ،رﺎﺴﻴﻟا ﻰﻟإ ﻦﻴﻤﻴﻟا ﻦﻣ ﻦﻳرﺬﺣ اﻮﻧﻮﻜﻳ نأ ﻦﻳرﻮﻄﻤﻟا ﻰﻠﻋ ﺐﺠﻳ ،هﺎﺠﺗﻻا ﺔﻴﺋﺎﻨﺛ صﻮﺼﻨﻟا ﻊﻣ ﻞﻤﻌﻟا ﺪﻨﻋ وأ ﺔﻴﻨﻴﺗﻼﻟا ءﺎﻤﺳأ جاردإ ﺪﻨﻋ ،لﺎﺜﻤﻟا ﻞﻴﺒﺳ ﻰﻠﻋ .RTL و LTR صﻮﺼﻨﻟا ﻞﻋﺎﻔﺗ .يﺮﺼﺒﻟا ﺐﻴﺗﺮﺘﻟا ﻲﻓ سﺎﺒﺘﻟا ثﺪﺤﻳ ﺪﻗ ،ﺔﻴﺑﺮﻌﻟا صﻮﺼﻨﻟا ﻲﻓ ﺔﺠﻣﺮﺒﻟا داﻮﻛأ ﻖﻓﺪﺘﻟاو ﺺﻨﻟا هﺎﺠﺗا ﻢﻬﻓ :ﻰﻟوﻷا ﺔﻄﻘﻨﻟا HTML ﻲﻓ تﺎﻤﺴﻟاو CSS ﻲﻓ ﺺﺋﺎﺼﺨﻟا ﻖﻴﺒﻄﺗ :ﺔﻴﻧﺎﺜﻟا ﺔﻄﻘﻨﻟا ﺔﻠﻣﺎﺸﻟا هﺎﺠﺗﻻا ﺔﻴﺋﺎﻨﺛ ﺔﻤﻈﻧﻷا رﺎﺒﺘﺧا :ﺔﺜﻟﺎﺜﻟا ﺔﻄﻘﻨﻟا تﺎﺤﻔﺼﺘﻤﻟا ﺮﺒﻋ ﺔﻴﻘﻓاﻮﺘﻟا نﺎﻤﺿ :ﺔﻌﺑاﺮﻟا ﺔﻄﻘﻨﻟا ﻞﺜﻣ ،ﺔﻴﺑﺮﻌﻟا صﻮﺼﻨﻟا ﻞﺧاد ﺔﻳﺰﻴﻠﺠﻧﻹا صﻮﺼﻨﻟا ﺞﻣد ﺪﻨﻋ اﺬﻫ .ﺔﻔﻠﺘﺨﻤﻟا تﺎﻫﺎﺠﺗﻻا ﻲﻓ حﻮﺿو كﺎﻨﻫ نﻮﻜﻳ نأ ﺐﺠﻳ ، code_variable = 42 .سﺎﺒﺘﻟﻻا ﻊﻨﻤﻳو ةءاﺮﻘﻟا ﻦﺴﺤﻳ</p>
+
+<p><em>The</em> <em>above</em> <em>section</em> <em>demonstrates</em> <em>pure</em> <em>RTL</em> <em>text</em> <em>with</em> <em>embedded</em> <em>LTR</em> <em>code</em> <em>snippet</em></p>
+
+<p><strong>Section</strong> <strong>3:</strong> <strong>Bidirectional</strong> <strong>Override</strong> <strong>Examples</strong></p>
+
+<p>The HTML bdo element (Bidirectional Override) allows you to explicitly force text direction, overriding the default behavior based on character properties. This is useful for special cases where you need to present text in a direction that differs from its natural flow. <strong>Example</strong> <strong>1</strong> <strong>-</strong> <strong>Default</strong> <strong>LTR:</strong> This text flows naturally from left to right in English.</p>
+
+<p><strong>Example</strong> <strong>2</strong> <strong>-</strong> <strong>Forced</strong> <strong>RTL</strong> <strong>Override:</strong></p>
+
+<p>gnieb etipsed tfel-ot-thgir syalpsid ti woh eciton - LTR decrof si txet sihT hsilgnE</p>
+
+<p>The bdo element should be used sparingly, as it can create confusing presentations if misused. However, there are legitimate use cases, such as displaying palindromes or demonstrating bidirectional text concepts. When implementing bdo , always ensure that the content makes sense and that the visual override serves a clear purpose.</p>
+
+<p><strong>Section</strong> <strong>4:</strong> <strong>Embedding</strong> <strong>LTR</strong> <strong>Content</strong> <strong>in</strong> <strong>RTL</strong> <strong>Context</strong></p>
+
+<p>One of the most common scenarios in bilingual documents is embedding LTR content (like English text or code) within an RTL paragraph. This requires careful attention to Unicode directional marks and proper HTML markup to ensure correct visual presentation and logical reading order.</p>
+
+<p><strong>Best</strong> <strong>Practice:</strong> Use the &lt;span dir=&quot;ltr&quot;&gt; wrapper for inline LTR content within RTL text. This preserves logical order while allowing proper visual presentation. The span should only wrap the LTR portion, not surrounding punctuation.</p>
+
+<p>When code snippets appear in RTL documents, they must maintain their LTR direction. Variables like myFunction() , file paths, or programming constructs require left-to-right reading to maintain correctness. Wrapping such content in dir=&quot;ltr&quot; ensures both visual clarity and semantic accuracy.</p>
+
+<p>Advanced implementations may use Unicode right-to-left mark (RLM, U+200F) and left-to-right mark (LRM, U+200E) characters for fine-grained directional control. However, these are typically only necessary in edge cases and should be avoided when proper HTML markup can achieve the same result. Always prefer semantic HTML over invisible Unicode characters when possible.</p>
+
+<p><strong>Section</strong> <strong>5:</strong> <strong>Accessibility</strong> <strong>and</strong> <strong>Best</strong> <strong>Practices</strong></p>
+
+<p>When implementing RTL text on the web, accessibility must be a primary concern. Screen readers interpret text direction metadata to present content in the correct reading order. When direction is incorrectly specified, users with</p>
+
+<p>visual impairments receive content in the wrong order, fundamentally breaking the user experience.</p>
+
+<p>Always validate your bidirectional text implementations across multiple assistive technologies. Test with screen readers like NVDA, JAWS, and VoiceOver to ensure that content is presented in the logical order. Additionally, test across browsers—while modern browsers have good RTL support, older versions may have quirks or inconsistencies.</p>
+
+<p>For maximum clarity and accessibility, consider these guidelines: use semantic HTML elements appropriately, declare language using the lang attribute, use dir attributes on block-level elements rather than spans when possible, and avoid relying on CSS-only directional styling when HTML attributes can achieve the result. Proper implementation at the markup level ensures compatibility and creates content that works for everyone.</p>
+
+</body>
+</html>

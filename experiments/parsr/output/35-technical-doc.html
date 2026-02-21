@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>35-technical-doc</title>
+</head>
+<body>
+<h1><strong>DataSync</strong> <strong>API</strong> <strong>Reference</strong></h1>
+
+<p>Version 2.1.0 | Last Updated: February 2026</p>
+
+<h3><strong>1.</strong> <strong>Introduction</strong></h3>
+
+<p>Welcome to the DataSync API documentation. DataSync is a powerful, RESTful API that enables real-time data synchronization across distributed systems. This documentation provides comprehensive guidance for integrating DataSync into your applications and managing data workflows at scale.</p>
+
+<p>DataSync supports multiple data formats, provides robust error handling, and includes built-in retry mechanisms. With support for webhooks and real-time notifications, you can build responsive applications that stay synchronized with your data sources.</p>
+
+<p><strong>Getting</strong> <strong>Started</strong> New to DataSync? Start with the Installation section to set up your first connection, then review the Configuration section to customize your sync behavior.</p>
+
+<h3><strong>2.</strong> <strong>Installation</strong></h3>
+
+<p>Installing DataSync is straightforward and supports multiple deployment environments including Docker, Kubernetes, and traditional server setups.</p>
+
+<p><strong>Docker</strong> <strong>Installation</strong></p>
+
+<p>The easiest way to get started is using the official Docker image:</p>
+
+<p>docker pull datasync:latest docker run -d \ -p 8080:8080 \ -e API_KEY=your-api-key \ -e DB_URL=postgresql://user:pass@db:5432/sync \ datasync:latest</p>
+
+<p><strong>Kubernetes</strong> <strong>Deployment</strong></p>
+
+<p>For Kubernetes environments, use the official Helm chart:</p>
+
+<p>helm repo add datasync https://charts.datasync.io helm install datasync datasync/datasync \ --set apiKey=your-api-key \ --set database.url=postgresql://db:5432/sync</p>
+
+<p><strong>Security</strong> <strong>Warning</strong> Never commit API keys to version control. Use environment variables or secrets management systems like HashiCorp Vault, AWS Secrets Manager, or Kubernetes Secrets.</p>
+
+<h3><strong>3.</strong> <strong>Configuration</strong></h3>
+
+<p>DataSync configuration is managed through environment variables and YAML configuration files. The system supports hot-reload of non-critical settings without service interruption. <strong>Environment</strong> <strong>Variables</strong> Key configuration environment variables: API_KEY - Authentication token for API access (required) DB_URL - Database connection string (required) SYNC_INTERVAL - Sync check interval in seconds (default: 30) MAX_RETRIES - Maximum retry attempts (default: 3) WEBHOOK_TIMEOUT - Webhook request timeout in seconds (default: 30) LOG_LEVEL - Logging level: DEBUG, INFO, WARN, ERROR (default: INFO) <strong>YAML</strong> <strong>Configuration</strong> For advanced configuration, create a datasync.yaml file:</p>
+
+<p>server: port: 8080 timeout: 30s</p>
+
+<p>database: url: postgresql://localhost/datasync pool: min: 5 max: 20</p>
+
+<p>sync: interval: 30s maxRetries: 3 backoff: exponential</p>
+
+<p>webhook: timeout: 30s retries: 3</p>
+
+<h3><strong>4.</strong> <strong>API</strong> <strong>Reference</strong></h3>
+
+<p>The DataSync API provides endpoints for managing synchronization tasks, monitoring status, and retrieving sync results. All requests require authentication via API key in the Authorization header.</p>
+
+<p><strong>Authentication</strong></p>
+
+<p>Include your API key in the Authorization header for all requests:</p>
+
+<p>Authorization: Bearer your_api_key_here</p>
+
+<p><strong>Endpoints</strong></p>
+
+<p><strong>Method</strong> <strong>Path</strong> <strong>Description</strong> <strong>Response</strong></p>
+
+<p>Create a new 201 Created <strong>POST</strong> /api/v1/sync synchronization task with sync ID</p>
+
+<p>Retrieve sync task 200 OK with <strong>GET</strong> /api/v1/sync/{id} details and status task object</p>
+
+<p>Get real-time sync 200 OK with <strong>GET</strong> /api/v1/sync/{id}/status status updates status object</p>
+
+<p>Update 200 OK with <strong>PATCH</strong> /api/v1/sync/{id} synchronization updated task configuration</p>
+
+<p>Cancel an active 204 No <strong>DELETE</strong> /api/v1/sync/{id} synchronization task Content</p>
+
+<h4><strong>Example</strong> <strong>Request/Response</strong></h4>
+
+<p><strong>Create</strong> <strong>Sync</strong> <strong>Task</strong></p>
+
+<p>Request:</p>
+
+<p>POST /api/v1/sync HTTP/1.1 Host: api.datasync.io Authorization: Bearer your_api_key Content-Type: application/json</p>
+
+<p>{ &quot;source&quot;: { &quot;type&quot;: &quot;postgresql&quot;, &quot;url&quot;: &quot;postgresql://source-db:5432/mydb&quot; }, &quot;destination&quot;: { &quot;type&quot;: &quot;postgresql&quot;, &quot;url&quot;: &quot;postgresql://dest-db:5432/mydb&quot; }, &quot;tables&quot;: [&quot;users&quot;, &quot;transactions&quot;], &quot;syncInterval&quot;: &quot;30s&quot; }</p>
+
+<p>Response (201 Created):</p>
+
+<p>{ &quot;id&quot;: &quot;sync_abc123xyz789&quot;, &quot;status&quot;: &quot;running&quot;, &quot;progress&quot;: 0, &quot;createdAt&quot;: &quot;2026-02-21T10:30:00Z&quot;, &quot;source&quot;: {...}, &quot;destination&quot;: {...}, &quot;tables&quot;: [&quot;users&quot;, &quot;transactions&quot;], &quot;estimatedDuration&quot;: &quot;2m45s&quot; }</p>
+
+<p><strong>API</strong> <strong>Rate</strong> <strong>Limits</strong></p>
+
+<p>DataSync API enforces rate limits of 1000 requests per minute per API key. Responses include X-RateLimit-Remaining and X-RateLimit-</p>
+
+<p>Reset headers to help you manage your quota.</p>
+
+<h3><strong>5.</strong> <strong>Troubleshooting</strong></h3>
+
+<p>Common issues and their solutions: <strong>Connection</strong> <strong>Timeout</strong> If sync tasks timeout, increase the WEBHOOK_TIMEOUT environment variable and check network connectivity between services. Ensure firewall rules allow communication on required ports. <strong>Authentication</strong> <strong>Errors</strong> Verify your API key is correct and hasn&#x27;t expired. Check that the key is included in the Authorization header with the format Bearer &lt;key&gt;. <strong>Database</strong> <strong>Connection</strong> <strong>Issues</strong> Test database connectivity using standard database clients. Verify credentials, hostname, and port in the connection string. Check that the database user has appropriate permissions for read/write operations.</p>
+
+<p><strong>Performance</strong> <strong>Considerations</strong> For large datasets exceeding 1GB, consider implementing incremental sync strategies and enabling compression. Monitor resource usage during sync operations to prevent service degradation.</p>
+
+</body>
+</html>

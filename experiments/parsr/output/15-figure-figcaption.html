@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>15-figure-figcaption</title>
+</head>
+<body>
+<h2><strong>Architectural</strong> <strong>Design</strong> <strong>Patterns</strong></h2>
+
+<p><strong>Fig.</strong> <strong>1</strong> System Overview</p>
+
+<p><em>Figure</em> <em>1:</em> <em>High-level</em> <em>system</em> <em>architecture</em> <em>diagram</em> The layered architecture pattern separates concerns into distinct tiers, each responsible for specific functionality. This approach improves maintainability and allows teams to work on different layers independently. The presentation layer handles user interactions, the business logic layer contains core application rules, and the data layer manages persistence and retrieval.</p>
+
+<p>The Model-View-Controller (MVC) pattern divides applications into three <strong>Fig.</strong> <strong>2</strong> interconnected components. The Model represents data and business logic, the MVC Pattern View displays information to the user, and the Controller handles user input and <em>Figure</em> <em>2:</em> <em>Model-View-Controller</em> <em>pattern</em> <em>flow</em> coordinates between Model and View. This separation enables developers to modify one component without affecting others, promoting code reusability and testability.</p>
+
+<p>Implementing MVC requires careful consideration of communication between components. Controllers should remain thin, delegating complex operations to the Model. Views should be stateless and focused solely on presentation. This discipline ensures that your codebase remains maintainable as it grows and evolves over time.</p>
+
+<p>The benefits of MVC become increasingly apparent in large projects with multiple developers. Each team member can focus on their assigned layer without creating conflicts or dependencies with other areas. Testing becomes simpler because components have clear responsibilities and minimal coupling.</p>
+
+<p>The Observer pattern facilitates loose coupling between objects by establishing a one-to-many <strong>Fig.</strong> <strong>3</strong> relationship. When one object changes state, all Observer Pattern registered observers are notified automatically. This pattern is fundamental to event-driven <em>Figure</em> <em>3:</em> <em>Event-driven</em> <em>Observer</em> <em>pattern</em> architectures and is extensively used in graphical user interfaces and reactive programming frameworks.</p>
+
+<p>Observer pattern implementation requires defining a subject that maintains a list of observers and methods to register, unregister, and notify them. When the subject&#x27;s state changes, it iterates through all observers and calls their update method. This approach scales well and makes it easy to add new observers without modifying the subject class.</p>
+
+<p>Understanding and applying these design patterns helps architects create robust, scalable, and maintainable systems. Pattern knowledge accelerates development because proven solutions exist for common problems, reducing the need for reinventing solutions and allowing teams to focus on domain-specific logic rather than infrastructure concerns.</p>
+
+</body>
+</html>

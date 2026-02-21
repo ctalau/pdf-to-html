@@ -1,0 +1,25 @@
+{
+  "version": 0.9,
+  "extractor": {
+    "pdf": "pdfminer",
+    "img": "tesseract",
+    "language": ["eng"]
+  },
+  "cleaner": [
+    "out-of-page-removal",
+    "whitespace-removal",
+    "redundancy-detection",
+    "table-detection",
+    "header-footer-detection",
+    "hierarchy-detection"
+  ],
+  "output": {
+    "granularity": "word",
+    "includeMarginals": false,
+    "formats": {
+      "json": true,
+      "markdown": true,
+      "text": true
+    }
+  }
+}

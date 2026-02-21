@@ -1,0 +1,302 @@
+[
+  {
+    "fixture": "01-basic-paragraphs",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/01-basic-paragraphs.html",
+    "bytes": 1671
+  },
+  {
+    "fixture": "02-headings",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/02-headings.html",
+    "bytes": 1681
+  },
+  {
+    "fixture": "03-inline-emphasis",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/03-inline-emphasis.html",
+    "bytes": 2711
+  },
+  {
+    "fixture": "04-unordered-list",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/04-unordered-list.html",
+    "bytes": 934
+  },
+  {
+    "fixture": "05-ordered-list",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/05-ordered-list.html",
+    "bytes": 1881
+  },
+  {
+    "fixture": "06-nested-lists",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/06-nested-lists.html",
+    "bytes": 1247
+  },
+  {
+    "fixture": "07-definition-list",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/07-definition-list.html",
+    "bytes": 1256
+  },
+  {
+    "fixture": "08-simple-table",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/08-simple-table.html",
+    "bytes": 190
+  },
+  {
+    "fixture": "09-table-colspan",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/09-table-colspan.html",
+    "bytes": 301
+  },
+  {
+    "fixture": "10-table-rowspan",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/10-table-rowspan.html",
+    "bytes": 288
+  },
+  {
+    "fixture": "11-table-colspan-rowspan",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/11-table-colspan-rowspan.html",
+    "bytes": 1572
+  },
+  {
+    "fixture": "12-lists-in-table",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/12-lists-in-table.html",
+    "bytes": 286
+  },
+  {
+    "fixture": "13-nested-tables",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/13-nested-tables.html",
+    "bytes": 899
+  },
+  {
+    "fixture": "14-inline-image",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/14-inline-image.html",
+    "bytes": 1345
+  },
+  {
+    "fixture": "15-figure-figcaption",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/15-figure-figcaption.html",
+    "bytes": 3169
+  },
+  {
+    "fixture": "16-blockquote",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/16-blockquote.html",
+    "bytes": 4448
+  },
+  {
+    "fixture": "17-inline-code",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/17-inline-code.html",
+    "bytes": 2281
+  },
+  {
+    "fixture": "18-code-block",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/18-code-block.html",
+    "bytes": 2408
+  },
+  {
+    "fixture": "19-page-header-footer",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/19-page-header-footer.html",
+    "bytes": 6984
+  },
+  {
+    "fixture": "20-footnotes",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/20-footnotes.html",
+    "bytes": 4404
+  },
+  {
+    "fixture": "21-watermark",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/21-watermark.html",
+    "bytes": 5792
+  },
+  {
+    "fixture": "22-warning-callout",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/22-warning-callout.html",
+    "bytes": 2348
+  },
+  {
+    "fixture": "23-info-note-callout",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/23-info-note-callout.html",
+    "bytes": 3560
+  },
+  {
+    "fixture": "24-two-column-layout",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/24-two-column-layout.html",
+    "bytes": 4947
+  },
+  {
+    "fixture": "25-three-column-layout",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/25-three-column-layout.html",
+    "bytes": 6032
+  },
+  {
+    "fixture": "26-pull-quote",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/26-pull-quote.html",
+    "bytes": 6213
+  },
+  {
+    "fixture": "27-sidebar",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/27-sidebar.html",
+    "bytes": 4747
+  },
+  {
+    "fixture": "28-drop-cap",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/28-drop-cap.html",
+    "bytes": 3513
+  },
+  {
+    "fixture": "29-table-of-contents",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/29-table-of-contents.html",
+    "bytes": 9732
+  },
+  {
+    "fixture": "30-academic-paper",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/30-academic-paper.html",
+    "bytes": 12801
+  },
+  {
+    "fixture": "31-invoice-layout",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/31-invoice-layout.html",
+    "bytes": 1295
+  },
+  {
+    "fixture": "32-recipe",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/32-recipe.html",
+    "bytes": 2062
+  },
+  {
+    "fixture": "33-resume-cv",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/33-resume-cv.html",
+    "bytes": 2592
+  },
+  {
+    "fixture": "34-newsletter",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/34-newsletter.html",
+    "bytes": 3459
+  },
+  {
+    "fixture": "35-technical-doc",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/35-technical-doc.html",
+    "bytes": 6704
+  },
+  {
+    "fixture": "36-form-layout",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/36-form-layout.html",
+    "bytes": 1118
+  },
+  {
+    "fixture": "37-hanging-indent",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/37-hanging-indent.html",
+    "bytes": 1842
+  },
+  {
+    "fixture": "38-business-letter",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/38-business-letter.html",
+    "bytes": 2098
+  },
+  {
+    "fixture": "39-legal-document",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/39-legal-document.html",
+    "bytes": 5600
+  },
+  {
+    "fixture": "40-long-multipage",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/40-long-multipage.html",
+    "bytes": 11950
+  },
+  {
+    "fixture": "41-mixed-inline-formatting",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/41-mixed-inline-formatting.html",
+    "bytes": 4538
+  },
+  {
+    "fixture": "42-image-alignment",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/42-image-alignment.html",
+    "bytes": 4545
+  },
+  {
+    "fixture": "43-multiline-header-footer",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/43-multiline-header-footer.html",
+    "bytes": 8145
+  },
+  {
+    "fixture": "44-horizontal-rule",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/44-horizontal-rule.html",
+    "bytes": 7038
+  },
+  {
+    "fixture": "45-superscript-subscript",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/45-superscript-subscript.html",
+    "bytes": 2277
+  },
+  {
+    "fixture": "46-address-contact",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/46-address-contact.html",
+    "bytes": 2065
+  },
+  {
+    "fixture": "47-data-table-numeric",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/47-data-table-numeric.html",
+    "bytes": 1145
+  },
+  {
+    "fixture": "48-multicol-heading-break",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/48-multicol-heading-break.html",
+    "bytes": 6761
+  },
+  {
+    "fixture": "49-rtl-text",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/49-rtl-text.html",
+    "bytes": 8388
+  },
+  {
+    "fixture": "50-comprehensive-mixed",
+    "status": "done",
+    "output": "/home/miciiortodocsi/repo/pdf-to-html/experiments/parsr/output/50-comprehensive-mixed.html",
+    "bytes": 13790
+  }
+]
