@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>source</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
+    }
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+    }
+    pre code {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
+    }
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
+    }
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
+    }
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .key-value-region dt {
+        font-weight: bold;
+    }
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
+</head>
+<body>
+<div class='page'>
+<figure><img src="data:image/png;base64,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"></figure>
+<h2>CloudSync CloudSync</h2>
+<p>Unified Cloud Data Management Platform</p>
+<p>Product Manual v2.0</p>
+<p>© 2026 Example Corporation. All rights reserved.</p>
+<h2>Table of Contents</h2>
+<p>Introduction</p>
+<p>Getting Started</p>
+<p>Configuration Reference</p>
+<p>Advanced Topics</p>
+<p>API Reference</p>
+<p>Troubleshooting</p>
+<p>Appendix</p>
+<h2>Introduction</h2>
+<p>C loudSync is a revolutionary platform designed to simplify cloud data management across multiple providers and services. Whether you're synchronizing files, managing configurations, or coordinating distributed teams, CloudSync provides a unified interface that makes complexity disappear. Our platform has been trusted by over 10,000 organizations worldwide to manage petabytes of critical data with unprecedented reliability and ease.</p>
+<p>The modern enterprise operates across multiple cloud providers, each with their own ecosystems, APIs, and management interfaces. CloudSync bridges these gaps, providing a single pane of glass for all your cloud data operations. By abstracting away provider-specific details, CloudSync allows your teams to focus on what matters: moving, protecting, and optimizing your data.</p>
+<p>"CloudSync transformed how we manage our multi-cloud infrastructure. What used to take hours now takes minutes, and our data is safer than ever." - Sarah Chen, CTO at DataFlow Industries</p>
+<p>This manual provides comprehensive documentation for CloudSync v2.0, including installation instructions, configuration options, advanced usage patterns, and API reference documentation. Whether you're a system administrator setting up your first deployment or an experienced engineer optimizing your infrastructure, you'll find detailed guidance for every task.</p>
+<h2>Important Note:</h2>
+<p>This version of CloudSync requires Python 3.8+ and supports AWS, Google Cloud, and Microsoft Azure. See the system requirements in the Getting Started section for full details.</p>
+<h2>Getting Started</h2>
+<h2>Installation Steps</h2>
+<ol>
+<li style="list-style-type: '1. ';">Download CloudSync from our official repository at github.com/example/cloudsync</li>
+<li style="list-style-type: '2. ';">Verify system requirements: Python 3.8+, 4GB RAM minimum, network connectivity to your cloud providers</li>
+<li style="list-style-type: '3. ';">Install dependencies: Run pip install -r requirements.txt</li>
+<li style="list-style-type: '4. ';">Initialize configuration: Execute cloudsync init --interactive</li>
+<li style="list-style-type: '5. ';">Test connectivity: Run cloudsync test-providers to verify your cloud provider credentials</li>
+<li style="list-style-type: '6. ';">Start the service: Use systemctl start cloudsync (on Linux) or appropriate service management tool</li>
+</ol>
+<h2>Success!</h2>
+<p>If all tests pass, your CloudSync installation is ready. You can now begin configuring data synchronization rules.</p>
+<h2>First Sync Operation</h2>
+<p>To perform your first data synchronization, follow these steps:</p>
+<pre><code># Configure your first sync rule cloudsync sync create \ --name "backup-to-cloud" \ --source /data/important \ --destination s3://my-backup-bucket \ --schedule "0 2 * * *" \ --encryption AES-256 # Verify the rule was created cloudsync sync list # Perform initial sync manually</code></pre>
+<pre><code>cloudsync sync run --name backup-to-cloud</code></pre>
+<p>Tip:</p>
+<p>Use the --dry-run flag on your first sync to preview what changes will be made before actually synchronizing data.</p>
+<h2>Configuration Reference</h2>
+<h2>Configuration File Structure</h2>
+<p>CloudSync uses a YAML-based configuration file located at /etc/cloudsync/config.yaml . The following table describes all available configuration options:</p>
+<table><tbody><tr><th colspan="2">Core Settings</th><th>Description</th></tr><tr><td>logging</td><td>level</td><td>Log verbosity: DEBUG, INFO, WARNING, ERROR. Default: INFO</td></tr><tr><td>api</td><td>port</td><td>RESTAPI listening port. Default: 8080</td></tr><tr><td>storage</td><td>cache-size</td><td>Local cache size in GB. Default: 10</td></tr><tr><td>providers</td><td>aws :AWS configuration gcp : Google Cloud settings azure : Microsoft Azure options</td><td>Cloud provider credentials and endpoints</td></tr></tbody></table>
+<h2>Provider Configuration Example</h2>
+<pre><code>providers: aws: region: us-east-1 endpoint: https://s3.amazonaws.com credentials: access_key: ${AWS_ACCESS_KEY_ID} secret_key: ${AWS_SECRET_ACCESS_KEY} gcp: project: my-gcp-project region: us-central1 credentials_file: /etc/cloudsync/gcp-key.json azure:</code></pre>
+<p>subscription: 12345678-1234-1234-1234-123456789012 resource_group: my-resource-group</p>
+<h2>Advanced Topics</h2>
+<h2>Intelligent Replication</h2>
+<p>CloudSync implements a sophisticated replication engine that understands data patterns and optimizes transfer efficiency. The system learns from historical sync patterns and automatically adjusts parallelization, compression, and scheduling to minimize bandwidth consumption while maximizing throughput.</p>
+<h2>Disaster Recovery</h2>
+<p>"Advanced CloudSync features transformed our disaster recovery strategy from hours to minutes. The intelligent replication system is a gamechanger for enterprise data protection."</p>
+<p>The disaster recovery module provides point-in-time recovery capabilities with sub-minute RPO (Recovery Point Objective). By maintaining a distributed snapshot system across multiple providers, CloudSync ensures that your data remains protected against regional outages, ransomware attacks, and other catastrophic failures.</p>
+<figure><figcaption><div class="caption">Figure 1: Intelligent Multi-Region Replication Architecture</div></figcaption><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYcAAACdCAIAAADQRiNgAAAv7UlEQVR4nO2deXRcV5ngv3vfUruqtO+yLNmyLS+xHduxHSchiUMWnI2EMIE0cEhIw7A0PQe6Z87pQw7NcM4wwJlD0z000AmkmYQOAdLEWUliZzFJHDvy7njTYsnaVVJJtb7tfvNHlVTbK22WVE/y/R0f+dV799173/a97/vud79HEBE4HA7HMtB8d4DD4XDSEE3XKopy/vz5gYEBxtgCd2iBcTqdTU1NJSUl+e7IHDMyMnL27NlwOLy0dWFKaXFxcVNTk8PhyHdf5hLGWGdn58WLFzVNy3df5hdJkurr62traylNakiZUklV1b179/7+2Wdb21qRMYTFdU+TGe9AiKegYPfNNz/00F/V1dXNR58WmN7e3qeeeuqVV14ZHQ0stss3CwglpK5u2X333XfPPfcsDdl06NChJ5988siRI4qqwFK/goQQURC3bt324IOf2bFje2Jl6rtUUZSf/OQn/+83/04osdkLZUcpoVLivCRLpZ2mdDGAWdtzY1IhmXRnk00kdVPWdkwUwMy1KT9UPagogZgSWbO6+R//8R/Xrl07ZcetTGtr62OPPdZypMVus9sFt0xd+e7R/ILAYkZQ0cO6Ydx/3/3f+ta33G53vjt1Wezdu/cHP/hfgdGAXXY6RK8AUr57NL8YqMaMYFQNewt8f/d3f3f33XdDhlT6xS9+8dOf/sRm85Q33FNWf6ck+wjC+DMfLxZ/+yakAIHUlRlbESaEQsou6VtTawaTVggQllhIFpsoA0AwdwcAADFnBwDjtTI0AqOnOntfHAm0rVrV/POf/2txcfEMT6xVCIVCX/3qVz/88HChq2K5e3uprYESId+dml8IEI1Fu6MnOkIfhmPBL3z+C9/+9rfz3anZc/DgwW9+828jkVCVe029e6tbXGqOBVPCur8tdLAvdNbldv/whz/cuXNn0oLr6+t75plnRFGqXvW5yhWfBkBgDEjOx56kSAdTuZPUU7IFCgJkSiUEhERzCEAwoQfRlFbS/qbUYL4V0xUlkzIEUCBiadFWh63i1IX/e+7cmT/96U9f/OIXJz2H1uXVV189euyox1G4znd7oVzN0Fji2j8AANgET4P7Wpm6T7PXnn/++U9+8pONjY357tRsUBTl6aefHgsG6rzr1vluE4mNwRL36sbxypXrvbcTgK6x008//fQ111yT9DC9+eabfv+g27eyfPndCAyYAcAAEJABIgACYHIh9V+ethJkAAjAzLbGV7LxfVl2zWT86BjT3K666vKbGDMOHDgQiUTyeIVmjaZp+/bt03W1xrXRJ1cbqGP2+VyK/xAYAqtyri2y146OBV5//fV8X4pZ0traevzEMaetoM61RaR2Bkbez+3C/GNoiNS23L3dYXMdPny4o6MjKZXa29t1TfUUbSCCTEwGblJlxCSmEwLAuKIEgOk1pOxCIN3aSiuFaQupZcYX0zS1iYWkUpbq8JpYmdHn1EaZ21lrkz1+/9DQ0FDW5kVAIBDw+/2iYPPKlfnuy8KDFIRCuVbTtY6Ojnx3ZpYMDQ35/UNuucglFiIa+e7OgsKAucQih+DVDS1NKqmqioiC5CRTeJ2nAtMlRVLEJH+RDHGTJS9I6u6Zgi+jOcgUSam2W3JdWotZLi2kRKJU1nVN1/VpHabF0HVd13WBiAIscV+SKYQQkUgAuEgvHySuoCGAtOS9gTkgIpERUVXV7CjKdD0lRftI7m0uL1ILQJoQmVTrgSyth6T9Sv1vXKZMovWYt5u2PVskmZdcfCyBQ+BcoaSO5pvEdpNMeQGTaD3ZNtR8224cDmdpkxXbneoemliVIi8yjS9IlSYLYbulK0pZtpupojSlbkVMNnA4nLyQex7crGw3KzK5R8n6/edwrjDM58GlPKuzsN1Sd5nUdrOCRyn76DgcTl6xRs6A6XmU5jgaYOk4uTmcJYWZVEJMigYreZQmb3fG0QBprjPk4onDsQiT6koz8ShZKRqAw+EsYrLH4KbWenJ7lNIqSvw19SillVoI281kzl2yJAAxyy7A4XDywSRjcDBftpulMJWGHA4nf5iOwWFqdpF5tN0QUmw3zNpqJibm3KMEmHKMHA4n/1hjDG5S5jsaYMb5KzkcznySrSul6UST5XWDxeFRMju6dE3NvCSHw8kPl6ErLfZoAA6HY0lMpRKme1sWRTTALGy3eAd4LCWHYy0mH4NLXci0oXhuAA6HMx/knAeX90jueckNkO1RSjs6DoeTf8x1peQXjXLYblZkhtEAaUeX+MuH4zic/GOmK01MCpvCdktVlCa13SznUYKUDmSU5HA4eWZh45Wm51FaoGiArDo4HI4VMMuQm/g/bx6lydu9/Eju3O1yI47DyT9TjsFZORqAw+EsQSafB5fLo5ReOLELgAUiuafIDZDtUcqsh8Ph5JkcX15K+zVb281STOFRsmSfOZwrEtMxuPH/5sp2m5AImTIu9/jXAnuUuFDicCyDhXIGLHQ0ALfdOBxLkq4rkYlnfonmBsiqY6IJnmKJw7EI09CVFn00AIfDWUxM+T04AGtFA8zCdhvPDZBcmWm7EfOmORxOHphkDC7xAPPcABwOZyGZZAxugWy3vOUG4IoSh2NJJsv6ZlHmbH7J+O6mih6Hw8kTOfxKkGq7ZXtkFm1ugMyucnHE4ViO+YlXmp5HyTLRAFwycTgWIodUwoylefEopTeX5VEyaXfebDdMbZrD4eSTnH4lK0UDcDicKwjzMTjrR3LPQW4Ak6PjcDj5J0tXWtq5AUw9SpY8Dg7niiVTVyKpk+FmartNSIRMP1GGzygFK3iUrCxkOZwrjzzkDLBYNMAkneFwOHkgWyoRAEzXa6zlUcpsNb3dWdpuXCRxOJZhynlwab+sHQ3A4XCWApPPgwPIEEOQU15A/iO5p5EbIMsLlnl0HA4n30w+D24ubTfrkaXTcTgcCzDJPLi0hSWSGwBSd0ktxkUSh2MVLJS3OxMeDcDhXJFMkosSc9pulvMoXWY0AALP283hWIbL05Wm51GyVjQAh8OxNqZjcJiuhlyuRymlZsgUSXmM5B7fhQAQ5BkDOByrkD0PzmQpl7yYa9uNw+FwTHSlNJUk75Hc85MbIE1RAkzrB4fDyS854pUw1QFsSTVmFh4lU52Om24cjsXIHa8Ux9R2m5AImX6i3M+5pTxKyQIptXHpxOFYg3mMV7J4NADJLIkW1Qo5nCsMs9m51vAomfUqXVObM9uNCyMOx0KY60rjIiOnvOC5ATgczjxh6lfCNIXFcpHcc5AbINOjRLj5xuFYBRNdKc2Nncr0bDfrMaVHKQ6fc8LhWIIpx+BmbLstgtwAk38xgcPh5BUL5AzIczRAbluSw+HkA7MZJ8l5cFbzKM15NEBGSQ6Hk3+mpytNz6NkrWiARcvi7j2Hc9lMkotyxh6llH0hUyRZIzeAyXw6TB6bRegd0PcfjDbUSmsa5AI3pRYwsjkz4tAJ5UKnurnZvqxKtNusdG8tEibJ+gap8mNJ5wZAGP88pxWIxfC9o7E3P4g5HWRFndS8Ql5eLVaV8ft70dDvN156O/LW4VihhzavkFctl+oqxIrSqUaWOOPkjleaWFwQ222BcgNMVhItIpcIAUkkMRWjMTx2Rm05rXg9tKpUbKgVm1fIjTWSjYsnayNQEAXCDBgaYfsPRt/8IFpeLFSWiauWS2tX2MqLqSjwKzgZM5ffiYQCaXJnynPMGDKGhIAwU3tkFh4lU51u8mgA6+UyIQCEgCCAIJBwBM+0q2c7tDfei3o9dE2jvKZRrikXqkrF6fTbdLo0maMDRkRDR0KACpQQYAYyhoSCMOMrPZ3Gxg1uq10tMwgBQoBSAgADw6xvUDl+Vv2TGKkuF9aukFcuk6rKRZ9n6rNkfvlgzt6hzGCMAaWECgQRmMEQQRAJmeuznJQbAJNXbpZfKd13k5EbIP6oAJK4chFfa2jIGIiiuUcJEKqq7TU1zmBQaz0f1DTMcEvnPRogc4ZNXsl+nClN3NwGA3+AvXUo+vbhaGmhUFMhrlwmrW+ylRUJkOMuJZTQzDsAkaGuMSCXKzsQ0Vviql9Tauis7WR/ZEypbSourSkYG4m2nxiY2wSfhsEoIaIkICAzLHGlckGzroRAQaAEADQd2y7p5y9qdhupLBHrKoU1jfLqRtntzLpKE/uKWd4FRMNghsYEkV6u7CCwfF15Ubl74NJY55lBZ4GtYV25zS62nugf80dI9pHMiriwk2yCKIlAgOmoKjpA4q7OZma6EiLs3OHbttWHLLlOVVlPj3L06EjnxShixnsMAQERN20uvP0TVT3dkX/5p3PqiEZocnv+ogFmTO+g3nJanQ8lYAKBkqERXdPN1YHU1+9QgA0MK8fOqM/vj5QVS8XOUCiKGa5xRNx2y8pNNy5HhhO3L2MYCcbaTw+efq9zuC9EL+N4DB1rVhb9l2/tiobVJx57Y2w4uv32pm23rWw/3f+L//E603FOXreIYBispMpz7Z2ra1eWBIbCr/y6Zbg/TGduBx39SOkdNOZV1aIUznRouU4qISAQECgxDLjYq3X0aO8dUxx2Ul/jCvbHRDH9FYro9tnvenRrQZEz1b+ga4a/N3jmUPf5o726ZsxaMCGCQMl19zSv31n3/svnLhztrW4svO8bOzw++xPf3TfcF5JswuxqzoTg+mvrdu5ZXdNULIh0pD904sDFvzx/JjymmAq+yefBpesUiIhQViavaHRl7LB2LWzf7vvd77pbPhwBIIbOAEAQiKEjIAoCnDw5GgrqwaAWizFCwDAQESkFQGA6w/jLRCCIqGssvkkQKBm33RDB0BlDBARKUBBpXJbFZTAgCgIxdIYIlAIiEkQqUJLQ5NAwEONmBSUZB5XwiE1vHtzFHu2JP4zNt9dZoMRum/pOS75+Nezs1j8KKaNBlqUVQXGVp2FdefbuG3bVb/7Y8md+/Jf+rkB8nM8wGNMRAQkhgkgn3mOGHr8ilBDQ48uECFLyLU0pUApxrbzlzbbejpHAUBgxIZIQwdANZAgAhJLU1/vEJgSghAgiNblHESglG29o2P3ghrJaLwCMDIQlh4gz9wMiwluHYu8ejc63W0eWiCxN0QQhEO8GAoQjePysNtyt0EyVCERJWL623FvihHjRlAJbb1nx1h9PvfbUMcaAkLgpzVLOszB+/tHQkQBQkTADmcEAgApUEBOCk9DEWA8VyJg/+tITH9qcUn/HiCCOv8YMNAyGiCR9RwBAhokHE4CmNJoK09nqrdUP/LdrHS45NBqLhtTyOl/5Z3wOt+2Fxz80dBOpOvkYXHo0QLwNBgAwOKT88Y+9gYAuUKiqsu/eXVJWZr/ttvJz54KGhmW1dsOAoaFYVb3b7RZaL4SGB1WmMUVlhsYEgVRU2m02OjQQIwD1DW5JJH290Z7uiM1Gm1YXuFzisF/p6gjFTzdjKEl0eaO3wCcRQsYCSldHUFUYocThEErLXYaO/sFoZU2B0yUOD0Qlm2BobKA3bIzr+eVVLodLjIS04YHI5VgVZUXiTdsdkji/93Q4ws53anoOdWkCREAEg6FAoapcdFbLQ2dIIJRVjCEADPUGX/i3w3GdXJaElZurdt29prap5Jrbm/b+8hCMKyNldT6bQ4qF1e4L/rGRqCBQQqC8zudwSYGhiBrTaptKHB45NBLrOufXFD21J3GGeoKxsBaLaHHzDRlSgdSsKSsscxJCxvzRS61+LWZQgSBDKtKalaW+UhcVaCgQ677gj0W0DK3eYKyhufyBv905MhA+9X7X2u21jLFZ67zNK2RZTkjz+aN30LjUp08Z0oEIDMEw0GmnddXSiCy3tZgUi8uRQ3++8N6LZ+PqYUGJ69o9qxo3VOy8a/Xp97s6z/qRgCjRulWl3hInEAgMhLsvDDODASV2p1xS5WEMBy+NeUudFXU+AOjvDAxeGkvcYRMPOyGqYnSdGxJEGg2p8TeEYbCCQkdVY5HDJauKPnhpbPDSKKEJH6LdJVU1FHkK7QgQGAj3tA4bOkt9tSCCZBd3fGKVwyV3tw3/5n++NTYSueMLm3fdvab5mpp3XzzbfzEgZD1QufN254oGQAAAXcOurujgoCpQOHcu6HDQe++tKiqSC32yIMCXvrQ8GjUOvj98x55KSuHHPzjT0Oi+Y09VV1fk1//Wigzvub+2vt69//Xe2mWuqzYVAcBAf+x3T7WtWeu96eNVhJBwSN/7+4533+5jDAu88p776jduKbY7RABQFKPl/YEXft8+OqJUNno+/1+bY1Hj0IHe2+5dbjB469XOa3ZVGgz//V9Otp8PCAQcbvHTjzRX1rrffvniK8+1jmtLGff1tG7zhlrpq5/xTqfk5dDdp//oVwFNMzd/GAODISVEkqDYK6xplNY0yrUVkqFEWt4UhvvN69QVo/v88FDfmChQxqD9o8H6taUN6ypKqjySTVSj2sYb6j/+0Ma4MgIAbSf69/7yUOc5v2wTbvnshqbNVacPdomisH7XMkGkmqJ/8NqFlx5v0cNqSiOICLvuXL3t1pWtJ/ue/sEBXdWdBbbdD264+uZGp8cGAGpMP3Hg4stPHgkMhh0u6dbPbdx0Y4OrwA4AumZ89EH38z8/FBgKpwomAsQw8MCfPnr3hbMN68vXbq+dtZuXELhlp+OWnY7Z7T59XvtL9OkXg7KZ7EMAZgBjKIpElkhdpdC8Ql65TKqplD886Hz+mZx34uhQpP30gChSANDUPi2m168tszvlokpP+6kBb6nr4w9t3HRDvd0lA0A0pL774tn9z5yIRtSKZaWf+fvrDJ0d2d++4fplZTVeABi8NPb8Lw99dPCSICRtNMNgheWuB799na/E+dT/fufsoW4ikBUbKm77/Kb65rJ4GX9v8PXfHm95o80wWHGF584vbWnaXCXbRQCIBJXDr1149TfHNFXPUH8O7D3z0eHuwa5Rf1/Q0IxL5/0AINlE2SaYagmmX15KXcj0HE9ACFAClAIhoCosvoYAAhCXW3R7pGuvK+nqjPT2RCMRw+EQXG7R7RYJAYOh3S643OK115e1t4XefL3vmp0lZeX2z3y+cWgg+trL3Rs2FlVUOT/28cqTR/2jAfXGW6u3X1ceCqq/+eUZAnDn/ct33FDZ1xN+44VOAHC5JY/XtuPG6q6OYPfF0JnjQxuuLq2sca/eUNRxfoQZULOsoH6FFxHbzo6gwUCkSSd3MhDBQoM6qpZ5tuPXwWDAGBZ5aWWp1FgnrV0h11eJspzoeV9fQi0yBQGZwZiBBiBjzFfgdLhtABANq1pMX7am7O4vb3N57W88c+L0+11bdjfu+MSqPQ9v+fX39muKLttFp8e28YblZz/s+f1P3mu8qmLLzY07P7Gq88zQwZfPZTRkd8nOApvTYwNAIOS6e9Zcd09zaCz20q9aYhHtY/c1X727kTH27E/e33bryl13NxsG++M/vx8ciX7i4S3rr63z94y99Os0hYEKpPu8v+vsoKYYTZuqLv/0LgB6ljM+VbEtLxGry4TVjdLaRltJIRXGzcnsvdJrQGagQRAQCSHeEiclxNBZZEyhArnxU+t23NHU3xn4jx/9BSjc8YXNNz2wbqQ/9O7eM0DAVWCTbOKWjzceeq01NBLduWdVeZ3v1oc2XjrnjwaVlDaAUuL22l1euyhRw8Dy6oJ7v7q9vM57rqXn8OutDevKt9/RdM+Xt435o+eP9tzy2avW7awbGQj99oeHPIWOTzyy5fpPNl+6MNyyr21C/SEEDJ2dPdwNCFQgAMThtjVvrwWAkYFQcCRKzTxXOf1K5pHciX9ACMgSkWVKKVZVObds8QHAyLA6PKyWltkMA+12erEj/NS/d0TChiRC3L3NEo8NxhdCIf13v2kPBTWvV9q0tdjhFF594dKxI8Mjw8oDn20sKLR5C+WxUfXUMX9fdzgU1E4d9VOBrNtUvHFLaW29RxAIIhgGSjLpbBt7+penI2FNEunpo0OVNe4VqwtdLik0pjauKRRE2npmuLNtlAo0qa+mxVhZcUwnfnQIIInE6SRNy6TmFfKyKrGqTMx2W0xumbp99hvuWxsJq4QQUSL1zWWV9YWqop84cNEwcO2OWk+ho+OjgXf+eDowFB4bijZdXVW/tqy2qeTCsd74gNfIQOiFxw/3XBj56NCl6saiyuWFqzZXtbzRmjLuATBuMCJDZOgtdmy8fjkAtLze+sZvjzOGhm7suGOVZBddHlvbyYFnfnRA04wTf+nUVWPlpqqSqlVVjUV2hxRNt+MQkQBJdWcsFsYVW5BEUuwT1q6UmpZLteVSWfGMvcgN68tv/8ImSikAeoqc67bXEko6TvR1nfMXlXvWXVsHAAdfOXf0nXYAKCxz3f3X2zZcu+zwaxcYSwxZHnur45VftRgG0xTjU3+zo6LeV9VQeP5Ib1af41cQkLE1W6vL67yRoPLSr1raTw6ca+mxu+SSao+v1CkItGVfW+vxvtHB8NmWHptdvPrmxmVrSmtWFh95sz3DBSZKAgAYOrM5xY8/dNX6nXXMwA9eOT86FDUdbJllvGlpqfyNrzcaDCkFl0uUJKqqbN++gdFRrazcTgggwoljgViM2WyUsdQ7Nzm41tEWCoc1QmFgIAoAQwOx/r6oJNGh/igzmECJLFPGoO38mEDJitXeTdtKRJHW1XsAQJLiI6mYaOvDQSWq22yCrrGTR4a231hdU+8pr3YxgzWuKgSAkx8ORiOaQKmJAMK0cT4rYDBQNXQ5SF2lVFslrm2Um+oljyvn4PGUeHyO6z/ZnLqmp234nedOn3qvS7YLlfU+APAWO+/6660MkVJid8qCSCvrC88f6YmX7+sIBAYiskOMhtSetuHK5YW+UqfdKec6b4hQVOHxljgR4dL5YUJAtouHX289sr8dAAydhcaioiys2FDxqW/uFCVa1VAEAIJIzccELaTLTg0i6AYSAF8BrS6XGmrFDU222oqkYjsLGjdUNG6omPipKXrLvrY3/uN4KBCtaix0e+2I0LyttrKhCAB8JS4AKFvmdXnt8Q+LMQPbTw0QQiRZ6G4djkVUh9tWXOk519KTq0VBpPHaRgbCw/0hm0OMBtVnfnyAUIKIus7aT/U3bapasalqyy0rBIkWVbgBQJQEQjKEEgAA05m32LHn0a2bbliua8b+Z09+8FprrsgDc6mU06M0vpJS4nAm5H0sxlpbwwfeGTp+LEBIwm3DGEYjBs182jGlQtBUI7GWIQAYOjIGZFzdJQCIhFK4495lN91WQwm52BYMjqnZTmDGWDSsE0oAgVLafTHYcS6wdlNp/UqfobOKWldwVLlw2g9IJtrOmh9joW+cUAEaa8WGWmlFnVRTLnrcc6AjBEeih19vjYwprgLb9jtW2V3SuQ+7P/jzBYFSQohkFwHA6bbVrS4BIAAYCkRDgaimJR0ESlRHg8WvZ9zPLcpCPO7OFESQ7SIVKTKmqQnXPTJUNR0ABIHuurv5ts9tsjnErnNDo0ORxSV3JsfpIFvX2TeukesqxepycU6GRy4c7Tvb0g0AKzZUrNpSrUT1t/94qrc9QAUqyUI8hLW01ustcxMAROzvDIRGY/HHngAwxpSoFg++1FUjPhA0+cA/ocTmEAFAUw1msPg4XXyIHAg4nPIdX9y8/Y5VhmZcPDMYC2uTvDINnRWVu+/52jXNW2uiIfWVJ1sOvnoBDTYzqZTbo5T42d+vPP74xaEhRUgITtRUg9IJoZRanphVkGMVThiP8V9YVmHfeUOlKNIX/9jx5+cvCiL53JfXFBWXpu2YUgGlEI1oxw8NNG8sXbW+GAFcbvnowd6+7vBimeZaWyl97bM+YY4iReKERpW/PH/G3xsUJUpFev29zVfvXnHmcM/5o70Co0pEA4D2U/2//dEBTTEAwNAZIYApdpPNIVKRMBWBQNylqimGEZdTOVBjuqEzSRbtTgkZAoIkCw6PTYvpzgLb9tubbA7xL3vP7P3lYUNn9371mrgj1pTEMB9m/bSkLLvuavv1Wx1zO9DXfnrg9aePEwIn3+t8uHp3SaXnhvvX/eGf3ouGNSWqM4OhQF5+ouXIW+2iJDCDMYaEEMMwCstcCEAFanfKcVtYdoiiKACAGtUnaREZqlENAGx2UZQENaojAZfXJko0EtRqmoo339wAiH/6+Qfvv3zeZhe/9P1b3D6TkQTG0O213/u1a9ZsrRnqHvvPn33w0QeXqEBJ7ucxR4bc8Y5lRVQnI00UxYhFWSxmKAozDCYIJGFSpe4+8X9KqEFmJtrccgoRXS5JlikADA9GI2GtrMJRW+cGgPHYGZOuCpScOzXsH4jU1ns2bitjDE8fGVKjyde++aw9y0Dj0fNzCiEgiFSQKCK899K5vosBT6HjY59a53DLmmr0tgcAoLDC43DbQoEYIeSq6+vXX7vM7bVNxGdX1BcWlrljUc3ts1ctLwSA4f5QLKzlet1RSob7QmNDEUKgdlUJEYga09btrHv4uzd/+lu7SqsL4u/hkf5QNKQUFDniQVWEgK4bGUHhhIAgEkEkZNwxLAhEECmx6mwyQZiroOgklBJBpKIsDnaNvbv3DBps3c66dbuWIcOR/lBwOEoIKa/3qYoeHo2V1/mu3t24fG1ZYvwJgVJSv7YMADRNr20qtjlFXTUGe4M54+IIGAbrbh8BAF+Zq7S6QInqdqd016NbH/ne7mtuX+n02CRJ1DU20h+KhbXKhqKyusRLRddZ6vuDUnLtXavXbK2JhtUXf9XSerzP4ZZtTkm2i9PVlcYjoVNNreQzTADj9RCSmKiVOKjxkvEEuMn1E9WS5N8pf8J4zYTC6LAaCeuyTdh5Y5W7QNq0tTQ+OFpZ4163scSIx4ylN0YIBIaiJ1sGPnZ7vcsjD/SGz53yE5qpxY13O82oXHqMn9vx51mkg12j7zx3+r5vbF+9pXrbrSvf+v2pk+92br5xeXmt985Htxx9s71xQ8X225sGL409/tgbOC4hfCXOOx/dcuJA55qtNWV1Pl0zTr3XZWgMCBCSnDM10RwhMDoUPvxG661/tXHzTY3RsBYJKrvuWl1Y5r7U6u/rDIQCUV+pa/NNjYiwamu102NjBiuuLFi/c9mJdy+qsUQENjOwYX357gfXE0oKihwA4C123P83OzVVbz858Ppvj6FhUY1proif24lnhFDy4Rttq7dUN22uuvmB9R2nBoYujR15s233g1dtu22lEtWCw9Fd96yprC/c/+zJ80cTzmzGcOP1ywzNCAeVXXetJoR0nBnsPj9ME8pE6sM4HhxLyOn3uq65dWVVQ9GeL2059OcL9WvLNt/UoCn6QNdoJKhEQorba991T3Pl8qLNNzWoMc3hkmtXFa/ZUt16on983IMVVrg3XFcPALJduufLW8lXtgGJB3yw//jRgfNHekU58yVslosyayl1UdNQUZiisOw5uolfDJUYi8WMxIgbIgDqOlMUpiosfpOrKlMUQ9MSiriuoaIYisIIAgFgBioxQ4kZwMA/GN3/alckrDU2ee99cEVgWHnq8TN93eGSMvueBxrdbika0ZWYPjG6RwAIgMHwVMtQNKwBwLmT/tFhZcJ8y5FxZcmKJV1jakxXY9qEAkIpPf5Ox0cfdKsx/erdjZUNhV1nh/7zXz/o7Qisvab2s39//fbbm7rOD/3nzw4OdY9NhHi3Hu+LhbVPfXPnumvroiF1/+9Onj3cHQ8XVqKaEtXid6GmMjWmq0rCkfTuC2f2P3sSGbv50+vvfGSLq8B+8NXzrz55dLg39M6fzgQD0aqGwju/tIUCPPPjAxfPDHqKHHd8cXNhuXsiygERnR65vrls+dryonKPGtOZgVUNhfWry8pqC0hiJuaSBRGUmKbGdF1LDBlRSsKjsbefOx0ciXpLnNfctkIQ6dvPffT2c6dFgd72uU2f+ubO4krPu3vPvP3c6bgPCAgYmnH07Y6NH1t+5yNbfKWuSxf8rz55JBpSCCGaYqgxXVMNIICI8eYYQ0LpyGD4uX852Haiv25Vyf3f2LHl5sbBS2O//6f3Lhzp6esIvP/SOTWmr95S/YmHr+48O/jcPx8c6Q/VrCi+9XMbZbuYCKNFIJTquqHGdEMznAV2h8fmcNvsbtnukik1v3xk4mb97ne/+7vfPb2i6aG6+gcQDTPzDQiiKBJBAGSgaQkRk/rhIwJAKEgiIYCahowlwn4FAUSBIqKuGYggiYRSYhiGriEACiIRKWGIhsaQIaVElAgAjLvlsLTcUV7hDI4p3R0hTTMKi2zFZY5gQBn2x0SRAqKusfhIH0E0DNQ146ptZZ/72lWUkif+z5HTRwZFkQDk+CITIiXCWKzrSOeTpRXen/70nxsaGub23loAent7v/71r7VduLi17P4i2zKGCZeBIFJBpIigq0nLCBFFUYjPGtE1I372nG65or7Q7bUHh6M9HSNqVCeUCAL57H+/ft3Oug/3tf7hJ+9X1PsKihwDl8aGesYAgBBCBRIf99VUAxmKEqUCRYbxoYy4cPGVucrrfEBgsGtseCCIDCgljGFxpae8zhsNqj1tw7GI5ilylFYXRIPqUM8YS4m9mmgiA8ZQHx8woUToCB06OvDSnjvu+uEPfziPJ3re2Ldv39e+/tWqgqaNRXeLRMbxEBxJFoGAobP4RK448cGEuFqjKbphICFQVOEur/UBwEBXwN8XQgREXL627Evf2y1IwuPfeb37wnDd6lJdZ90X/NGgGo8UF2WBUsIM1FWDUCLJAhDQ1YRWwQwm2cTK+kJPsSM8qvRfDERCCk3MMIKKZb7CCnegP9zbMcIMVlTh8ZW6AoPhwGB4oquEEFE2mYkCkGwl/uAe9j87qvf8z+99P0e8UtrTmybONA01DQFhYpbZxF6JaTcMlBjG7biJenQddM0g4ytVNbFvvK+6hjoyAIiLTsZQibF4E3HtdaA30t8doQQJIYJARkeUEb9CCFAKiq7H48oAgCAQQhrX+ErLHdd9vNbuEI8f6u84FzCZmpyt6C1RdI3pmgHpdi4hRNeZrifWEwKCQGMRre1kP2DCTMgYX6OUGAw7zw4CEELJxCllBiq6NlG/pjKAZHNxx8HIQHi4LwTjCQzibk5Kib83ONQ9BiThNAkHYsGRKAGSMe12ooks5jzZhuWI60oAkHGwhICasp5SAgj+3tBQdxBSzrNhpAp3GgrEPvrgEgBQIXmSNcWIu4zJuK6U2hgVqK4ZnWcH4/MOKSXJPBMIPW0j3a3DhBBKCRXocH/I3xeM/0w5BBzvaia5rt8M4pXiNykhaDb2kTabl2TpZQTSpBhJRgzE3VUAJC03QEoBAERKCdCksk4oEUjSZANC4guIKIr0rgeb6ld4AaD7YvCVP1yIRvQ5dx4vIkhiaHjq9XGJn11SkCgACCIdT6KUWSZd3pk0Rykxye6RtZ5QIuRwES198ZObXMeeuZ4AJSbnOa7+EIESSuKzo7PqgdRLZnp9zQcWSCJce2IFpSTHzTazyzfl9+DG673sbJOZ9aZ5mucmr1s8G8H+F9tLy53BUaX1zMhQXyQuknLZbslWlrjONBviL8/Dr13oPDPY2x5AxCtZOixGCCEj/aGXft1CKB28NDr3Q4Pzg2nWt1RpMsm4VabtBpAtTdJlyhzlOZoERDz6fh8gsHjCDcFs6I0zbRDh+DudcXk0i3xGnPxCKRkdiu5/9hTErbbFKpXGLaqJH5Bz3ApSVqbrIOnbp8rrlv71kdSSmNWBtFaSbaVqaoJAAVBINDstqZpRGyeVDC2ds7iIh6rluxczw7S7mEMAWYQMETn1tyenlKr8meNwrMOUM04yHuks281UUVpwj1L62rSS0/OIWVcGczhXGvPxIYrpe5QytZ5sm+vyvxSQ3lpujxiHw7EG2VIJ0575+fUozfdX3mbS/6UeuMThLBbMdKXxZ9Va0QAcDufKIFcuyuwVuW2fTGkyz7abiaJk/sXwmUhVDodjFXL6lWZiu1mNWUhVKx4Gh3NlYqorTcwYmb3tlq4opatCVvMocTuRw7ESCx5eNQuPUoavfCoPOszSIzbDA+FwOPND7ijKiUXreJSSBVJqMymZ0dr0+8/hcPKPWYbcNHmRgZWjATgczlLALENu2rM+Y49SOgsZyY0wjdwAZk5uLts4HAuRy6+UY34JQJa8mL7tZjUmEaYcDidv5MpFmWvl5dhuc5wbYI48StlHyuFw8omVUxxM36OUJdSmK1W5cOJwLEd2fqXU0bEULcNUMbGKRwlgNtEAk40DcjicfHEZutIijQbgcDjWJre3O3X5cj1KVorkziyJKaoch8PJP7miKCe3febTduNwOFc25vPgUuTDEssNkFtR4q4lDscaTD7jZOnlBkjdD1MKmNXG4XDygZmulPL0LvHcABMHyCUSh2MZ5i1eaRYeJVNdZoGiAbhY4nCsQoZUIoBJ820p5gZI69u4osRFEodjIXLrSlNJAZ4bgMPhzAe5vgeHCxoNMDPbDeHycwMkPUqprfCgJQ4n/5h+42Rp5wbIMb/E0ofA4VxBZOpKWUbVLGw3K+cGyOFR4q4lDscyWCFnwPQ9SllCbRq2ZGYt5rYbh8OxCplSiQASwEwzxyoeJYC5zw3As75xONZiGrrSIo0G4HA4i5NcY3AwK4+SJSO5U0SkSf8TJbkg43CswlS60pWTGwC5bOJwLEG2rkSyLKN5tt1MFKX5yg2QfqQWn3vM4VyhZOlKVnw+Z+hRMvWgm0QDzHk/ORzOHJCtK2H6A7/EcgPk8IgRnouSw7EKlx2vNAuPkqkuk4doAK4scThWZJIxuOR/iyYaYBa2G+J4D3ngEodjCUznwUGqdcZzA3A4nIUkx7dz43+n4cFZnLkB0vpD0vfgcDj5JVtXyjK+YLHoMjP0KJlKVQ6Hk29y+JUgRyT0xN+JR3qR5QbIrDHRLteXOBzLsJA5A6bvUcoSatOwJTNrmZntxkUSh2MVcnx5Kc8eJYB5j+TmthuHY1HM/EoJPWISj9LUUoDnBuBwOLPD3K80c9sn06M0uRTLX24A8/4AphbmcDj5JJdfCdOWL8d2sxqTS1UOh5NvTHSl+Dfhlm5uADOpymfBcTiWwQp5uyeYoUfJ1IM+/WiA5AJXlDgcC2HmV0o6WZZcbgBuu3E4lmfautIsPEqmugzPDcDhcCZlknlwc+dRShZIqc2kZEZrc2q7JXMDmPU/nh6Xe5c4HAswSS7Kads+PDcAh8OZO5K6kiiKQACZliJzJh23Sixcvu2GsNC5AbKkKgFAxphBBYFSS40ATBdBEKggMGRXZpooRGTIAMgivXwAQCmllDJkiRvyCgMBGOoARBTF5CWsqqoSRXks3M5Qy2PnpsEMPUrTkKoEIKT7Y3rY6/UWFhbOW8/nEY/H4/P6NCMW1Afz3Zc8gMACao8oSJWVlfnuyyzx+Xw+X2FYH4kaY4QI+e7OgkKBKCwYMQKiIFRVVSWl0g033OByukeDrf6RowKRCKEAKY80pnw6beIjRam5ASzrUZpCihGBiIoR7AofBcTNmzZ7vd7MLi0GHA7Htm3bKBEuhY9H9QAlIrkyXrgEqEAkv9LhVzocdseNN96Y7x7NkpUrVzatXBWKDV+KnGBo0CtGMFEiIMHO8JGYFl65cuXKlSuTFlxDQ8OePXt++9unW7ue0Y1oSeEmWSogSCH+je80W4wBkHHxBJBpf6VIAQJJoRZ/RhIL8a0pu5O0XTLqIWRcJBETEZOcXzIunMb/Jlohqe0mCwAgGqAFlK7W4LvDka6amtoHHnjgcs5vfrn33ntfeOGF1rYLJwMvN3p2+uQqgcj57tR8g4oRGVTaWoMHYmrkzj13rV+/Pt9dmiUul+uBBz51/PixrvARSoQ650anWJhQDpYshKEe0QNdkSMXQ0ckUX7oob+SZZlgyvyvkZGR73znO/v2vyGJsq+gwSYVAqHjz3xqXbkVHLMNWVsyfxM0X59YieO6VqYnPqNgLn8KZmVPSmpcOtNGld5gdLiivPIf/uEfbrrpphyVLA4OHjz42GOPdXZ1uO0+n61KpPJSj1vHmBEaifYoWmzH9h3f//73Kyoq8t2l2WMYxs9+9rMnnnhC1VSfo9wjFS95U46hEdaHRyK9kig/+uijjzzyiCRJaVIJAEKh0M9//vN9+97ouNjOmJHjjs59o1vxEZisT4jo8xVtvGrjww8/vGXLlgXr0/xx8uTJX/zily1HPhzyDxJCrHhB5g4EJEDrapddd911X/nKV4qKivLdozngueeee+aZZ86eOxOLRZf6BQREtNscq1atvv/++++///74ykypFKejo+P06dN+v98wjIXt5IJCCHE6ncuXL1+3bp3dbs93d+YMTdNOnjzZ2toaDodNr++SQRAEn8/X3Nzc2NiY777MJX6//8SJEz09Paqq5rsv84ssy5WVlRs2bCguLp5YaS6VOBwOJ18sbV8ah8NZfPx/hPUqRiQ9KQgAAAAASUVORK5CYII="></figure>
+<h2>Performance Optimization</h2>
+<p>For organizations with large datasets, CloudSync provides advanced optimization features including delta sync (only changed blocks are transferred), intelligent compression based on file type, and adaptive parallelization that adjusts to network conditions in real-time.</p>
+<h2>API Reference</h2>
+<p>CloudSync exposes a comprehensive REST API for programmatic access to all functionality. The API uses standard HTTP methods and returns JSON responses with consistent error handling.</p>
+<h2>Endpoints Reference</h2>
+<table><tbody><tr><th>Method</th><th>Endpoint</th><th>Purpose</th></tr><tr><td colspan="3">Status &amp; Configuration</td></tr><tr><td>GET</td><td>/api/v1/health</td><td>Check service health and status</td></tr><tr><td>GET</td><td>/api/v1/config</td><td>Retrieve current configuration</td></tr><tr><td>PUT</td><td>/api/v1/config</td><td>Update configuration settings</td></tr><tr><td>GET</td><td>/api/v1/sync/list</td><td>List all configured sync jobs</td></tr><tr><td>POST</td><td>/api/v1/sync/run</td><td>Execute a sync job immediately</td></tr></tbody></table>
+<h2>Example API Call</h2>
+<pre><code>curl -X GET https://localhost:8080/api/v1/health \ -H "Authorization: Bearer $CLOUDSYNC_TOKEN" \ -H "Content-Type: application/json" # Response: { "status": "healthy", "version": "2.0.0", "uptime_seconds": 86400, "active_syncs": 3, "last_error": null }</code></pre>
+<h2>Troubleshooting</h2>
+<h2>Common Issues and Solutions</h2>
+<h2>Issue: "Connection refused" when connecting to cloud provider</h2>
+<p>Solution: Verify your network connectivity and firewall rules. Ensure that your credentials are valid and that the credentials have appropriate permissions in the cloud provider. Use cloudsync test-providers --verbose to get detailed connection diagnostics.</p>
+<h2>Warning:</h2>
+<p>Do not hardcode credentials in configuration files. Always use environment variables or credential files with restricted permissions (600).</p>
+<h2>Issue: Sync operations timeout frequently</h2>
+<p>Solution: Increase timeout values in configuration and consider enabling compression. Monitor network bandwidth and adjust parallelization settings. Large datasets may benefit from incremental sync strategies.</p>
+<h2>Issue: High memory usage during large file transfers</h2>
+<p>Solution: Reduce the cache-size parameter and enable streaming mode for large files. Adjust max-parallel-transfers to reduce concurrent operations.</p>
+<p>Performance Tip: for files larger than 1GB to optimize</p>
+<p>Enable intelligent-chunking memory usage and improve transfer reliability.</p>
+<h2>Issue: Authentication failures after credential rotation</h2>
+<p>Solution: Update credentials in your credential files and run cloudsync reload-config . If using environment variables, ensure they're properly exported in your shell environment before starting the service.</p>
+<h2>Getting Support:</h2>
+<p>For issues not covered here, visit our support portal at support.cloudsync.example.com or contact our team at support@example.com. Include diagnostic information from cloudsync diagnostics --export with your support request.</p>
+<h2>Appendix</h2>
+<h2>System Requirements</h2>
+<ul>
+<li>Operating System: Linux (Ubuntu 18.04+, RHEL 7+), macOS 10.14+, or Windows Server 2016+</li>
+<li>Python: Version 3.8 or higher</li>
+<li>Memory: Minimum 4GB RAM; 16GB+ recommended for large-scale deployments</li>
+<li>Storage: Minimum 2GB for application; additional space required for local cache</li>
+<li>Network: Stable internet connection with at least 10 Mbps for cloud provider access</li>
+</ul>
+<h2>Supported Cloud Providers</h2>
+<ul>
+<li>AWS S3, EBS, EFS</li>
+<li>GCP Cloud Storage, Cloud Datastore</li>
+<li>Azure Blob Storage, Azure Files</li>
+<li>MinIO (S3-compatible)</li>
+<li>DigitalOcean Spaces</li>
+<li>Backblaze B2</li>
+</ul>
+<h2>Company Information</h2>
+<h2>Example Corporation</h2>
+<p>Cloud Solutions Division 123 Tech Street San Francisco, CA 94105 United States</p>
+<p>Phone: +1 (555) 123-4567</p>
+<p>Email: support@example.com</p>
+<p>Website: www.example.com</p>
+<h2>Version History</h2>
+<table><tbody><tr><th>Version</th><th>Release Date</th><th>Key Features</th></tr><tr><td>2.0</td><td>February 2026</td><td>Intelligent replication, Advanced API, Multi-region support</td></tr><tr><td>1.5</td><td>August 2025</td><td>Performance optimizations, Extended provider support</td></tr><tr><td>1.0</td><td>January 2025</td><td>Initial release, Core synchronization features</td></tr></tbody></table>
+<h2>License and Legal</h2>
+<p>CloudSync is provided under the Enterprise Software License Agreement. By using this software, you agree to the terms and conditions outlined in the license document. For a copy of the full license, visit www.example.com/legal/license.</p>
+<p>This documentation is accurate as of CloudSync v2.0 released in February 2026. All product names, logos, and brands mentioned are the property of their respective owners.</p>
+<h2>Footnotes:</h2>
+<p>1 CloudSync supports AWS regions: us-east-1, us-west-2, eu-west-1, ap-southeast-1, and others.</p>
+<p>2 Encryption at rest is enabled by default using industry-standard algorithms (AES-256-GCM).</p>
+<p>3 Point-in-time recovery is available for the past 90 days with standard retention policies.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,402 @@
+[
+  {
+    "fixture": "01-basic-paragraphs",
+    "text_fidelity": 3,
+    "structure": 1,
+    "formatting": 0,
+    "score": 5.0,
+    "notes": "All text present and accurate. However, source has 5 separate paragraphs while converted merges all into single paragraph in page div. No inline formatting preserved."
+  },
+  {
+    "fixture": "02-headings",
+    "text_fidelity": 3,
+    "structure": 1,
+    "formatting": 0,
+    "score": 5.0,
+    "notes": "All text present. Source has proper heading hierarchy (h1, h2, h3, h4, h5, h6) but converted flattens all to h2 level. No inline formatting."
+  },
+  {
+    "fixture": "03-inline-emphasis",
+    "text_fidelity": 3,
+    "structure": 1,
+    "formatting": 0,
+    "score": 5.0,
+    "notes": "All text present. Source uses proper semantic elements (strong, em, u, s, span with style) but converted strips all inline formatting, converting to plain text with section titles as h2."
+  },
+  {
+    "fixture": "04-unordered-list",
+    "text_fidelity": 2,
+    "structure": 0,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Text is present but merged into paragraphs instead of list structure. Source has unordered lists under headings but converted loses all list markup entirely."
+  },
+  {
+    "fixture": "05-ordered-list",
+    "text_fidelity": 1,
+    "structure": 0,
+    "formatting": 0,
+    "score": 1.3,
+    "notes": "First ordered list severely mangled - all 8 items merged into single li with custom list-style marker. Second list converted to paragraph. Major structural failure."
+  },
+  {
+    "fixture": "06-nested-lists",
+    "text_fidelity": 2,
+    "structure": 0,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Text present but nested list structure completely lost. Source has complex ul/ol nesting flattened to single-level ul with all items as siblings."
+  },
+  {
+    "fixture": "07-definition-list",
+    "text_fidelity": 3,
+    "structure": 0,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "All text present. Source uses semantic dl/dt/dd elements but converted to h2 headings with paragraphs. Definition list structure entirely lost."
+  },
+  {
+    "fixture": "08-simple-table",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.3,
+    "notes": "All text and data present. Table structure preserved with tbody. However, caption moved to colspan row instead of separate caption element, and thead/semantic structure lost."
+  },
+  {
+    "fixture": "09-table-colspan",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.3,
+    "notes": "All text present. Table structure preserved with colspan attributes working. However, lost thead/tbody organization, mixed th/td usage, and CSS classes for styling not preserved."
+  },
+  {
+    "fixture": "10-table-rowspan",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.3,
+    "notes": "All text present. Table structure preserved with rowspan attributes working. However, lost thead element, thead cells converted to tbody, and category-cell CSS classes removed."
+  },
+  {
+    "fixture": "11-table-colspan-rowspan",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 1,
+    "score": 5.0,
+    "notes": "Table structure severely degraded. Docling collapsed complex colspan/rowspan into flat layout. Content present but all table hierarchies and cell spanning lost. Table rendered as single tbody with misaligned headers and content."
+  },
+  {
+    "fixture": "12-lists-in-table",
+    "text_fidelity": 1,
+    "structure": 0,
+    "formatting": 0,
+    "score": 1.3,
+    "notes": "Nested lists within table cells completely flattened into plain text. Source has structured ul/ol with nested elements; converted output shows only text concatenation without list markers or structure."
+  },
+  {
+    "fixture": "13-nested-tables",
+    "text_fidelity": 1,
+    "structure": 0,
+    "formatting": 0,
+    "score": 1.3,
+    "notes": "Nested table completely lost. Inner table with caption and structured content flattened. Source has clear nested table structure; converted file shows no evidence of inner table element."
+  },
+  {
+    "fixture": "14-inline-image",
+    "text_fidelity": 1,
+    "structure": 1,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Inline images not preserved. Docling output appears to extract text only without image elements. SVG data URIs and inline img tags from source are missing. Paragraph structure retained but visual content completely absent."
+  },
+  {
+    "fixture": "15-figure-figcaption",
+    "text_fidelity": 1,
+    "structure": 0,
+    "formatting": 0,
+    "score": 1.3,
+    "notes": "Figure and figcaption elements lost. Source has 3 figure elements with SVG content and captions; converted output shows no figure/figcaption tags. Content appears as plain text without semantic figure structure."
+  },
+  {
+    "fixture": "16-blockquote",
+    "text_fidelity": 2,
+    "structure": 0,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Blockquote elements not preserved. Source has semantic blockquote and cite tags; converted output shows plain text without blockquote markup or citation structure."
+  },
+  {
+    "fixture": "17-inline-code",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Inline code formatting lost. Code, kbd, and var elements from source not preserved in conversion. Text content present but semantic markup for code/keyboard/variable elements missing."
+  },
+  {
+    "fixture": "18-code-block",
+    "text_fidelity": 1,
+    "structure": 1,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Code blocks severely corrupted. Whitespace and indentation destroyed - converted output has code crammed into single lines or split pre tags. Line breaks and formatting critical for code readability are lost."
+  },
+  {
+    "fixture": "19-page-header-footer",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.3,
+    "notes": "Most text preserved and readable. Heading structure mostly intact (h1/h2 preserved) with minor issues. Text content and paragraph structure recoverable but formatting and page layout CSS completely absent."
+  },
+  {
+    "fixture": "20-footnotes",
+    "text_fidelity": 2,
+    "structure": 0,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Footnote/endnote structure destroyed. Source uses semantic doc-endnotes role and sup anchor links; converted output shows plain numbered list without proper reference linking. Role attributes and bidirectional references lost."
+  },
+  {
+    "fixture": "21-watermark",
+    "text_fidelity": 3,
+    "structure": 1,
+    "formatting": 2,
+    "score": 7.5,
+    "notes": "Text fully extracted including watermark text. Watermark integrated into body as text (not filtered). Some formatting preserved."
+  },
+  {
+    "fixture": "22-warning-callout",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 2,
+    "score": 10.0,
+    "notes": "Warning callout content, structure, and formatting well recovered. Callout box boundaries and labels detected."
+  },
+  {
+    "fixture": "23-info-note-callout",
+    "text_fidelity": 3,
+    "structure": 0,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Info note text present but callout semantic structure lost. Note box boundaries not recognized."
+  },
+  {
+    "fixture": "24-two-column-layout",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 2,
+    "score": 10.0,
+    "notes": "Two-column layout text and structure well recovered. Reading order correct. Formatting preserved."
+  },
+  {
+    "fixture": "25-three-column-layout",
+    "text_fidelity": 3,
+    "structure": 1,
+    "formatting": 2,
+    "score": 7.5,
+    "notes": "Three-column text fully extracted. Reading order partially correct. Column layout not structurally represented but text readable."
+  },
+  {
+    "fixture": "26-pull-quote",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 2,
+    "score": 10.0,
+    "notes": "Pull quote content, structure, and formatting well recovered. Quote visually distinct from body text."
+  },
+  {
+    "fixture": "27-sidebar",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 2,
+    "score": 10.0,
+    "notes": "Sidebar content and structure well recovered. Sidebar and main content areas separated correctly."
+  },
+  {
+    "fixture": "28-drop-cap",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 2,
+    "score": 10.0,
+    "notes": "Drop cap and body text fully recovered. Paragraph structure and formatting well preserved."
+  },
+  {
+    "fixture": "29-table-of-contents",
+    "text_fidelity": 3,
+    "structure": 1,
+    "formatting": 2,
+    "score": 7.5,
+    "notes": "TOC entries and page numbers present. Entry hierarchy partially detected. Leader dots absorbed into text."
+  },
+  {
+    "fixture": "30-academic-paper",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Academic paper text and section structure well recovered. Two-column layout handled. Citation and reference structure present but inline formatting lost."
+  },
+  {
+    "fixture": "31-invoice-layout",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Invoice table structure partially preserved but line-item details and column alignment lost. Totals and header areas present as text."
+  },
+  {
+    "fixture": "32-recipe",
+    "text_fidelity": 2,
+    "structure": 2,
+    "formatting": 0,
+    "score": 5.0,
+    "notes": "Recipe content mostly present. Section headings and some structure recovered. Ingredient list and steps partially structured."
+  },
+  {
+    "fixture": "33-resume-cv",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Most resume text present. Section headings partially detected but two-column layout causes reading-order issues. Contact info and experience entries present but formatting lost."
+  },
+  {
+    "fixture": "34-newsletter",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Newsletter content present but multi-column layout causes interleaved reading order. Headlines and article content mixed."
+  },
+  {
+    "fixture": "35-technical-doc",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Technical documentation text mostly present. Heading hierarchy partially detected but code blocks and inline formatting lost."
+  },
+  {
+    "fixture": "36-form-layout",
+    "text_fidelity": 0,
+    "structure": 0,
+    "formatting": 0,
+    "score": 0.0,
+    "notes": "Form layout output appears to be a large image dump (328KB) with minimal text content. Form fields, labels, and structure entirely lost."
+  },
+  {
+    "fixture": "37-hanging-indent",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Bibliography text mostly present. Hanging indent structure not preserved; entries rendered as flat paragraphs."
+  },
+  {
+    "fixture": "38-business-letter",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Business letter text mostly present. Header, body paragraphs and signature partially structured. Formal letter layout not recovered."
+  },
+  {
+    "fixture": "39-legal-document",
+    "text_fidelity": 1,
+    "structure": 0,
+    "formatting": 0,
+    "score": 1.3,
+    "notes": "Legal document text significantly degraded. Section numbering and hierarchical structure lost. Key structural markers and clause formatting absent."
+  },
+  {
+    "fixture": "40-long-multipage",
+    "text_fidelity": 1,
+    "structure": 0,
+    "formatting": 0,
+    "score": 1.3,
+    "notes": "Multi-page document text extraction incomplete. Page structure not preserved. Headings and section hierarchy collapsed."
+  },
+  {
+    "fixture": "41-mixed-inline-formatting",
+    "text_fidelity": 1,
+    "structure": 1,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Mixed inline formatting (mark, small, color spans, etc.) entirely lost. Text partially present but many inline styled elements stripped."
+  },
+  {
+    "fixture": "42-image-alignment",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Text present but image float/alignment (left/right/center) not preserved. Images may be present as figures but alignment classes lost."
+  },
+  {
+    "fixture": "43-multiline-header-footer",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.3,
+    "notes": "Text well preserved. Multi-line header/footer structure partially recovered. Section headings detected."
+  },
+  {
+    "fixture": "44-horizontal-rule",
+    "text_fidelity": 3,
+    "structure": 1,
+    "formatting": 0,
+    "score": 5.0,
+    "notes": "Text fully present. Horizontal rule hr elements not preserved; visual separators lost."
+  },
+  {
+    "fixture": "45-superscript-subscript",
+    "text_fidelity": 1,
+    "structure": 1,
+    "formatting": 0,
+    "score": 2.5,
+    "notes": "Superscript and subscript elements (sup/sub) not preserved. Text partially present but mathematical/chemical notation rendered as plain text."
+  },
+  {
+    "fixture": "46-address-contact",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Contact information text mostly present. Semantic address/abbr/time elements not preserved. Line-per-line structure partially recovered."
+  },
+  {
+    "fixture": "47-data-table-numeric",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Numeric data table well recovered. All data present, table structure (thead, tfoot, tbody, th/td) correctly identified. Best table result."
+  },
+  {
+    "fixture": "48-multicol-heading-break",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Text present but column-spanning heading structure not recovered. Multi-column layout causes reading order issues."
+  },
+  {
+    "fixture": "49-rtl-text",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Arabic/Hebrew characters extracted but dir=rtl attributes absent. Bidirectional text ordering may be incorrect."
+  },
+  {
+    "fixture": "50-comprehensive-mixed",
+    "text_fidelity": 2,
+    "structure": 1,
+    "formatting": 0,
+    "score": 3.8,
+    "notes": "Comprehensive document text mostly present. Complex mixed layout (tables, lists, multi-column, images) causes structural recovery failures across most categories."
+  }
+]

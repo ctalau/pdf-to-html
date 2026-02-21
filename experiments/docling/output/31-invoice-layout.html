@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>source</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
+    }
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+    }
+    pre code {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
+    }
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
+    }
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
+    }
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .key-value-region dt {
+        font-weight: bold;
+    }
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
+</head>
+<body>
+<div class='page'>
+<figure><img src="data:image/png;base64,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"></figure>
+<h2>ABC Corporation</h2>
+<p>123 Business Avenue New York, NY 10001</p>
+<p>Phone: (555) 123-4567</p>
+<h2>Bill To</h2>
+<h2>Acme Industries Inc.</h2>
+<h2>INVOICE</h2>
+<p>Invoice #:</p>
+<p>2024-001842</p>
+<p>Date:</p>
+<p>February 21, 2026</p>
+<p>Due Date:</p>
+<p>March 21, 2026</p>
+<h2>Ship To</h2>
+<h2>Acme Industries Inc.</h2>
+<p>456 Commerce Plaza</p>
+<p>Suite 200</p>
+<p>Boston, MA 02108</p>
+<p>Contact: John Smith</p>
+<p>john.smith@acmeindustries.com</p>
+<p>789 Distribution Center Warehouse Division Newark, NJ 07101</p>
+<p>Attention: Receiving Department</p>
+<p>Hours: 8am - 5pm EST</p>
+<table><tbody><tr><th>Description</th><th>Quantity</th><th>Unit Price</th><th>Total</th></tr><tr><td>Professional Consulting Services - Q1 2026</td><td>160</td><td>$150.00</td><td>$24,000.00</td></tr><tr><td>Software License - Enterprise Edition (Annual)</td><td>1</td><td>$8,500.00</td><td>$8,500.00</td></tr><tr><td>Implementation and Deployment Services</td><td>40</td><td>$200.00</td><td>$8,000.00</td></tr><tr><td>Technical Training (5 days on-site)</td><td>5</td><td>$1,200.00</td><td>$6,000.00</td></tr><tr><td></td><td></td><td>Subtotal:</td><td>$74,500.00</td></tr><tr><td></td><th colspan="2">Tax (8.875%):</th><th>$6,613.44</th></tr><tr><td></td><th colspan="2">Total Amount Due:</th><th>$81,113.44</th></tr></tbody></table>
+<table><tbody><tr><th>Description</th><th>Quantity</th><th>Unit Price</th><th>Total</th></tr><tr><td>Premium Support Package (Monthly)</td><td>3</td><td>$2,000.00</td><td>$6,000.00</td></tr><tr><td>Hardware Infrastructure Setup</td><td>1</td><td>$12,000.00</td><td>$12,000.00</td></tr><tr><td></td><td></td><td>Subtotal:</td><td>$74,500.00</td></tr><tr><td></td><td colspan="2">Tax (8.875%):</td><td>$6,613.44</td></tr><tr><td colspan="3">Total Amount Due:</td><td>$81,113.44</td></tr></tbody></table>
+<h2>Thank you for your business!</h2>
+<p>Payment due within 30 days of invoice date. Please reference invoice number 2024001842 with your payment.</p>
+<h2>Payment Instructions:</h2>
+<p>Wire Transfer: ABC Corporation</p>
+<p>Bank: First National Bank, Account: 9876543210, Routing: 123456789</p>
+<p>Or mail check to: ABC Corporation, 123 Business Avenue, New York, NY 10001</p>
+<p>This is a computer-generated invoice. No signature is required. For questions regarding this invoice, please contact our billing department at billing@abc-corp.com or call (555) 123-4567 ext. 500.</p>
+</div>
+</body>
+</html>

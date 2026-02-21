@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>source</title>
+<meta name="generator" content="Docling HTML Serializer"/>
+<style>
+    html {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #333;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2em;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3em;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 1em 0;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    figure {
+        margin: 1.5em 0;
+        text-align: center;
+    }
+    figcaption {
+        color: #666;
+        font-style: italic;
+        margin-top: 0.5em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    pre {
+        background-color: #f6f8fa;
+        border-radius: 3px;
+        padding: 1em;
+        overflow: auto;
+    }
+    code {
+        font-family: monospace;
+        background-color: #f6f8fa;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+    }
+    pre code {
+        background-color: transparent;
+        padding: 0;
+    }
+    .formula {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background-color: #f9f9f9;
+    }
+    .formula-not-decoded {
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em 0;
+        background: repeating-linear-gradient(
+            45deg,
+            #f0f0f0,
+            #f0f0f0 10px,
+            #f9f9f9 10px,
+            #f9f9f9 20px
+        );
+    }
+    .page-break {
+        page-break-after: always;
+        border-top: 1px dashed #ccc;
+        margin: 2em 0;
+    }
+    .key-value-region {
+        background-color: #f9f9f9;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .key-value-region dt {
+        font-weight: bold;
+    }
+    .key-value-region dd {
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+    }
+    .form-container {
+        border: 1px solid #ddd;
+        padding: 1em;
+        border-radius: 4px;
+        margin: 1em 0;
+    }
+    .form-item {
+        margin-bottom: 0.5em;
+    }
+    .image-classification {
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 0.5em;
+    }
+</style>
+</head>
+<body>
+<div class='page'>
+<h2>Advanced JavaScript Patterns</h2>
+<h2>Higher-Order Functions</h2>
+<p>Higher-order functions are a powerful paradigm in functional programming that allow you to write more abstract  and  reusable  code. A  higher-order  function  is  one  that  takes  other  functions  as  arguments  or returns  a  function  as  its  result.  This  capability  enables  you  to  create  flexible  abstractions  that  can  be adapted to many different use cases. The following example demonstrates a simple higher-order function that applies a given function to each element of an array.</p>
+<pre><code>function map(array, transform) { const result = []; for (let i = 0; i < array.length; i++) { result.push(transform(array[i])); } return result; }</code></pre>
+<p>This  implementation  shows  how  a  function  can  accept  another  function  as  a  parameter.  By  passing different transform functions, you can implement various operations like doubling numbers, extracting properties  from  objects,  or  applying  complex  calculations.  This  abstraction  makes  the  code  more modular and testable.</p>
+<h2>Nested Control Flow</h2>
+<p>When dealing with complex data processing tasks, you often need to combine multiple control structures such  as  conditional  statements  and  loops.  The  following  example  demonstrates  a  more  sophisticated pattern that uses nested conditionals and loops to filter and process data with multiple criteria.</p>
+<pre><code>function processUserData(users, minAge, departments) { const results = []; for (let i = 0; i < users.length; i++) { const user = users[i]; if (user.active === true) { if (user.age >= minAge) { let matched = false; for (let j = 0; j < departments.length; j++) { while (departments[j].length > 0) { const dept = departments[j].pop(); if (user.department === dept) { matched = true; break;</code></pre>
+<pre><code>} } if (matched) break; } if (matched) { results.push(user); } } } } return results; }</code></pre>
+<p>This function demonstrates proper whitespace preservation with indentation, nested conditional blocks, and  multiple  loop  structures.  When  printing  such  code  to  PDF,  maintaining  consistent  spacing  and alignment is critical for readability and correctness verification.</p>
+</div>
+</body>
+</html>
