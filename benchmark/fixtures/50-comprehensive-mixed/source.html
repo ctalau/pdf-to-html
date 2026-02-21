@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSync Product Manual v2.0</title>
+    <style>
+        @page {
+            margin: 1.5cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Title Page */
+        .title-page {
+            page-break-after: always;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 40px;
+        }
+
+        .title-page h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .title-page .subtitle {
+            font-size: 24px;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        .title-page .version {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-top: 30px;
+        }
+
+        .title-page .copyright {
+            font-size: 12px;
+            margin-top: 60px;
+            opacity: 0.75;
+        }
+
+        /* Table of Contents */
+        .toc-page {
+            page-break-after: always;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .toc-page h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #667eea;
+        }
+
+        nav.toc {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav.toc ul {
+            list-style: none;
+        }
+
+        nav.toc li {
+            margin-bottom: 12px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 8px;
+        }
+
+        nav.toc a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px;
+            background-color: white;
+        }
+
+        main h2 {
+            font-size: 24px;
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            page-break-before: always;
+            column-span: all;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        main h3 {
+            font-size: 18px;
+            color: #555;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .drop-cap::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            float: left;
+            line-height: 1;
+            margin-right: 5px;
+        }
+
+        /* Callout Boxes */
+        .callout {
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            border-left: 5px solid;
+        }
+
+        .callout.info {
+            background-color: #e3f2fd;
+            border-left-color: #2196f3;
+        }
+
+        .callout.warning {
+            background-color: #fff3e0;
+            border-left-color: #ff9800;
+        }
+
+        .callout.success {
+            background-color: #e8f5e9;
+            border-left-color: #4caf50;
+        }
+
+        .callout strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        /* Code Blocks */
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+
+        pre {
+            background-color: #2b2b2b;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        thead {
+            background-color: #667eea;
+            color: white;
+        }
+
+        thead th {
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        tbody td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Lists */
+        ol, ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        dl {
+            margin: 15px 0;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 15px;
+        }
+
+        dd {
+            margin-left: 30px;
+            margin-bottom: 12px;
+        }
+
+        /* Figure and Blockquote */
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        figcaption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #666;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .pull-quote {
+            float: right;
+            width: 35%;
+            margin: 0 0 20px 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 16px;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Multi-column sections */
+        .two-column {
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 1px solid #e0e0e0;
+        }
+
+        .two-column h2 {
+            column-span: all;
+        }
+
+        /* Footnotes */
+        sup {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .footnotes {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .footnote-item {
+            margin-bottom: 12px;
+        }
+
+        /* Other elements */
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        address {
+            font-style: normal;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        abbr {
+            border-bottom: 1px dotted #999;
+            cursor: help;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Page -->
+    <div class="title-page">
+        <svg class="logo" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="50" fill="url(#grad1)" stroke="white" stroke-width="3"/>
+            <circle cx="40" cy="50" r="15" fill="white" opacity="0.9"/>
+            <circle cx="80" cy="50" r="15" fill="white" opacity="0.9"/>
+            <path d="M 50 75 Q 60 85 70 75" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+        <h1>CloudSync</h1>
+        <p class="subtitle">Unified Cloud Data Management Platform</p>
+        <p class="version">Product Manual v2.0</p>
+        <p class="copyright">© 2026 Example Corporation. All rights reserved.</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc-page">
+        <h2>Table of Contents</h2>
+        <nav class="toc">
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#config-ref">Configuration Reference</a></li>
+                <li><a href="#advanced">Advanced Topics</a></li>
+                <li><a href="#api-ref">API Reference</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#appendix">Appendix</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction -->
+        <h2 id="intro">Introduction</h2>
+        <div class="two-column">
+            <p class="drop-cap">CloudSync is a revolutionary platform designed to simplify cloud data management across multiple providers and services. Whether you're synchronizing files, managing configurations, or coordinating distributed teams, CloudSync provides a unified interface that makes complexity disappear. Our platform has been trusted by over 10,000 organizations worldwide to manage petabytes of critical data with unprecedented reliability and ease.</p>
+
+            <p>The modern enterprise operates across multiple cloud providers, each with their own ecosystems, APIs, and management interfaces. CloudSync bridges these gaps, providing a single pane of glass for all your cloud data operations. By abstracting away provider-specific details, CloudSync allows your teams to focus on what matters: moving, protecting, and optimizing your data.</p>
+
+            <blockquote>
+                "CloudSync transformed how we manage our multi-cloud infrastructure. What used to take hours now takes minutes, and our data is safer than ever." — Sarah Chen, CTO at DataFlow Industries
+            </blockquote>
+
+            <p>This manual provides comprehensive documentation for CloudSync v2.0, including installation instructions, configuration options, advanced usage patterns, and API reference documentation. Whether you're a system administrator setting up your first deployment or an experienced engineer optimizing your infrastructure, you'll find detailed guidance for every task.</p>
+
+            <div class="callout info">
+                <strong>Important Note:</strong> This version of CloudSync requires Python 3.8+ and supports AWS, Google Cloud, and Microsoft Azure. See the system requirements in the Getting Started section for full details.
+            </div>
+        </div>
+
+        <!-- Getting Started -->
+        <h2 id="getting-started">Getting Started</h2>
+
+        <h3>Installation Steps</h3>
+        <ol>
+            <li><strong>Download CloudSync</strong> from our official repository at github.com/example/cloudsync</li>
+            <li><strong>Verify system requirements:</strong> Python 3.8+, 4GB RAM minimum, network connectivity to your cloud providers</li>
+            <li><strong>Install dependencies:</strong> Run <code>pip install -r requirements.txt</code></li>
+            <li><strong>Initialize configuration:</strong> Execute <code>cloudsync init --interactive</code></li>
+            <li><strong>Test connectivity:</strong> Run <code>cloudsync test-providers</code> to verify your cloud provider credentials</li>
+            <li><strong>Start the service:</strong> Use <code>systemctl start cloudsync</code> (on Linux) or appropriate service management tool</li>
+        </ol>
+
+        <div class="callout success">
+            <strong>Success!</strong> If all tests pass, your CloudSync installation is ready. You can now begin configuring data synchronization rules.
+        </div>
+
+        <h3>First Sync Operation</h3>
+        <p>To perform your first data synchronization, follow these steps:</p>
+
+        <pre><code># Configure your first sync rule
+cloudsync sync create \
+  --name "backup-to-cloud" \
+  --source /data/important \
+  --destination s3://my-backup-bucket \
+  --schedule "0 2 * * *" \
+  --encryption AES-256
+
+# Verify the rule was created
+cloudsync sync list
+
+# Perform initial sync manually
+cloudsync sync run --name backup-to-cloud</code></pre>
+
+        <div class="callout info">
+            <strong>Tip:</strong> Use the <code>--dry-run</code> flag on your first sync to preview what changes will be made before actually synchronizing data.
+        </div>
+
+        <!-- Configuration Reference -->
+        <h2 id="config-ref">Configuration Reference</h2>
+
+        <h3>Configuration File Structure</h3>
+        <p>CloudSync uses a YAML-based configuration file located at <code>/etc/cloudsync/config.yaml</code>. The following table describes all available configuration options:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Core Settings</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>logging</code></td>
+                    <td><code>level</code></td>
+                    <td>Log verbosity: DEBUG, INFO, WARNING, ERROR. Default: INFO</td>
+                </tr>
+                <tr>
+                    <td><code>api</code></td>
+                    <td><code>port</code></td>
+                    <td>REST API listening port. Default: 8080</td>
+                </tr>
+                <tr>
+                    <td><code>storage</code></td>
+                    <td><code>cache-size</code></td>
+                    <td>Local cache size in GB. Default: 10</td>
+                </tr>
+                <tr>
+                    <td><code>providers</code></td>
+                    <td>
+                        <ul style="margin: 0; list-style-position: inside;">
+                            <li><code>aws</code>: AWS configuration</li>
+                            <li><code>gcp</code>: Google Cloud settings</li>
+                            <li><code>azure</code>: Microsoft Azure options</li>
+                        </ul>
+                    </td>
+                    <td>Cloud provider credentials and endpoints</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Provider Configuration Example</h3>
+        <pre><code>providers:
+  aws:
+    region: us-east-1
+    endpoint: https://s3.amazonaws.com
+    credentials:
+      access_key: ${AWS_ACCESS_KEY_ID}
+      secret_key: ${AWS_SECRET_ACCESS_KEY}
+  gcp:
+    project: my-gcp-project
+    region: us-central1
+    credentials_file: /etc/cloudsync/gcp-key.json
+  azure:
+    subscription: 12345678-1234-1234-1234-123456789012
+    resource_group: my-resource-group</code></pre>
+
+        <!-- Advanced Topics -->
+        <h2 id="advanced">Advanced Topics</h2>
+
+        <div class="two-column">
+            <div class="pull-quote">
+                "Advanced CloudSync features transformed our disaster recovery strategy from hours to minutes. The intelligent replication system is a game-changer for enterprise data protection."
+            </div>
+
+            <h3>Intelligent Replication</h3>
+            <p>CloudSync implements a sophisticated replication engine that understands data patterns and optimizes transfer efficiency. The system learns from historical sync patterns and automatically adjusts parallelization, compression, and scheduling to minimize bandwidth consumption while maximizing throughput.</p>
+
+            <h3>Disaster Recovery</h3>
+            <p>The disaster recovery module provides point-in-time recovery capabilities with sub-minute RPO (Recovery Point Objective). By maintaining a distributed snapshot system across multiple providers, CloudSync ensures that your data remains protected against regional outages, ransomware attacks, and other catastrophic failures.</p>
+
+            <figure>
+                <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="replicationGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="20" y="30" width="80" height="140" fill="url(#replicationGrad)" stroke="#333" stroke-width="2" rx="5"/>
+                    <text x="60" y="110" text-anchor="middle" fill="white" font-weight="bold">Primary</text>
+
+                    <path d="M 110 100 L 160 100" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <polygon points="0 0, 10 3, 0 6" fill="#667eea" />
+                        </marker>
+                    </defs>
+
+                    <rect x="160" y="30" width="80" height="140" fill="#764ba2" stroke="#333" stroke-width="2" rx="5"/>
+                    <text x="200" y="110" text-anchor="middle" fill="white" font-weight="bold">Replica 1</text>
+
+                    <path d="M 250 100 L 300 100" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+                    <rect x="300" y="30" width="80" height="140" fill="#764ba2" stroke="#333" stroke-width="2" rx="5"/>
+                    <text x="340" y="110" text-anchor="middle" fill="white" font-weight="bold">Replica 2</text>
+                </svg>
+                <figcaption>Figure 1: Intelligent Multi-Region Replication Architecture</figcaption>
+            </figure>
+
+            <h3>Performance Optimization</h3>
+            <p>For organizations with large datasets, CloudSync provides advanced optimization features including delta sync (only changed blocks are transferred), intelligent compression based on file type, and adaptive parallelization that adjusts to network conditions in real-time.</p>
+        </div>
+
+        <!-- API Reference -->
+        <h2 id="api-ref">API Reference</h2>
+
+        <p>CloudSync exposes a comprehensive REST API for programmatic access to all functionality. The API uses standard HTTP methods and returns JSON responses with consistent error handling.</p>
+
+        <h3>Endpoints Reference</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Endpoint</th>
+                    <th rowspan="2">Purpose</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Status & Configuration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>GET</td>
+                    <td><code>/api/v1/health</code></td>
+                    <td>Check service health and status</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><code>/api/v1/config</code></td>
+                    <td>Retrieve current configuration</td>
+                </tr>
+                <tr>
+                    <td>PUT</td>
+                    <td><code>/api/v1/config</code></td>
+                    <td>Update configuration settings</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><code>/api/v1/sync/list</code></td>
+                    <td>List all configured sync jobs</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td><code>/api/v1/sync/run</code></td>
+                    <td>Execute a sync job immediately</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Example API Call</h3>
+        <pre><code>curl -X GET https://localhost:8080/api/v1/health \
+  -H "Authorization: Bearer $CLOUDSYNC_TOKEN" \
+  -H "Content-Type: application/json"
+
+# Response:
+{
+  "status": "healthy",
+  "version": "2.0.0",
+  "uptime_seconds": 86400,
+  "active_syncs": 3,
+  "last_error": null
+}</code></pre>
+
+        <!-- Troubleshooting -->
+        <h2 id="troubleshooting">Troubleshooting</h2>
+
+        <h3>Common Issues and Solutions</h3>
+        <dl>
+            <dt>Issue: "Connection refused" when connecting to cloud provider</dt>
+            <dd>
+                <p><strong>Solution:</strong> Verify your network connectivity and firewall rules. Ensure that your credentials are valid and that the credentials have appropriate permissions in the cloud provider. Use <code>cloudsync test-providers --verbose</code> to get detailed connection diagnostics.</p>
+                <div class="callout warning">
+                    <strong>Warning:</strong> Do not hardcode credentials in configuration files. Always use environment variables or credential files with restricted permissions (600).
+                </div>
+            </dd>
+
+            <dt>Issue: Sync operations timeout frequently</dt>
+            <dd>
+                <p><strong>Solution:</strong> Increase timeout values in configuration and consider enabling compression. Monitor network bandwidth and adjust parallelization settings. Large datasets may benefit from incremental sync strategies.</p>
+            </dd>
+
+            <dt>Issue: High memory usage during large file transfers</dt>
+            <dd>
+                <p><strong>Solution:</strong> Reduce the <code>cache-size</code> parameter and enable streaming mode for large files. Adjust <code>max-parallel-transfers</code> to reduce concurrent operations.</p>
+                <div class="callout info">
+                    <strong>Performance Tip:</strong> Enable <code>intelligent-chunking</code> for files larger than 1GB to optimize memory usage and improve transfer reliability.
+                </div>
+            </dd>
+
+            <dt>Issue: Authentication failures after credential rotation</dt>
+            <dd>
+                <p><strong>Solution:</strong> Update credentials in your credential files and run <code>cloudsync reload-config</code>. If using environment variables, ensure they're properly exported in your shell environment before starting the service.</p>
+            </dd>
+        </dl>
+
+        <div class="callout success">
+            <strong>Getting Support:</strong> For issues not covered here, visit our support portal at support.cloudsync.example.com or contact our team at support@example.com. Include diagnostic information from <code>cloudsync diagnostics --export</code> with your support request.
+        </div>
+
+        <!-- Appendix -->
+        <h2 id="appendix">Appendix</h2>
+
+        <h3>System Requirements</h3>
+        <ul>
+            <li><strong>Operating System:</strong> Linux (Ubuntu 18.04+, RHEL 7+), macOS 10.14+, or Windows Server 2016+</li>
+            <li><strong>Python:</strong> Version 3.8 or higher</li>
+            <li><strong>Memory:</strong> Minimum 4GB RAM; 16GB+ recommended for large-scale deployments</li>
+            <li><strong>Storage:</strong> Minimum 2GB for application; additional space required for local cache</li>
+            <li><strong>Network:</strong> Stable internet connection with at least 10 Mbps for cloud provider access</li>
+        </ul>
+
+        <hr>
+
+        <h3>Supported Cloud Providers</h3>
+        <ul>
+            <li><abbr title="Amazon Web Services">AWS</abbr> S3, EBS, EFS</li>
+            <li><abbr title="Google Cloud Platform">GCP</abbr> Cloud Storage, Cloud Datastore</li>
+            <li><abbr title="Microsoft Azure">Azure</abbr> Blob Storage, Azure Files</li>
+            <li>MinIO (S3-compatible)</li>
+            <li>DigitalOcean Spaces</li>
+            <li>Backblaze B2</li>
+        </ul>
+
+        <hr>
+
+        <h3>Company Information</h3>
+        <address>
+            <strong>Example Corporation</strong><br>
+            Cloud Solutions Division<br>
+            123 Tech Street<br>
+            San Francisco, CA 94105<br>
+            United States<br>
+            <br>
+            Phone: +1 (555) 123-4567<br>
+            Email: support@example.com<br>
+            Website: www.example.com
+        </address>
+
+        <hr>
+
+        <h3>Version History</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Release Date</th>
+                    <th>Key Features</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2.0</td>
+                    <td>February 2026</td>
+                    <td>Intelligent replication, Advanced API, Multi-region support</td>
+                </tr>
+                <tr>
+                    <td>1.5</td>
+                    <td>August 2025</td>
+                    <td>Performance optimizations, Extended provider support</td>
+                </tr>
+                <tr>
+                    <td>1.0</td>
+                    <td>January 2025</td>
+                    <td>Initial release, Core synchronization features</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>License and Legal</h3>
+        <p>CloudSync is provided under the Enterprise Software License Agreement. By using this software, you agree to the terms and conditions outlined in the license document. For a copy of the full license, visit www.example.com/legal/license.</p>
+
+        <p>This documentation is accurate as of CloudSync v2.0 released in February 2026. All product names, logos, and brands mentioned are the property of their respective owners.</p>
+
+        <!-- Footnotes Section -->
+        <div class="footnotes">
+            <p><strong>Footnotes:</strong></p>
+            <div class="footnote-item">
+                <sup>1</sup> CloudSync supports AWS regions: us-east-1, us-west-2, eu-west-1, ap-southeast-1, and others.
+            </div>
+            <div class="footnote-item">
+                <sup>2</sup> Encryption at rest is enabled by default using industry-standard algorithms (AES-256-GCM).
+            </div>
+            <div class="footnote-item">
+                <sup>3</sup> Point-in-time recovery is available for the past 90 days with standard retention policies.
+            </div>
+        </div>
+    </main>
+</body>
+</html>

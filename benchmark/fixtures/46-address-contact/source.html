@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Address and Contact Information</title>
+  <style>
+    body { font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.6; max-width: 650px; margin: 2cm auto; color: #222; }
+    h1 { font-size: 1.8em; margin-bottom: 0.2em; }
+    h2 { font-size: 1.2em; margin-top: 1.5em; margin-bottom: 0.5em; border-bottom: 1px solid #ddd; padding-bottom: 0.2em; }
+    p { margin-bottom: 0.7em; }
+    address { font-style: normal; margin: 1em 0 1em 1.5em; color: #333; }
+    address a { color: #0066cc; }
+    .contact-card { border: 1px solid #ddd; border-radius: 4px; padding: 1em; margin: 1em 0; background: #fafafa; }
+    .contact-card h3 { margin: 0 0 0.5em; font-size: 1.1em; }
+    abbr { text-decoration: underline dotted; cursor: help; }
+    time { font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Acme Technologies, Inc.</h1>
+  <p>Founded in <time datetime="2001-03-15">March 2001</time>, Acme Technologies is a global provider of enterprise software solutions. Our <abbr title="Chief Executive Officer">CEO</abbr>, Jane Hartley, leads a team of over 500 engineers across three continents. The company's <abbr title="Research and Development">R&amp;D</abbr> division is headquartered in San Francisco, with additional offices in London and Singapore.</p>
+
+  <h2>Headquarters</h2>
+  <address>
+    Acme Technologies, Inc.<br>
+    1234 Innovation Drive, Suite 500<br>
+    San Francisco, CA 94105<br>
+    United States of America
+  </address>
+
+  <h2>Contact Information</h2>
+  <div class="contact-card">
+    <h3>General Inquiries</h3>
+    <address>
+      Phone: <a href="tel:+14155550100">+1 (415) 555-0100</a><br>
+      Toll-free: <a href="tel:+18005550199">1-800-555-0199</a><br>
+      Email: <a href="mailto:info@acmetech.example.com">info@acmetech.example.com</a><br>
+      Website: <a href="#">www.acmetech.example.com</a>
+    </address>
+  </div>
+
+  <div class="contact-card">
+    <h3>Media Inquiries</h3>
+    <address>
+      Sarah Chen, <abbr title="Vice President">VP</abbr> of Communications<br>
+      Direct: <a href="tel:+14155550142">+1 (415) 555-0142</a><br>
+      Email: <a href="mailto:press@acmetech.example.com">press@acmetech.example.com</a>
+    </address>
+  </div>
+
+  <div class="contact-card">
+    <h3>Technical Support</h3>
+    <address>
+      Available <time datetime="PT8H">8:00</time>&ndash;<time datetime="PT20H">20:00</time> <abbr title="Pacific Standard Time">PST</abbr>, Monday&ndash;Friday<br>
+      Phone: <a href="tel:+14155550177">+1 (415) 555-0177</a><br>
+      Email: <a href="mailto:support@acmetech.example.com">support@acmetech.example.com</a>
+    </address>
+  </div>
+
+  <h2>International Offices</h2>
+  <address>
+    <strong>London</strong><br>
+    45 Finsbury Square, 3rd Floor<br>
+    London EC2A 1PX<br>
+    United Kingdom<br>
+    Phone: <a href="tel:+442079460100">+44 20 7946 0100</a>
+  </address>
+  <address>
+    <strong>Singapore</strong><br>
+    8 Marina Boulevard, #22-01<br>
+    Marina Bay Financial Centre<br>
+    Singapore 018981<br>
+    Phone: <a href="tel:+6565550200">+65 6555 0200</a>
+  </address>
+
+  <h2>Bidirectional Text Notes</h2>
+  <p>Our product name in Arabic is <bdo dir="rtl">أكمي تكنولوجيز</bdo>, which reads right-to-left. When embedding a user-supplied identifier like <bdi>username_42</bdi> in a bidirectional context, use the <code>&lt;bdi&gt;</code> element to isolate it.</p>
+  <p>Last updated: <time datetime="2026-02-21">February 21, 2026</time>. All <abbr title="International Organization for Standardization">ISO</abbr> 8601 date formats are used throughout this document per <abbr title="World Wide Web Consortium">W3C</abbr> recommendations.</p>
+</body>
+</html>

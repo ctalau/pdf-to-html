@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Inventory</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #27ae60;
+            color: #ecf0f1;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #1e8449;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+        }
+        .category-cell {
+            background-color: #d5f4e6;
+            font-weight: bold;
+            color: #16a085;
+            vertical-align: middle;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f0fdf4;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        .price {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Inventory</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Product Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="category-cell" rowspan="3">Electronics</td>
+                <td>Wireless Headphones</td>
+                <td class="price">$89.99</td>
+            </tr>
+            <tr>
+                <td>USB-C Hub</td>
+                <td class="price">$34.50</td>
+            </tr>
+            <tr>
+                <td>External SSD 1TB</td>
+                <td class="price">$129.99</td>
+            </tr>
+            <tr>
+                <td class="category-cell" rowspan="3">Office Supplies</td>
+                <td>Desk Organizer Set</td>
+                <td class="price">$24.99</td>
+            </tr>
+            <tr>
+                <td>Ergonomic Keyboard</td>
+                <td class="price">$79.95</td>
+            </tr>
+            <tr>
+                <td>Monitor Stand</td>
+                <td class="price">$49.50</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

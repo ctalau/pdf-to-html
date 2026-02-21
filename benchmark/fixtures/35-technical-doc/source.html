@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataSync API Reference Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fafafa;
+            counter-reset: section;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1a3a5c;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #1a3a5c;
+            padding-bottom: 15px;
+        }
+
+        .doc-version {
+            color: #777;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #1a3a5c;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        h2::before {
+            counter-increment: section;
+            content: counter(section) ". ";
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 1em;
+            color: #34495e;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .callout {
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-left: 4px solid #666;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .callout.warning {
+            border-left-color: #e74c3c;
+            background-color: #ffe6e6;
+        }
+
+        .callout.warning h4 {
+            color: #c0392b;
+        }
+
+        .callout.warning p {
+            color: #a93226;
+        }
+
+        .callout.note {
+            border-left-color: #3498db;
+            background-color: #e8f4f8;
+        }
+
+        .callout.note h4 {
+            color: #2980b9;
+        }
+
+        .callout.note p {
+            color: #16a085;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c0392b;
+        }
+
+        pre {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+            page-break-inside: avoid;
+        }
+
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #1a3a5c;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        @page {
+            margin: 2cm;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            article {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+            }
+            pre {
+                page-break-inside: avoid;
+            }
+            h2 {
+                page-break-after: avoid;
+            }
+            h3 {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>DataSync API Reference</h1>
+    <p class="doc-version">Version 2.1.0 | Last Updated: February 2026</p>
+
+    <article>
+        <h2 id="section-intro">Introduction</h2>
+        <p>Welcome to the DataSync API documentation. DataSync is a powerful, RESTful API that enables real-time data synchronization across distributed systems. This documentation provides comprehensive guidance for integrating DataSync into your applications and managing data workflows at scale.</p>
+
+        <p>DataSync supports multiple data formats, provides robust error handling, and includes built-in retry mechanisms. With support for webhooks and real-time notifications, you can build responsive applications that stay synchronized with your data sources.</p>
+
+        <div class="callout note">
+            <h4>Getting Started</h4>
+            <p>New to DataSync? Start with the <a href="#section-install">Installation</a> section to set up your first connection, then review the <a href="#section-config">Configuration</a> section to customize your sync behavior.</p>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="section-install">Installation</h2>
+        <p>Installing DataSync is straightforward and supports multiple deployment environments including Docker, Kubernetes, and traditional server setups.</p>
+
+        <h3>Docker Installation</h3>
+        <p>The easiest way to get started is using the official Docker image:</p>
+
+        <pre><code>docker pull datasync:latest
+docker run -d \
+  -p 8080:8080 \
+  -e API_KEY=your-api-key \
+  -e DB_URL=postgresql://user:pass@db:5432/sync \
+  datasync:latest</code></pre>
+
+        <h3>Kubernetes Deployment</h3>
+        <p>For Kubernetes environments, use the official Helm chart:</p>
+
+        <pre><code>helm repo add datasync https://charts.datasync.io
+helm install datasync datasync/datasync \
+  --set apiKey=your-api-key \
+  --set database.url=postgresql://db:5432/sync</code></pre>
+
+        <div class="callout warning">
+            <h4>Security Warning</h4>
+            <p>Never commit API keys to version control. Use environment variables or secrets management systems like HashiCorp Vault, AWS Secrets Manager, or Kubernetes Secrets.</p>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="section-config">Configuration</h2>
+        <p>DataSync configuration is managed through environment variables and YAML configuration files. The system supports hot-reload of non-critical settings without service interruption.</p>
+
+        <h3>Environment Variables</h3>
+        <p>Key configuration environment variables:</p>
+
+        <ul>
+            <li><code>API_KEY</code> - Authentication token for API access (required)</li>
+            <li><code>DB_URL</code> - Database connection string (required)</li>
+            <li><code>SYNC_INTERVAL</code> - Sync check interval in seconds (default: 30)</li>
+            <li><code>MAX_RETRIES</code> - Maximum retry attempts (default: 3)</li>
+            <li><code>WEBHOOK_TIMEOUT</code> - Webhook request timeout in seconds (default: 30)</li>
+            <li><code>LOG_LEVEL</code> - Logging level: DEBUG, INFO, WARN, ERROR (default: INFO)</li>
+        </ul>
+
+        <h3>YAML Configuration</h3>
+        <p>For advanced configuration, create a <code>datasync.yaml</code> file:</p>
+
+        <pre><code>server:
+  port: 8080
+  timeout: 30s
+
+database:
+  url: postgresql://localhost/datasync
+  pool:
+    min: 5
+    max: 20
+
+sync:
+  interval: 30s
+  maxRetries: 3
+  backoff: exponential
+
+webhook:
+  timeout: 30s
+  retries: 3</code></pre>
+    </article>
+
+    <article>
+        <h2>API Reference</h2>
+        <p>The DataSync API provides endpoints for managing synchronization tasks, monitoring status, and retrieving sync results. All requests require authentication via API key in the <code>Authorization</code> header.</p>
+
+        <h3>Authentication</h3>
+        <p>Include your API key in the <code>Authorization</code> header for all requests:</p>
+
+        <pre><code>Authorization: Bearer your_api_key_here</code></pre>
+
+        <h3>Endpoints</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Path</th>
+                    <th>Description</th>
+                    <th>Response</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>POST</strong></td>
+                    <td>/api/v1/sync</td>
+                    <td>Create a new synchronization task</td>
+                    <td>201 Created with sync ID</td>
+                </tr>
+                <tr>
+                    <td><strong>GET</strong></td>
+                    <td>/api/v1/sync/{id}</td>
+                    <td>Retrieve sync task details and status</td>
+                    <td>200 OK with task object</td>
+                </tr>
+                <tr>
+                    <td><strong>GET</strong></td>
+                    <td>/api/v1/sync/{id}/status</td>
+                    <td>Get real-time sync status updates</td>
+                    <td>200 OK with status object</td>
+                </tr>
+                <tr>
+                    <td><strong>PATCH</strong></td>
+                    <td>/api/v1/sync/{id}</td>
+                    <td>Update synchronization configuration</td>
+                    <td>200 OK with updated task</td>
+                </tr>
+                <tr>
+                    <td><strong>DELETE</strong></td>
+                    <td>/api/v1/sync/{id}</td>
+                    <td>Cancel an active synchronization task</td>
+                    <td>204 No Content</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Example Request/Response</h3>
+
+        <h4>Create Sync Task</h4>
+        <p>Request:</p>
+        <pre><code>POST /api/v1/sync HTTP/1.1
+Host: api.datasync.io
+Authorization: Bearer your_api_key
+Content-Type: application/json
+
+{
+  "source": {
+    "type": "postgresql",
+    "url": "postgresql://source-db:5432/mydb"
+  },
+  "destination": {
+    "type": "postgresql",
+    "url": "postgresql://dest-db:5432/mydb"
+  },
+  "tables": ["users", "transactions"],
+  "syncInterval": "30s"
+}</code></pre>
+
+        <p>Response (201 Created):</p>
+        <pre><code>{
+  "id": "sync_abc123xyz789",
+  "status": "running",
+  "progress": 0,
+  "createdAt": "2026-02-21T10:30:00Z",
+  "source": {...},
+  "destination": {...},
+  "tables": ["users", "transactions"],
+  "estimatedDuration": "2m45s"
+}</code></pre>
+
+        <div class="callout note">
+            <h4>API Rate Limits</h4>
+            <p>DataSync API enforces rate limits of 1000 requests per minute per API key. Responses include <code>X-RateLimit-Remaining</code> and <code>X-RateLimit-Reset</code> headers to help you manage your quota.</p>
+        </div>
+    </article>
+
+    <article>
+        <h2>Troubleshooting</h2>
+        <p>Common issues and their solutions:</p>
+
+        <h3>Connection Timeout</h3>
+        <p>If sync tasks timeout, increase the <code>WEBHOOK_TIMEOUT</code> environment variable and check network connectivity between services. Ensure firewall rules allow communication on required ports.</p>
+
+        <h3>Authentication Errors</h3>
+        <p>Verify your API key is correct and hasn't expired. Check that the key is included in the <code>Authorization</code> header with the format <code>Bearer &lt;key&gt;</code>.</p>
+
+        <h3>Database Connection Issues</h3>
+        <p>Test database connectivity using standard database clients. Verify credentials, hostname, and port in the connection string. Check that the database user has appropriate permissions for read/write operations.</p>
+
+        <div class="callout warning">
+            <h4>Performance Considerations</h4>
+            <p>For large datasets exceeding 1GB, consider implementing incremental sync strategies and enabling compression. Monitor resource usage during sync operations to prevent service degradation.</p>
+        </div>
+    </article>
+
+</body>
+</html>

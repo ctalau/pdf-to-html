@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Superscript and Subscript</title>
+  <style>
+    body { font-family: Georgia, serif; font-size: 12pt; line-height: 1.7; max-width: 650px; margin: 2cm auto; color: #222; }
+    h1 { font-size: 1.8em; margin-bottom: 0.3em; }
+    h2 { font-size: 1.3em; margin-top: 1.5em; margin-bottom: 0.4em; border-bottom: 1px solid #ccc; padding-bottom: 0.2em; }
+    p { margin-bottom: 0.8em; }
+    sup, sub { font-size: 0.75em; line-height: 0; position: relative; vertical-align: baseline; }
+    sup { top: -0.5em; }
+    sub { bottom: -0.25em; }
+    .formula { font-style: italic; }
+    ol.footnotes { font-size: 0.9em; color: #444; margin-top: 2em; border-top: 1px solid #ccc; padding-top: 0.5em; }
+  </style>
+</head>
+<body>
+  <h1>Superscript and Subscript Demonstration</h1>
+
+  <h2>Mathematical Expressions</h2>
+  <p>The Pythagorean theorem states that <span class="formula">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></span>, where c is the hypotenuse. Einstein's equation <span class="formula">E = mc<sup>2</sup></span> expresses the equivalence of mass and energy.</p>
+  <p>The area of a circle is A = &pi;r<sup>2</sup>, and the volume of a sphere is V = (4/3)&pi;r<sup>3</sup>. For compound interest: A = P(1 + r/n)<sup>nt</sup>.</p>
+  <p>The n<sup>th</sup> partial sum of a geometric series S<sub>n</sub> = a(1 &minus; r<sup>n</sup>)/(1 &minus; r). Logarithm: log<sub>2</sub>(8) = 3.</p>
+
+  <h2>Chemical Formulae</h2>
+  <p>Water has the formula H<sub>2</sub>O. Carbon dioxide is CO<sub>2</sub>. Sulfuric acid is H<sub>2</sub>SO<sub>4</sub>, and glucose is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>. Ethanol is C<sub>2</sub>H<sub>5</sub>OH and ammonia is NH<sub>3</sub>.</p>
+  <p>Combustion of methane: CH<sub>4</sub> + 2O<sub>2</sub> &rarr; CO<sub>2</sub> + 2H<sub>2</sub>O. Photosynthesis: 6CO<sub>2</sub> + 6H<sub>2</sub>O &rarr; C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub>.</p>
+
+  <h2>Ordinal Numbers</h2>
+  <p>She finished in 1<sup>st</sup> place. The 2<sup>nd</sup> runner-up received silver. By the 3<sup>rd</sup> quarter the team secured the championship. Our 100<sup>th</sup> customer received a special prize on the company's 21<sup>st</sup> anniversary.</p>
+
+  <h2>Footnote References</h2>
+  <p>The study found significant correlations between sleep deprivation and cognitive performance.<sup><a href="#fn1" id="ref1">[1]</a></sup> Participants sleeping fewer than six hours showed worse memory results.<sup><a href="#fn2" id="ref2">[2]</a></sup> These findings align with circadian rhythm research<sup><a href="#fn3" id="ref3">[3]</a></sup> and support the hypothesis that deep sleep consolidates memories.<sup><a href="#fn4" id="ref4">[4]</a></sup></p>
+
+  <hr style="margin-top: 2em;">
+  <ol class="footnotes">
+    <li id="fn1">Smith, J. et al. (2023). Sleep and cognition. <em>Journal of Neuroscience</em>, 45(2), 112&ndash;128. <a href="#ref1">&uarr;</a></li>
+    <li id="fn2">Jones, A. &amp; Lee, B. (2022). Memory consolidation during sleep. <em>Sleep Research</em>, 18, 44&ndash;59. <a href="#ref2">&uarr;</a></li>
+    <li id="fn3">Williams, C. (2021). Circadian rhythm disruption. <em>Nature Reviews</em>, 7, 203&ndash;215. <a href="#ref3">&uarr;</a></li>
+    <li id="fn4">Brown, D. et al. (2024). REM sleep and declarative memory. <em>Brain</em>, 147(3), 891&ndash;905. <a href="#ref4">&uarr;</a></li>
+  </ol>
+</body>
+</html>

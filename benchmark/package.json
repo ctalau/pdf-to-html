@@ -1,0 +1,20 @@
+{
+  "name": "pdf-to-html-benchmark",
+  "version": "1.0.0",
+  "description": "Benchmark fixtures for the pdf-to-html conversion library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/html-to-pdf.js",
+    "generate:one": "node scripts/html-to-pdf.js --fixture",
+    "generate:all": "node scripts/run-all.js",
+    "verify": "node scripts/verify-fixtures.js",
+    "clean": "find fixtures -name 'source.pdf' -delete"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

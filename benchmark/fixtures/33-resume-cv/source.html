@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Chen - Software Engineer CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 10pt;
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 750px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28pt;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            font-size: 9pt;
+            color: #555;
+        }
+
+        .job-title {
+            font-size: 11pt;
+            color: #c0392b;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #333;
+            margin: 15px 0;
+        }
+
+        h2 {
+            font-size: 11pt;
+            color: #1a1a1a;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.2em;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 10pt;
+            color: #1a1a1a;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            font-size: 9pt;
+        }
+
+        .company-info {
+            color: #555;
+        }
+
+        .job-dates {
+            color: #555;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .skills-list li {
+            display: inline-flex;
+            background-color: #ecf0f1;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 9pt;
+            margin-bottom: 0;
+            border: 1px solid #bdc3c7;
+        }
+
+        article {
+            page-break-inside: avoid;
+        }
+
+        @media print {
+            body {
+                padding: 10px;
+            }
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Sarah Chen</h1>
+    <div class="job-title">Senior Software Engineer</div>
+
+    <div class="header-contact">
+        <span>sarah.chen@email.com</span>
+        <span>+1 (555) 234-5678</span>
+        <span>San Francisco, CA</span>
+        <span>linkedin.com/in/sarahchen</span>
+    </div>
+
+    <hr>
+
+    <h2>Professional Experience</h2>
+
+    <article>
+        <h3>Senior Backend Engineer</h3>
+        <div class="job-header">
+            <span class="company-info">TechCorp Solutions Inc.</span>
+            <span class="job-dates">2022 - Present</span>
+        </div>
+        <ul>
+            <li>Led architecture and implementation of microservices platform serving 2M+ daily users, reducing response time by 40%</li>
+            <li>Mentored team of 5 junior engineers through code reviews and technical design sessions, improving code quality metrics by 35%</li>
+            <li>Designed and deployed distributed caching system using Redis, improving database query performance by 60%</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>Backend Software Engineer</h3>
+        <div class="job-header">
+            <span class="company-info">DataFlow Systems LLC</span>
+            <span class="job-dates">2019 - 2022</span>
+        </div>
+        <ul>
+            <li>Developed RESTful APIs in Python and Go serving real-time analytics platform for 500+ enterprise clients</li>
+            <li>Implemented comprehensive automated testing suite increasing coverage from 45% to 87%, reducing production bugs by 52%</li>
+            <li>Optimized database queries and indexing strategies, improving query performance by 5x and reducing infrastructure costs by $200k annually</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>Junior Software Engineer</h3>
+        <div class="job-header">
+            <span class="company-info">StartupXYZ</span>
+            <span class="job-dates">2018 - 2019</span>
+        </div>
+        <ul>
+            <li>Built full-stack features for SaaS product using Python backend and React frontend, supporting new user acquisition</li>
+            <li>Developed data migration scripts and ETL pipelines to consolidate data from legacy systems into new data warehouse</li>
+            <li>Collaborated with product team to implement analytics and monitoring dashboards using Grafana</li>
+        </ul>
+    </article>
+
+    <h2>Education</h2>
+
+    <article>
+        <h3>Master of Science in Computer Science</h3>
+        <div class="job-header">
+            <span class="company-info">University of California, Berkeley</span>
+            <span class="job-dates">2016 - 2018</span>
+        </div>
+    </article>
+
+    <article>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <div class="job-header">
+            <span class="company-info">University of Washington</span>
+            <span class="job-dates">2012 - 2016</span>
+        </div>
+    </article>
+
+    <h2>Skills</h2>
+
+    <ul class="skills-list">
+        <li>Python</li>
+        <li>Go</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>Redis</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>AWS</li>
+        <li>GCP</li>
+        <li>Microservices</li>
+        <li>RESTful APIs</li>
+        <li>System Design</li>
+        <li>Agile</li>
+    </ul>
+
+</body>
+</html>

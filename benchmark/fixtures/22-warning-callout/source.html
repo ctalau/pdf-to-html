@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning Callout Fixtures</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+        }
+        h1 {
+            color: #222;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin: 1rem 0;
+        }
+        .callout {
+            display: flex;
+            gap: 1em;
+            border-radius: 4px;
+            padding: 1em;
+            margin: 1.5em 0;
+            border: 1px solid;
+        }
+        .callout-icon {
+            font-size: 1.5em;
+            flex-shrink: 0;
+            text-align: center;
+            width: 1.5em;
+        }
+        .callout-warning {
+            background: #fff3cd;
+            border-color: #ffc107;
+            border-left: 5px solid #ffc107;
+        }
+        .callout-info {
+            background: #d1ecf1;
+            border-color: #bee5eb;
+            border-left: 5px solid #17a2b8;
+        }
+        .callout-danger {
+            background: #f8d7da;
+            border-color: #f5c6cb;
+            border-left: 5px solid #dc3545;
+        }
+        .callout-title {
+            font-weight: bold;
+            margin-bottom: 0.3em;
+        }
+        .callout-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Important Notices and Alerts</h1>
+
+    <p>Welcome to our documentation system. Throughout this guide, you will encounter important notices that require your attention. Below are examples of the three types of callout boxes we use to highlight critical information.</p>
+
+    <div class="callout callout-warning">
+        <div class="callout-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+            </svg>
+        </div>
+        <div class="callout-content">
+            <div class="callout-title">Warning: System Maintenance</div>
+            <p>The application will undergo scheduled maintenance on Sunday from 2:00 AM to 4:00 AM UTC. During this time, the service will be unavailable. Please plan your work accordingly and save any unsaved changes before the maintenance window.</p>
+        </div>
+    </div>
+
+    <p>This is standard body text between the callout boxes. It provides context and explanation for the surrounding content. Regular paragraphs help break up the visual space and improve readability of the entire document.</p>
+
+    <div class="callout callout-info">
+        <div class="callout-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+        </div>
+        <div class="callout-content">
+            <div class="callout-title">Information: New Feature Available</div>
+            <p>A new integration feature has been released that allows you to connect third-party applications directly to your workspace. This feature is available for all premium tier users at no additional cost. Visit the integrations page to explore available connections and setup instructions.</p>
+        </div>
+    </div>
+
+    <p>Additional context continues here with normal paragraph styling. The information callout above highlights a positive notification that users should be aware of. These messages are typically less urgent than warnings but still important for user awareness.</p>
+
+    <div class="callout callout-danger">
+        <div class="callout-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+            </svg>
+        </div>
+        <div class="callout-content">
+            <div class="callout-title">Danger: Critical Security Update Required</div>
+            <p>A critical security vulnerability has been identified in the current version. All users must update to the latest version immediately to protect their data and accounts. Failure to update may result in unauthorized access to sensitive information.</p>
+        </div>
+    </div>
+
+    <p>Thank you for reviewing these important notices. Please ensure you have acknowledged and understood each callout type. They represent different levels of urgency and importance in our documentation system, helping you prioritize your actions accordingly.</p>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "margin": { "top": "70px", "bottom": "70px", "left": "50px", "right": "50px" },
+  "displayHeaderFooter": true,
+  "headerTemplate": "<div style='font-size:9px;width:100%;text-align:center;border-bottom:1px solid #ccc;padding:4px 0;font-family:sans-serif'>Technical Report — Benchmark Suite v1.0</div>",
+  "footerTemplate": "<div style='font-size:9px;width:100%;text-align:center;padding:4px 0;font-family:sans-serif;border-top:1px solid #eee'>Page <span class='pageNumber'></span> of <span class='totalPages'></span></div>",
+  "printBackground": false
+}

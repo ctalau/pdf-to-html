@@ -1,0 +1,7 @@
+{
+  "margin": { "top": "70px", "bottom": "60px", "left": "50px", "right": "50px" },
+  "displayHeaderFooter": true,
+  "headerTemplate": "<div style='font-size:9px;width:100%;text-align:right;padding:4px 15px 0;font-family:sans-serif;color:#666'>Annual Report 2025</div>",
+  "footerTemplate": "<div style='font-size:9px;width:100%;text-align:center;padding:0 0 4px;font-family:sans-serif;color:#666'>Page <span class='pageNumber'></span> of <span class='totalPages'></span></div>",
+  "printBackground": false
+}

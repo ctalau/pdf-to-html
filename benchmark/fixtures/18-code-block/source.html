@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JavaScript Patterns - Fixture 18</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2a2a2a;
+        }
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+        pre {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 1em;
+            font-family: monospace;
+            font-size: 0.9em;
+            white-space: pre;
+            overflow-x: auto;
+            line-height: 1.5;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        code {
+            font-family: monospace;
+            color: #d73a49;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced JavaScript Patterns</h1>
+
+    <h2>Higher-Order Functions</h2>
+    <p>
+        Higher-order functions are a powerful paradigm in functional programming that allow you to write more abstract
+        and reusable code. A higher-order function is one that takes other functions as arguments or returns a function
+        as its result. This capability enables you to create flexible abstractions that can be adapted to many different
+        use cases. The following example demonstrates a simple higher-order function that applies a given function to
+        each element of an array.
+    </p>
+
+    <pre>function map(array, transform) {
+  const result = [];
+  for (let i = 0; i &lt; array.length; i++) {
+    result.push(transform(array[i]));
+  }
+  return result;
+}</pre>
+
+    <p>
+        This implementation shows how a function can accept another function as a parameter. By passing different
+        <code>transform</code> functions, you can implement various operations like doubling numbers, extracting
+        properties from objects, or applying complex calculations. This abstraction makes the code more modular and
+        testable.
+    </p>
+
+    <h2>Nested Control Flow</h2>
+    <p>
+        When dealing with complex data processing tasks, you often need to combine multiple control structures such
+        as conditional statements and loops. The following example demonstrates a more sophisticated pattern that
+        uses nested conditionals and loops to filter and process data with multiple criteria.
+    </p>
+
+    <pre>function processUserData(users, minAge, departments) {
+  const results = [];
+  for (let i = 0; i &lt; users.length; i++) {
+    const user = users[i];
+    if (user.active === true) {
+      if (user.age &gt;= minAge) {
+        let matched = false;
+        for (let j = 0; j &lt; departments.length; j++) {
+          while (departments[j].length &gt; 0) {
+            const dept = departments[j].pop();
+            if (user.department === dept) {
+              matched = true;
+              break;
+            }
+          }
+          if (matched) break;
+        }
+        if (matched) {
+          results.push(user);
+        }
+      }
+    }
+  }
+  return results;
+}</pre>
+
+    <p>
+        This function demonstrates proper whitespace preservation with indentation, nested conditional blocks,
+        and multiple loop structures. When printing such code to PDF, maintaining consistent spacing and alignment
+        is critical for readability and correctness verification.
+    </p>
+</body>
+</html>

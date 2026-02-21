@@ -1,0 +1,7 @@
+{
+  "margin": { "top": "60px", "bottom": "60px", "left": "45px", "right": "45px" },
+  "displayHeaderFooter": true,
+  "headerTemplate": "<div style='width:100%;font-size:8px;padding:3px 15px;border-bottom:1px solid #ddd;font-family:sans-serif;color:#888;display:flex;justify-content:space-between;box-sizing:border-box'><span>Product Manual v2.0</span><span>© 2026 Example Corp</span></div>",
+  "footerTemplate": "<div style='width:100%;font-size:8px;padding:3px 15px;font-family:sans-serif;color:#888;text-align:center;box-sizing:border-box'>Page <span class='pageNumber'></span> of <span class='totalPages'></span></div>",
+  "printBackground": true
+}

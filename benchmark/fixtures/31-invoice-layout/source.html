@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Invoice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background: #fff;
+            padding: 2em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .invoice-container {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 2em;
+        }
+
+        .invoice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 1.5em;
+        }
+
+        .company-info {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .company-logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .company-details h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 0.3em;
+        }
+
+        .company-details p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 0.2em;
+        }
+
+        .invoice-meta {
+            text-align: right;
+        }
+
+        .invoice-label {
+            font-size: 2em;
+            font-weight: bold;
+            color: #c0392b;
+            margin-bottom: 0.5em;
+        }
+
+        .invoice-meta p {
+            margin-bottom: 0.3em;
+            font-size: 0.95em;
+        }
+
+        .invoice-meta strong {
+            display: inline-block;
+            width: 80px;
+        }
+
+        .billing-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin-bottom: 2em;
+        }
+
+        .billing-block h3 {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 0.8em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3em;
+        }
+
+        .billing-block p {
+            margin-bottom: 0.3em;
+            font-size: 0.95em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+
+        thead {
+            background: #f5f5f5;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+        }
+
+        th {
+            padding: 0.8em;
+            text-align: left;
+            font-weight: bold;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        td {
+            padding: 0.8em;
+            border-bottom: 1px solid #eee;
+        }
+
+        .desc-col {
+            text-align: left;
+        }
+
+        .qty-col, .price-col, .total-col {
+            text-align: right;
+            width: 15%;
+        }
+
+        tfoot tr {
+            font-weight: bold;
+        }
+
+        tfoot tr.subtotal-row {
+            border-top: 1px solid #ddd;
+        }
+
+        tfoot tr.total-row {
+            background: #f5f5f5;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+        }
+
+        tfoot td {
+            padding: 0.8em;
+        }
+
+        tfoot .label {
+            text-align: right;
+            width: 70%;
+        }
+
+        tfoot .amount {
+            text-align: right;
+            width: 30%;
+            padding-left: 1em;
+        }
+
+        .payment-footer {
+            margin-top: 2em;
+            padding-top: 1.5em;
+            border-top: 1px solid #ddd;
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        .payment-footer p {
+            margin-bottom: 0.5em;
+        }
+
+        .thank-you {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <div class="company-info">
+                <svg class="company-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#logoGradient)" rx="8"/>
+                    <rect x="10" y="10" width="80" height="80" fill="none" stroke="#ecf0f1" stroke-width="2" rx="4"/>
+                    <text x="50" y="60" font-size="32" font-weight="bold" fill="#ecf0f1" text-anchor="middle" font-family="Arial, sans-serif">ABC</text>
+                </svg>
+                <div class="company-details">
+                    <h1>ABC Corporation</h1>
+                    <p>123 Business Avenue</p>
+                    <p>New York, NY 10001</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+
+            <div class="invoice-meta">
+                <div class="invoice-label">INVOICE</div>
+                <p><strong>Invoice #:</strong> 2024-001842</p>
+                <p><strong>Date:</strong> February 21, 2026</p>
+                <p><strong>Due Date:</strong> March 21, 2026</p>
+            </div>
+        </div>
+
+        <div class="billing-section">
+            <div class="billing-block">
+                <h3>Bill To</h3>
+                <p><strong>Acme Industries Inc.</strong></p>
+                <p>456 Commerce Plaza</p>
+                <p>Suite 200</p>
+                <p>Boston, MA 02108</p>
+                <p>Contact: John Smith</p>
+                <p>john.smith@acmeindustries.com</p>
+            </div>
+
+            <div class="billing-block">
+                <h3>Ship To</h3>
+                <p><strong>Acme Industries Inc.</strong></p>
+                <p>789 Distribution Center</p>
+                <p>Warehouse Division</p>
+                <p>Newark, NJ 07101</p>
+                <p>Attention: Receiving Department</p>
+                <p>Hours: 8am - 5pm EST</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="desc-col">Description</th>
+                    <th class="qty-col">Quantity</th>
+                    <th class="price-col">Unit Price</th>
+                    <th class="total-col">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="desc-col">Professional Consulting Services - Q1 2026</td>
+                    <td class="qty-col">160</td>
+                    <td class="price-col">$150.00</td>
+                    <td class="total-col">$24,000.00</td>
+                </tr>
+                <tr>
+                    <td class="desc-col">Software License - Enterprise Edition (Annual)</td>
+                    <td class="qty-col">1</td>
+                    <td class="price-col">$8,500.00</td>
+                    <td class="total-col">$8,500.00</td>
+                </tr>
+                <tr>
+                    <td class="desc-col">Implementation and Deployment Services</td>
+                    <td class="qty-col">40</td>
+                    <td class="price-col">$200.00</td>
+                    <td class="total-col">$8,000.00</td>
+                </tr>
+                <tr>
+                    <td class="desc-col">Technical Training (5 days on-site)</td>
+                    <td class="qty-col">5</td>
+                    <td class="price-col">$1,200.00</td>
+                    <td class="total-col">$6,000.00</td>
+                </tr>
+                <tr>
+                    <td class="desc-col">Premium Support Package (Monthly)</td>
+                    <td class="qty-col">3</td>
+                    <td class="price-col">$2,000.00</td>
+                    <td class="total-col">$6,000.00</td>
+                </tr>
+                <tr>
+                    <td class="desc-col">Hardware Infrastructure Setup</td>
+                    <td class="qty-col">1</td>
+                    <td class="price-col">$12,000.00</td>
+                    <td class="total-col">$12,000.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="subtotal-row">
+                    <td colspan="3" class="label">Subtotal:</td>
+                    <td class="amount">$74,500.00</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="label">Tax (8.875%):</td>
+                    <td class="amount">$6,613.44</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3" class="label">Total Amount Due:</td>
+                    <td class="amount">$81,113.44</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="payment-footer">
+            <p><span class="thank-you">Thank you for your business!</span></p>
+            <p>Payment due within 30 days of invoice date. Please reference invoice number 2024-001842 with your payment.</p>
+            <p><strong>Payment Instructions:</strong></p>
+            <p>Wire Transfer: ABC Corporation<br>
+            Bank: First National Bank, Account: 9876543210, Routing: 123456789<br>
+            Or mail check to: ABC Corporation, 123 Business Avenue, New York, NY 10001</p>
+            <p style="margin-top: 1em; font-size: 0.85em; color: #999;">
+                This is a computer-generated invoice. No signature is required. For questions regarding this invoice, please contact our billing department at billing@abc-corp.com or call (555) 123-4567 ext. 500.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

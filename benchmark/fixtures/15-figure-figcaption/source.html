@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure and Figcaption Elements</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fafafa;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            font-size: 0.9em;
+            text-align: center;
+            color: #555;
+            margin-top: 8px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .figure-right {
+            float: right;
+            margin: 0 0 1em 1em;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+        }
+        .figure-left {
+            float: left;
+            margin: 0 1em 1em 0;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Architectural Design Patterns</h1>
+
+    <figure>
+        <svg width="200" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="120" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+            <text x="100" y="60" font-size="24" font-weight="bold" fill="#2e7d32" text-anchor="middle" dominant-baseline="middle">Fig. 1</text>
+            <text x="100" y="90" font-size="12" fill="#558b2f" text-anchor="middle">System Overview</text>
+        </svg>
+        <figcaption>Figure 1: High-level system architecture diagram</figcaption>
+    </figure>
+
+    <p>
+        The layered architecture pattern separates concerns into distinct tiers, each responsible for specific functionality. This approach improves maintainability and allows teams to work on different layers independently. The presentation layer handles user interactions, the business logic layer contains core application rules, and the data layer manages persistence and retrieval.
+    </p>
+
+    <figure class="figure-right">
+        <svg width="200" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="120" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2"/>
+            <text x="100" y="60" font-size="24" font-weight="bold" fill="#6a1b9a" text-anchor="middle" dominant-baseline="middle">Fig. 2</text>
+            <text x="100" y="90" font-size="12" fill="#7b1fa2" text-anchor="middle">MVC Pattern</text>
+        </svg>
+        <figcaption>Figure 2: Model-View-Controller pattern flow</figcaption>
+    </figure>
+
+    <p>
+        The Model-View-Controller (MVC) pattern divides applications into three interconnected components. The Model represents data and business logic, the View displays information to the user, and the Controller handles user input and coordinates between Model and View. This separation enables developers to modify one component without affecting others, promoting code reusability and testability.
+    </p>
+
+    <p>
+        Implementing MVC requires careful consideration of communication between components. Controllers should remain thin, delegating complex operations to the Model. Views should be stateless and focused solely on presentation. This discipline ensures that your codebase remains maintainable as it grows and evolves over time.
+    </p>
+
+    <p>
+        The benefits of MVC become increasingly apparent in large projects with multiple developers. Each team member can focus on their assigned layer without creating conflicts or dependencies with other areas. Testing becomes simpler because components have clear responsibilities and minimal coupling.
+    </p>
+
+    <figure class="figure-left">
+        <svg width="200" height="120" xmlns="http://www.w3.org/2000/svg">
+            <rect width="200" height="120" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+            <text x="100" y="60" font-size="24" font-weight="bold" fill="#1565c0" text-anchor="middle" dominant-baseline="middle">Fig. 3</text>
+            <text x="100" y="90" font-size="12" fill="#1976d2" text-anchor="middle">Observer Pattern</text>
+        </svg>
+        <figcaption>Figure 3: Event-driven Observer pattern</figcaption>
+    </figure>
+
+    <p>
+        The Observer pattern facilitates loose coupling between objects by establishing a one-to-many relationship. When one object changes state, all registered observers are notified automatically. This pattern is fundamental to event-driven architectures and is extensively used in graphical user interfaces and reactive programming frameworks.
+    </p>
+
+    <p>
+        Observer pattern implementation requires defining a subject that maintains a list of observers and methods to register, unregister, and notify them. When the subject's state changes, it iterates through all observers and calls their update method. This approach scales well and makes it easy to add new observers without modifying the subject class.
+    </p>
+
+    <p>
+        Understanding and applying these design patterns helps architects create robust, scalable, and maintainable systems. Pattern knowledge accelerates development because proven solutions exist for common problems, reducing the need for reinventing solutions and allowing teams to focus on domain-specific logic rather than infrastructure concerns.
+    </p>
+</body>
+</html>

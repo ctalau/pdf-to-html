@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Outline - Nested Lists</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        /* First level: disc bullets */
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            margin: 0.8em 0;
+        }
+
+        /* Second level: circle bullets */
+        ul ul {
+            list-style-type: circle;
+            padding-left: 40px;
+        }
+
+        /* Third level: square bullets */
+        ul ul ul {
+            list-style-type: square;
+            padding-left: 40px;
+        }
+
+        /* Ordered lists at second level */
+        ol {
+            list-style-type: decimal;
+            padding-left: 40px;
+            margin: 0.8em 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Development Project Structure Overview</h1>
+
+    <ul>
+        <li>Frontend Architecture
+            <ul>
+                <li>User Interface Components</li>
+                <li>Responsive Design Frameworks and CSS Preprocessors</li>
+                <li>JavaScript Frameworks and Libraries for Interactive Components</li>
+            </ul>
+        </li>
+        <li>Backend Infrastructure and Services
+            <ol>
+                <li>Database Design and Management
+                    <ul>
+                        <li>Relational Database Systems including PostgreSQL and MySQL</li>
+                        <li>NoSQL Solutions such as MongoDB and Redis for Caching</li>
+                        <li>Data Integrity, Backup Strategies, and Disaster Recovery Planning</li>
+                    </ul>
+                </li>
+                <li>API Development and REST Endpoints
+                    <ul>
+                        <li>Authentication and Authorization Mechanisms</li>
+                        <li>Rate Limiting and Request Validation Protocols</li>
+                        <li>Error Handling and Response Formatting Standards</li>
+                    </ul>
+                </li>
+                <li>Server Configuration and Deployment
+                    <ul>
+                        <li>Container Orchestration with Docker and Kubernetes</li>
+                        <li>Continuous Integration and Continuous Deployment Pipelines</li>
+                        <li>Performance Monitoring and Log Aggregation Tools</li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>Quality Assurance and Testing
+            <ul>
+                <li>Unit Testing Frameworks and Code Coverage Analysis</li>
+                <li>Integration Testing Strategies for Multi-Component Systems</li>
+                <li>End-to-End Testing with Selenium and Cypress</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

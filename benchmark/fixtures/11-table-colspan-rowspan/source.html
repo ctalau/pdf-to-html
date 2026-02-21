@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Schedule</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .description {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        th {
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #34495e;
+            color: white;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #95a5a6;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .time-slot {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            width: 80px;
+        }
+        .keynote {
+            background-color: #ffe5b4;
+        }
+        .workshop {
+            background-color: #d4edda;
+        }
+        .networking {
+            background-color: #cfe2ff;
+        }
+        .breaktime {
+            background-color: #f8d7da;
+        }
+        .speaker {
+            font-size: 12px;
+            color: #555;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>International Tech Conference 2026 - Schedule</h1>
+    <p class="description">Main Hall & Breakout Rooms - Day 1: March 15, 2026</p>
+
+    <!-- Grid Layout Reference:
+         7 columns x 7 rows (including header)
+         [Time]  [Main Hall]      [Workshop A]    [Workshop B]    [Networking]
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" rowspan="2">Time Slot</th>
+                <th colspan="3">Events</th>
+                <th colspan="1">Social</th>
+            </tr>
+            <tr>
+                <th>Main Hall</th>
+                <th>Workshop A</th>
+                <th>Workshop B</th>
+                <th>Lounge</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-slot" rowspan="2">9:00 - 10:00</td>
+                <td rowspan="2" class="keynote">
+                    Opening Keynote<br>
+                    <span class="speaker">Dr. Sarah Anderson</span>
+                </td>
+                <td class="breaktime">Registration</td>
+                <td class="breaktime">Registration</td>
+                <td class="breaktime">Coffee</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="breaktime">Main Hall Only</td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:15 - 11:15</td>
+                <td class="workshop">
+                    "AI in Production"<br>
+                    <span class="speaker">Prof. James Liu</span>
+                </td>
+                <td class="workshop">
+                    "Cloud Security"<br>
+                    <span class="speaker">Maria Garcia</span>
+                </td>
+                <td class="workshop">
+                    "DevOps Tools"<br>
+                    <span class="speaker">Chen Wei</span>
+                </td>
+                <td class="networking">
+                    Open Lounge
+                </td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:30 - 12:30</td>
+                <td class="workshop">
+                    "Machine Learning Ops"<br>
+                    <span class="speaker">Alex Thompson</span>
+                </td>
+                <td class="workshop">
+                    "Kubernetes Advanced"<br>
+                    <span class="speaker">Priya Patel</span>
+                </td>
+                <td class="workshop">
+                    "Microservices Design"<br>
+                    <span class="speaker">Michael Zhang</span>
+                </td>
+                <td class="breaktime">Lunch</td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:30 - 1:30</td>
+                <td colspan="3" class="breaktime">Lunch Break</td>
+                <td class="networking">
+                    Sponsor Booths
+                </td>
+            </tr>
+            <tr>
+                <td class="time-slot">1:30 - 2:30</td>
+                <td class="workshop">
+                    "API Design Patterns"<br>
+                    <span class="speaker">Lisa Roberts</span>
+                </td>
+                <td class="workshop">
+                    "GraphQL Mastery"<br>
+                    <span class="speaker">David Kim</span>
+                </td>
+                <td class="workshop">
+                    "Performance Tuning"<br>
+                    <span class="speaker">Emma Wilson</span>
+                </td>
+                <td class="networking">
+                    Networking
+                </td>
+            </tr>
+            <tr>
+                <td class="time-slot">3:00 - 4:00</td>
+                <td class="keynote">
+                    Closing Panel<br>
+                    <span class="speaker">Moderator: Dr. Robert Hayes</span>
+                </td>
+                <td class="breaktime">Wrap-up</td>
+                <td class="breaktime">Wrap-up</td>
+                <td class="breaktime">Departures</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

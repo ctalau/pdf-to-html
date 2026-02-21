@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .form-subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+
+        fieldset {
+            border: 2px solid #ecf0f1;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 0 10px;
+            margin-left: -10px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 0.5em 1em;
+            align-items: center;
+        }
+
+        label {
+            font-weight: 500;
+            color: #34495e;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 1px solid #999;
+            padding: 0.3em;
+            min-height: 1.5em;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            border-radius: 4px;
+        }
+
+        textarea {
+            min-height: 4em;
+            resize: vertical;
+            padding: 0.5em;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+        }
+
+        .form-group {
+            display: contents;
+        }
+
+        .checkbox-group,
+        .radio-group {
+            grid-column: 1 / -1;
+        }
+
+        .checkbox-group label,
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+
+        .checkbox-group input[type="checkbox"],
+        .radio-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+            min-height: auto;
+            margin-top: 0;
+        }
+
+        .checkbox-group {
+            margin-bottom: 10px;
+        }
+
+        .radio-group {
+            margin-bottom: 15px;
+        }
+
+        .section-divider {
+            grid-column: 1 / -1;
+            height: 1px;
+            background-color: #ecf0f1;
+            margin: 10px 0;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 20px;
+            grid-column: 1 / -1;
+        }
+
+        .form-row .form-group {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 0.5em 1em;
+            align-items: center;
+        }
+
+        .button-group {
+            grid-column: 1 / -1;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #3498db;
+            background-color: #3498db;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 120px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+
+        button[type="reset"] {
+            background-color: #95a5a6;
+            border-color: #95a5a6;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #7f8c8d;
+            border-color: #7f8c8d;
+        }
+
+        .required {
+            color: #e74c3c;
+            margin-left: 3px;
+        }
+
+        .form-hint {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            grid-column: 2;
+            margin-top: -8px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .form-container {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                margin: 0;
+            }
+            button {
+                border: 1px solid #333;
+                background-color: white;
+                color: #333;
+                page-break-inside: avoid;
+            }
+            input,
+            select,
+            textarea {
+                background-color: #f9f9f9;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Event Registration</h1>
+        <p class="form-subtitle">Register for our Annual Technology Conference 2026</p>
+
+        <form>
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span class="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" id="jobTitle" name="jobTitle">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry" name="industry">
+                            <option value="">-- Select Industry --</option>
+                            <option value="tech">Technology</option>
+                            <option value="finance">Finance</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="retail">Retail</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Contact Details Fieldset -->
+            <fieldset>
+                <legend>Contact Details</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State/Province</label>
+                        <input type="text" id="state" name="state">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zipcode">Zip/Postal Code</label>
+                        <input type="text" id="zipcode" name="zipcode">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="">-- Select Country --</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Preferences Fieldset -->
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="ticketType">Ticket Type <span class="required">*</span></label>
+                        <select id="ticketType" name="ticketType" required>
+                            <option value="">-- Select Ticket Type --</option>
+                            <option value="standard">Standard Pass - $299</option>
+                            <option value="vip">VIP Pass - $599</option>
+                            <option value="student">Student Pass - $99</option>
+                            <option value="speaker">Speaker Pass - Free</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dietary">Dietary Restrictions</label>
+                        <select id="dietary" name="dietary">
+                            <option value="">-- None --</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                            <option value="glutenfree">Gluten-Free</option>
+                            <option value="halal">Halal</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="workshop1" value="yes">
+                            <strong>Workshop:</strong> AI and Machine Learning Basics
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="workshop2" value="yes">
+                            <strong>Workshop:</strong> Cloud Architecture Patterns
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="workshop3" value="yes">
+                            <strong>Workshop:</strong> Security Best Practices
+                        </label>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="accommodation" value="yes" required>
+                            I need accommodation assistance
+                        </label>
+                        <label>
+                            <input type="radio" name="accommodation" value="no">
+                            No accommodation needed
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Special Requests</label>
+                        <textarea id="comments" name="comments" placeholder="Any special requests or accommodations..."></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="yes" checked>
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="terms" value="yes" required>
+                            I agree to the terms and conditions <span class="required">*</span>
+                        </label>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">Register</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

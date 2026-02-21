@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Letter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            margin: 2.5cm;
+        }
+
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            color: #000;
+        }
+
+        .letterhead {
+            border-bottom: 2pt solid #333;
+            padding-bottom: 1em;
+            margin-bottom: 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .company-info {
+            flex: 1;
+        }
+
+        .company-name {
+            font-size: 18pt;
+            font-weight: bold;
+            margin-bottom: 0.3em;
+        }
+
+        .company-details {
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+        }
+
+        .date {
+            margin-bottom: 2em;
+            text-align: left;
+        }
+
+        address {
+            font-style: normal;
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+        }
+
+        .salutation {
+            margin-bottom: 1em;
+        }
+
+        .body-text {
+            margin-bottom: 1em;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .closing {
+            margin-top: 2em;
+            margin-bottom: 4em;
+        }
+
+        .signature-block {
+            margin-top: 1em;
+        }
+
+        .signature-line {
+            border-top: 1pt solid #000;
+            width: 200px;
+            margin-bottom: 0.5em;
+        }
+
+        .footer-details {
+            font-size: 10pt;
+            margin-top: 2em;
+            border-top: 1pt solid #ccc;
+            padding-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="letterhead">
+        <div class="company-info">
+            <div class="company-name">Precision Analytics Inc.</div>
+            <div class="company-details">
+                1450 Innovation Drive<br>
+                San Francisco, CA 94105<br>
+                Phone: (415) 555-0147<br>
+                Email: info@precisionanalytics.com
+            </div>
+        </div>
+        <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" fill="#1e40af"/>
+            <circle cx="50" cy="50" r="35" fill="#3b82f6"/>
+            <path d="M 50 30 L 70 70 L 30 70 Z" fill="#1e40af"/>
+        </svg>
+    </div>
+
+    <div class="date">
+        February 21, 2026
+    </div>
+
+    <address>
+        Dr. Margaret Wellington<br>
+        Research Director<br>
+        Global Technology Institute<br>
+        2840 Westridge Avenue<br>
+        Los Angeles, CA 90064<br>
+        USA
+    </address>
+
+    <div class="salutation">
+        Dear Dr. Wellington,
+    </div>
+
+    <p class="body-text">
+        I hope this letter finds you in good health and high spirits. I am writing to formally propose a collaborative research partnership between Precision Analytics Inc. and the Global Technology Institute. Our mutual interests in advanced data analytics and machine learning applications align perfectly, and we believe such collaboration would benefit both institutions significantly.
+    </p>
+
+    <p class="body-text">
+        Over the past eighteen months, our team has developed proprietary algorithms for predictive modeling that have demonstrated exceptional accuracy across multiple datasets. We have achieved a 23% improvement over existing industry standards, and we are confident that your institute's research methodology would complement our technical capabilities beautifully. We propose a three-year joint initiative to develop hybrid approaches suitable for both academic research and commercial applications.
+    </p>
+
+    <p class="body-text">
+        The proposed collaboration would include shared laboratory facilities, joint publication rights, and a modest financial commitment from our organization. We have allocated an initial budget of $250,000 for the first fiscal year, with provisions for scaling based on project milestones and outcomes. A detailed proposal document is enclosed for your review, and I would welcome the opportunity to discuss this matter further at your earliest convenience.
+    </p>
+
+    <div class="closing">
+        Yours sincerely,
+    </div>
+
+    <div class="signature-block">
+        <div class="signature-line"></div>
+        <div>James Mitchell</div>
+        <div>Chief Research Officer</div>
+        <div>Precision Analytics Inc.</div>
+    </div>
+
+    <div class="footer-details">
+        CC: Dr. Sarah Chen, Research Coordinator<br>
+        Enclosures: Project Proposal (12 pages), Budget Breakdown, Timeline Specification
+    </div>
+</body>
+</html>

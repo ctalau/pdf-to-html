@@ -1,0 +1,15 @@
+{
+  "name": "pdf-to-html",
+  "version": "0.1.0",
+  "description": "Converts PDFs to semantic HTML with headings, paragraphs, formatting, lists, tables, and images",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": ["pdf", "html", "converter", "semantic"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
