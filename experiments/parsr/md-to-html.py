@@ -2,6 +2,7 @@
 """Convert markdown to HTML with multiple fallbacks."""
 from __future__ import annotations
 import html
+import json
 import re
 import subprocess
 import sys
@@ -32,6 +33,30 @@ def convert_with_pandoc(md: str) -> str | None:
             text=True,
             capture_output=True,
             check=True,
+        )
+        return proc.stdout
+    except Exception:
+        return None
+
+
+def convert_with_marked(md: str) -> str | None:
+    """Use the marked (Node) parser for robust CommonMark/GFM conversion."""
+    repo_root = Path(__file__).resolve().parents[2]
+    script = (
+        "import { marked } from 'marked';"
+        "process.stdin.setEncoding('utf8');"
+        "let data='';"
+        "process.stdin.on('data', c => data += c);"
+        "process.stdin.on('end', () => process.stdout.write(marked.parse(data)));"
+    )
+    try:
+        proc = subprocess.run(
+            ["node", "--input-type=module", "-e", script],
+            input=md,
+            text=True,
+            capture_output=True,
+            check=True,
+            cwd=repo_root,
         )
         return proc.stdout
     except Exception:
@@ -74,6 +99,7 @@ def convert_with_basic_fallback(md: str) -> str:
 
 def markdown_to_html(md: str, title: str) -> tuple[str, str]:
     for name, fn in [
+        ("marked", convert_with_marked),
         ("python-markdown", convert_with_python_markdown),
         ("markdown2", convert_with_markdown2),
         ("pandoc", convert_with_pandoc),
