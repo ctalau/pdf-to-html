@@ -1,0 +1,402 @@
+[
+  {
+    "fixture": "01-basic-paragraphs",
+    "status": "compared",
+    "text_similarity": 0.9944,
+    "tag_similarity": 0.8333,
+    "overall_score": 0.9461,
+    "notes": "ok"
+  },
+  {
+    "fixture": "02-headings",
+    "status": "compared",
+    "text_similarity": 0.9862,
+    "tag_similarity": 0.3684,
+    "overall_score": 0.8009,
+    "notes": "ok"
+  },
+  {
+    "fixture": "03-inline-emphasis",
+    "status": "compared",
+    "text_similarity": 0.9861,
+    "tag_similarity": 0.2292,
+    "overall_score": 0.759,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "04-unordered-list",
+    "status": "compared",
+    "text_similarity": 0.0408,
+    "tag_similarity": 0.1875,
+    "overall_score": 0.0848,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "05-ordered-list",
+    "status": "compared",
+    "text_similarity": 0.9706,
+    "tag_similarity": 0.1111,
+    "overall_score": 0.7128,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "06-nested-lists",
+    "status": "compared",
+    "text_similarity": 0.9797,
+    "tag_similarity": 0.1622,
+    "overall_score": 0.7344,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "07-definition-list",
+    "status": "compared",
+    "text_similarity": 0.982,
+    "tag_similarity": 0.2609,
+    "overall_score": 0.7656,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "08-simple-table",
+    "status": "compared",
+    "text_similarity": 0.8408,
+    "tag_similarity": 0.0893,
+    "overall_score": 0.6154,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "09-table-colspan",
+    "status": "compared",
+    "text_similarity": 0.6787,
+    "tag_similarity": 0.0746,
+    "overall_score": 0.4974,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "10-table-rowspan",
+    "status": "compared",
+    "text_similarity": 0.6029,
+    "tag_similarity": 0.119,
+    "overall_score": 0.4578,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "11-table-colspan-rowspan",
+    "status": "compared",
+    "text_similarity": 0.2447,
+    "tag_similarity": 0.0723,
+    "overall_score": 0.193,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "12-lists-in-table",
+    "status": "compared",
+    "text_similarity": 0.7144,
+    "tag_similarity": 0.082,
+    "overall_score": 0.5247,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "13-nested-tables",
+    "status": "compared",
+    "text_similarity": 0.732,
+    "tag_similarity": 0.1224,
+    "overall_score": 0.5491,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "14-inline-image",
+    "status": "compared",
+    "text_similarity": 0.9832,
+    "tag_similarity": 0.6,
+    "overall_score": 0.8682,
+    "notes": "ok"
+  },
+  {
+    "fixture": "15-figure-figcaption",
+    "status": "compared",
+    "text_similarity": 0.0133,
+    "tag_similarity": 0.1818,
+    "overall_score": 0.0638,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "16-blockquote",
+    "status": "compared",
+    "text_similarity": 0.0072,
+    "tag_similarity": 0.2609,
+    "overall_score": 0.0833,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "17-inline-code",
+    "status": "compared",
+    "text_similarity": 0.9853,
+    "tag_similarity": 0.3103,
+    "overall_score": 0.7828,
+    "notes": "ok"
+  },
+  {
+    "fixture": "18-code-block",
+    "status": "compared",
+    "text_similarity": 0.0132,
+    "tag_similarity": 0.3529,
+    "overall_score": 0.1151,
+    "notes": "low-text-sim;"
+  },
+  {
+    "fixture": "19-page-header-footer",
+    "status": "compared",
+    "text_similarity": 0.0073,
+    "tag_similarity": 0.2258,
+    "overall_score": 0.0728,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "20-footnotes",
+    "status": "compared",
+    "text_similarity": 0.0059,
+    "tag_similarity": 0.1765,
+    "overall_score": 0.0571,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "21-watermark",
+    "status": "compared",
+    "text_similarity": 0.0052,
+    "tag_similarity": 0.28,
+    "overall_score": 0.0876,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "22-warning-callout",
+    "status": "compared",
+    "text_similarity": 0.0158,
+    "tag_similarity": 0.1818,
+    "overall_score": 0.0656,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "23-info-note-callout",
+    "status": "compared",
+    "text_similarity": 0.0098,
+    "tag_similarity": 0.25,
+    "overall_score": 0.0819,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "24-two-column-layout",
+    "status": "compared",
+    "text_similarity": 0.0074,
+    "tag_similarity": 0.35,
+    "overall_score": 0.1102,
+    "notes": "low-text-sim;"
+  },
+  {
+    "fixture": "25-three-column-layout",
+    "status": "compared",
+    "text_similarity": 0.0071,
+    "tag_similarity": 0.2692,
+    "overall_score": 0.0857,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "26-pull-quote",
+    "status": "compared",
+    "text_similarity": 0.0052,
+    "tag_similarity": 0.35,
+    "overall_score": 0.1086,
+    "notes": "low-text-sim;"
+  },
+  {
+    "fixture": "27-sidebar",
+    "status": "compared",
+    "text_similarity": 0.0052,
+    "tag_similarity": 0.1707,
+    "overall_score": 0.0549,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "28-drop-cap",
+    "status": "compared",
+    "text_similarity": 0.004,
+    "tag_similarity": 0.3529,
+    "overall_score": 0.1087,
+    "notes": "low-text-sim;"
+  },
+  {
+    "fixture": "29-table-of-contents",
+    "status": "compared",
+    "text_similarity": 0.0034,
+    "tag_similarity": 0.0729,
+    "overall_score": 0.0242,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "30-academic-paper",
+    "status": "compared",
+    "text_similarity": 0.0035,
+    "tag_similarity": 0.0842,
+    "overall_score": 0.0277,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "31-invoice-layout",
+    "status": "compared",
+    "text_similarity": 0.2916,
+    "tag_similarity": 0.0926,
+    "overall_score": 0.2319,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "32-recipe",
+    "status": "compared",
+    "text_similarity": 0.0109,
+    "tag_similarity": 0.1224,
+    "overall_score": 0.0444,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "33-resume-cv",
+    "status": "compared",
+    "text_similarity": 0.9872,
+    "tag_similarity": 0.0789,
+    "overall_score": 0.7147,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "34-newsletter",
+    "status": "compared",
+    "text_similarity": 0.0104,
+    "tag_similarity": 0.1373,
+    "overall_score": 0.0485,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "35-technical-doc",
+    "status": "compared",
+    "text_similarity": 0.0103,
+    "tag_similarity": 0.084,
+    "overall_score": 0.0324,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "36-form-layout",
+    "status": "compared",
+    "text_similarity": 0.0236,
+    "tag_similarity": 0.0484,
+    "overall_score": 0.0311,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "37-hanging-indent",
+    "status": "compared",
+    "text_similarity": 0.9746,
+    "tag_similarity": 0.3478,
+    "overall_score": 0.7865,
+    "notes": "ok"
+  },
+  {
+    "fixture": "38-business-letter",
+    "status": "compared",
+    "text_similarity": 0.0172,
+    "tag_similarity": 0.1622,
+    "overall_score": 0.0607,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "39-legal-document",
+    "status": "compared",
+    "text_similarity": 0.0046,
+    "tag_similarity": 0.1,
+    "overall_score": 0.0332,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "40-long-multipage",
+    "status": "compared",
+    "text_similarity": 0.0216,
+    "tag_similarity": 0.1419,
+    "overall_score": 0.0577,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "41-mixed-inline-formatting",
+    "status": "compared",
+    "text_similarity": 0.0132,
+    "tag_similarity": 0.1591,
+    "overall_score": 0.057,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "42-image-alignment",
+    "status": "compared",
+    "text_similarity": 0.0093,
+    "tag_similarity": 0.15,
+    "overall_score": 0.0515,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "43-multiline-header-footer",
+    "status": "compared",
+    "text_similarity": 0.0973,
+    "tag_similarity": 0.1524,
+    "overall_score": 0.1138,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "44-horizontal-rule",
+    "status": "compared",
+    "text_similarity": 0.006,
+    "tag_similarity": 0.1795,
+    "overall_score": 0.0581,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "45-superscript-subscript",
+    "status": "compared",
+    "text_similarity": 0.023,
+    "tag_similarity": 0.0769,
+    "overall_score": 0.0392,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "46-address-contact",
+    "status": "compared",
+    "text_similarity": 0.022,
+    "tag_similarity": 0.087,
+    "overall_score": 0.0415,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "47-data-table-numeric",
+    "status": "compared",
+    "text_similarity": 0.914,
+    "tag_similarity": 0.0543,
+    "overall_score": 0.6561,
+    "notes": "low-structure-sim;"
+  },
+  {
+    "fixture": "48-multicol-heading-break",
+    "status": "compared",
+    "text_similarity": 0.009,
+    "tag_similarity": 0.2333,
+    "overall_score": 0.0763,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "49-rtl-text",
+    "status": "compared",
+    "text_similarity": 0.0056,
+    "tag_similarity": 0.1176,
+    "overall_score": 0.0392,
+    "notes": "low-text-sim;low-structure-sim;"
+  },
+  {
+    "fixture": "50-comprehensive-mixed",
+    "status": "compared",
+    "text_similarity": 0.0132,
+    "tag_similarity": 0.059,
+    "overall_score": 0.027,
+    "notes": "low-text-sim;low-structure-sim;"
+  }
+]

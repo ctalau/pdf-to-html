@@ -1,0 +1,402 @@
+[
+  {
+    "fixture": "01-basic-paragraphs",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/01-basic-paragraphs.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/01-basic-paragraphs.html",
+    "engine": "basic-fallback",
+    "bytes": 1662
+  },
+  {
+    "fixture": "02-headings",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/02-headings.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/02-headings.html",
+    "engine": "basic-fallback",
+    "bytes": 1386
+  },
+  {
+    "fixture": "03-inline-emphasis",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/03-inline-emphasis.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/03-inline-emphasis.html",
+    "engine": "basic-fallback",
+    "bytes": 1838
+  },
+  {
+    "fixture": "04-unordered-list",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/04-unordered-list.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/04-unordered-list.html",
+    "engine": "basic-fallback",
+    "bytes": 840
+  },
+  {
+    "fixture": "05-ordered-list",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/05-ordered-list.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/05-ordered-list.html",
+    "engine": "basic-fallback",
+    "bytes": 1856
+  },
+  {
+    "fixture": "06-nested-lists",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/06-nested-lists.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/06-nested-lists.html",
+    "engine": "basic-fallback",
+    "bytes": 1156
+  },
+  {
+    "fixture": "07-definition-list",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/07-definition-list.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/07-definition-list.html",
+    "engine": "basic-fallback",
+    "bytes": 1097
+  },
+  {
+    "fixture": "08-simple-table",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/08-simple-table.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/08-simple-table.html",
+    "engine": "basic-fallback",
+    "bytes": 715
+  },
+  {
+    "fixture": "09-table-colspan",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/09-table-colspan.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/09-table-colspan.html",
+    "engine": "basic-fallback",
+    "bytes": 690
+  },
+  {
+    "fixture": "10-table-rowspan",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/10-table-rowspan.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/10-table-rowspan.html",
+    "engine": "basic-fallback",
+    "bytes": 407
+  },
+  {
+    "fixture": "11-table-colspan-rowspan",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/11-table-colspan-rowspan.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/11-table-colspan-rowspan.html",
+    "engine": "basic-fallback",
+    "bytes": 376
+  },
+  {
+    "fixture": "12-lists-in-table",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/12-lists-in-table.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/12-lists-in-table.html",
+    "engine": "basic-fallback",
+    "bytes": 696
+  },
+  {
+    "fixture": "13-nested-tables",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/13-nested-tables.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/13-nested-tables.html",
+    "engine": "basic-fallback",
+    "bytes": 534
+  },
+  {
+    "fixture": "14-inline-image",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/14-inline-image.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/14-inline-image.html",
+    "engine": "basic-fallback",
+    "bytes": 1184
+  },
+  {
+    "fixture": "15-figure-figcaption",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/15-figure-figcaption.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/15-figure-figcaption.html",
+    "engine": "basic-fallback",
+    "bytes": 141
+  },
+  {
+    "fixture": "16-blockquote",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/16-blockquote.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/16-blockquote.html",
+    "engine": "basic-fallback",
+    "bytes": 134
+  },
+  {
+    "fixture": "17-inline-code",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/17-inline-code.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/17-inline-code.html",
+    "engine": "basic-fallback",
+    "bytes": 2104
+  },
+  {
+    "fixture": "18-code-block",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/18-code-block.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/18-code-block.html",
+    "engine": "basic-fallback",
+    "bytes": 134
+  },
+  {
+    "fixture": "19-page-header-footer",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/19-page-header-footer.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/19-page-header-footer.html",
+    "engine": "basic-fallback",
+    "bytes": 153
+  },
+  {
+    "fixture": "20-footnotes",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/20-footnotes.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/20-footnotes.html",
+    "engine": "basic-fallback",
+    "bytes": 133
+  },
+  {
+    "fixture": "21-watermark",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/21-watermark.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/21-watermark.html",
+    "engine": "basic-fallback",
+    "bytes": 144
+  },
+  {
+    "fixture": "22-warning-callout",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/22-warning-callout.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/22-warning-callout.html",
+    "engine": "basic-fallback",
+    "bytes": 139
+  },
+  {
+    "fixture": "23-info-note-callout",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/23-info-note-callout.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/23-info-note-callout.html",
+    "engine": "basic-fallback",
+    "bytes": 141
+  },
+  {
+    "fixture": "24-two-column-layout",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/24-two-column-layout.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/24-two-column-layout.html",
+    "engine": "basic-fallback",
+    "bytes": 152
+  },
+  {
+    "fixture": "25-three-column-layout",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/25-three-column-layout.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/25-three-column-layout.html",
+    "engine": "basic-fallback",
+    "bytes": 154
+  },
+  {
+    "fixture": "26-pull-quote",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/26-pull-quote.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/26-pull-quote.html",
+    "engine": "basic-fallback",
+    "bytes": 145
+  },
+  {
+    "fixture": "27-sidebar",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/27-sidebar.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/27-sidebar.html",
+    "engine": "basic-fallback",
+    "bytes": 142
+  },
+  {
+    "fixture": "28-drop-cap",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/28-drop-cap.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/28-drop-cap.html",
+    "engine": "basic-fallback",
+    "bytes": 132
+  },
+  {
+    "fixture": "29-table-of-contents",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/29-table-of-contents.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/29-table-of-contents.html",
+    "engine": "basic-fallback",
+    "bytes": 152
+  },
+  {
+    "fixture": "30-academic-paper",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/30-academic-paper.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/30-academic-paper.html",
+    "engine": "basic-fallback",
+    "bytes": 160
+  },
+  {
+    "fixture": "31-invoice-layout",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/31-invoice-layout.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/31-invoice-layout.html",
+    "engine": "basic-fallback",
+    "bytes": 1540
+  },
+  {
+    "fixture": "32-recipe",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/32-recipe.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/32-recipe.html",
+    "engine": "basic-fallback",
+    "bytes": 130
+  },
+  {
+    "fixture": "33-resume-cv",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/33-resume-cv.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/33-resume-cv.html",
+    "engine": "basic-fallback",
+    "bytes": 1817
+  },
+  {
+    "fixture": "34-newsletter",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/34-newsletter.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/34-newsletter.html",
+    "engine": "basic-fallback",
+    "bytes": 145
+  },
+  {
+    "fixture": "35-technical-doc",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/35-technical-doc.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/35-technical-doc.html",
+    "engine": "basic-fallback",
+    "bytes": 192
+  },
+  {
+    "fixture": "36-form-layout",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/36-form-layout.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/36-form-layout.html",
+    "engine": "basic-fallback",
+    "bytes": 135
+  },
+  {
+    "fixture": "37-hanging-indent",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/37-hanging-indent.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/37-hanging-indent.html",
+    "engine": "basic-fallback",
+    "bytes": 1733
+  },
+  {
+    "fixture": "38-business-letter",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/38-business-letter.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/38-business-letter.html",
+    "engine": "basic-fallback",
+    "bytes": 139
+  },
+  {
+    "fixture": "39-legal-document",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/39-legal-document.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/39-legal-document.html",
+    "engine": "basic-fallback",
+    "bytes": 160
+  },
+  {
+    "fixture": "40-long-multipage",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/40-long-multipage.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/40-long-multipage.html",
+    "engine": "basic-fallback",
+    "bytes": 591
+  },
+  {
+    "fixture": "41-mixed-inline-formatting",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/41-mixed-inline-formatting.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/41-mixed-inline-formatting.html",
+    "engine": "basic-fallback",
+    "bytes": 158
+  },
+  {
+    "fixture": "42-image-alignment",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/42-image-alignment.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/42-image-alignment.html",
+    "engine": "basic-fallback",
+    "bytes": 139
+  },
+  {
+    "fixture": "43-multiline-header-footer",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/43-multiline-header-footer.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/43-multiline-header-footer.html",
+    "engine": "basic-fallback",
+    "bytes": 701
+  },
+  {
+    "fixture": "44-horizontal-rule",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/44-horizontal-rule.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/44-horizontal-rule.html",
+    "engine": "basic-fallback",
+    "bytes": 150
+  },
+  {
+    "fixture": "45-superscript-subscript",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/45-superscript-subscript.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/45-superscript-subscript.html",
+    "engine": "basic-fallback",
+    "bytes": 145
+  },
+  {
+    "fixture": "46-address-contact",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/46-address-contact.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/46-address-contact.html",
+    "engine": "basic-fallback",
+    "bytes": 139
+  },
+  {
+    "fixture": "47-data-table-numeric",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/47-data-table-numeric.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/47-data-table-numeric.html",
+    "engine": "basic-fallback",
+    "bytes": 749
+  },
+  {
+    "fixture": "48-multicol-heading-break",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/48-multicol-heading-break.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/48-multicol-heading-break.html",
+    "engine": "basic-fallback",
+    "bytes": 157
+  },
+  {
+    "fixture": "49-rtl-text",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/49-rtl-text.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/49-rtl-text.html",
+    "engine": "basic-fallback",
+    "bytes": 154
+  },
+  {
+    "fixture": "50-comprehensive-mixed",
+    "status": "done",
+    "markdown": "/workspace/pdf-to-html/experiments/parsr/output-markdown/50-comprehensive-mixed.parsr.md",
+    "html": "/workspace/pdf-to-html/experiments/parsr/output-markdown/50-comprehensive-mixed.html",
+    "engine": "basic-fallback",
+    "bytes": 264
+  }
+]
