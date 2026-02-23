@@ -18,6 +18,7 @@
     "node": ">=22.0.0"
   },
   "dependencies": {
+    "marked": "^15.0.12",
     "pdf2json": "^4.0.2"
   }
 }
