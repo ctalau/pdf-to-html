@@ -1,0 +1,314 @@
+[
+  {
+    "fixture": "01-basic-paragraphs",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/01-basic-paragraphs.html",
+    "bytes": 1648,
+    "pages": 1,
+    "elapsed_seconds": 165.1
+  },
+  {
+    "fixture": "02-headings",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/02-headings.html",
+    "bytes": 1440,
+    "pages": 1,
+    "elapsed_seconds": 142.9
+  },
+  {
+    "fixture": "03-inline-emphasis",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/03-inline-emphasis.html",
+    "bytes": 1996,
+    "pages": 1,
+    "elapsed_seconds": 151.4
+  },
+  {
+    "fixture": "04-unordered-list",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/04-unordered-list.html",
+    "bytes": 982,
+    "pages": 1,
+    "elapsed_seconds": 141.1
+  },
+  {
+    "fixture": "05-ordered-list",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/05-ordered-list.html",
+    "bytes": 1863,
+    "pages": 1,
+    "elapsed_seconds": 154.9
+  },
+  {
+    "fixture": "06-nested-lists",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/06-nested-lists.html",
+    "bytes": 1376,
+    "pages": 1,
+    "elapsed_seconds": 200.3
+  },
+  {
+    "fixture": "07-definition-list",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/07-definition-list.html",
+    "bytes": 1165,
+    "pages": 1,
+    "elapsed_seconds": 144.0
+  },
+  {
+    "fixture": "08-simple-table",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/08-simple-table.html",
+    "bytes": 871,
+    "pages": 1,
+    "elapsed_seconds": 150.6
+  },
+  {
+    "fixture": "09-table-colspan",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/09-table-colspan.html",
+    "bytes": 930,
+    "pages": 1,
+    "elapsed_seconds": 156.8
+  },
+  {
+    "fixture": "10-table-rowspan",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/10-table-rowspan.html",
+    "bytes": 615,
+    "pages": 1,
+    "elapsed_seconds": 142.4
+  },
+  {
+    "fixture": "11-table-colspan-rowspan",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/11-table-colspan-rowspan.html",
+    "bytes": 1566,
+    "pages": 2,
+    "elapsed_seconds": 295.7
+  },
+  {
+    "fixture": "12-lists-in-table",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/12-lists-in-table.html",
+    "bytes": 941,
+    "pages": 1,
+    "elapsed_seconds": 143.3
+  },
+  {
+    "fixture": "13-nested-tables",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/13-nested-tables.html",
+    "bytes": 736,
+    "pages": 1,
+    "elapsed_seconds": 142.0
+  },
+  {
+    "fixture": "14-inline-image",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/14-inline-image.html",
+    "bytes": 1163,
+    "pages": 1,
+    "elapsed_seconds": 138.4
+  },
+  {
+    "fixture": "15-figure-figcaption",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/15-figure-figcaption.html",
+    "bytes": 2724,
+    "pages": 2,
+    "elapsed_seconds": 285.3
+  },
+  {
+    "fixture": "16-blockquote",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/16-blockquote.html",
+    "bytes": 3144,
+    "pages": 2,
+    "elapsed_seconds": 290.5
+  },
+  {
+    "fixture": "17-inline-code",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/17-inline-code.html",
+    "bytes": 2082,
+    "pages": 1,
+    "elapsed_seconds": 151.8
+  },
+  {
+    "fixture": "18-code-block",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/18-code-block.html",
+    "bytes": 2558,
+    "pages": 2,
+    "elapsed_seconds": 289.3
+  },
+  {
+    "fixture": "19-page-header-footer",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/19-page-header-footer.html",
+    "bytes": 6575,
+    "pages": 3,
+    "elapsed_seconds": 451.0
+  },
+  {
+    "fixture": "20-footnotes",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/20-footnotes.html",
+    "bytes": 4224,
+    "pages": 2,
+    "elapsed_seconds": 305.1
+  },
+  {
+    "fixture": "21-watermark",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/21-watermark.html",
+    "bytes": 5195,
+    "pages": 3,
+    "elapsed_seconds": 435.9
+  },
+  {
+    "fixture": "22-warning-callout",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/22-warning-callout.html",
+    "bytes": 2044,
+    "pages": 2,
+    "elapsed_seconds": 277.7
+  },
+  {
+    "fixture": "23-info-note-callout",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/23-info-note-callout.html",
+    "bytes": 3405,
+    "pages": 2,
+    "elapsed_seconds": 292.3
+  },
+  {
+    "fixture": "24-two-column-layout",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/24-two-column-layout.html",
+    "bytes": 4814,
+    "pages": 3,
+    "elapsed_seconds": 438.5
+  },
+  {
+    "fixture": "25-three-column-layout",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/25-three-column-layout.html",
+    "bytes": 5724,
+    "pages": 3,
+    "elapsed_seconds": 450.2
+  },
+  {
+    "fixture": "26-pull-quote",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/26-pull-quote.html",
+    "bytes": 4767,
+    "pages": 3,
+    "elapsed_seconds": 432.0
+  },
+  {
+    "fixture": "27-sidebar",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/27-sidebar.html",
+    "bytes": 4460,
+    "pages": 3,
+    "elapsed_seconds": 437.8
+  },
+  {
+    "fixture": "28-drop-cap",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/28-drop-cap.html",
+    "bytes": 3103,
+    "pages": 2,
+    "elapsed_seconds": 291.0
+  },
+  {
+    "fixture": "29-table-of-contents",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/29-table-of-contents.html",
+    "bytes": 8120,
+    "pages": 3,
+    "elapsed_seconds": 471.6
+  },
+  {
+    "fixture": "30-academic-paper",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/30-academic-paper.html",
+    "bytes": 10830,
+    "pages": 4,
+    "elapsed_seconds": 654.1
+  },
+  {
+    "fixture": "31-invoice-layout",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/31-invoice-layout.html",
+    "bytes": 1394,
+    "pages": 2,
+    "elapsed_seconds": 295.2
+  },
+  {
+    "fixture": "32-recipe",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/32-recipe.html",
+    "bytes": 1494,
+    "pages": 2,
+    "elapsed_seconds": 291.3
+  },
+  {
+    "fixture": "33-resume-cv",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/33-resume-cv.html",
+    "bytes": 1984,
+    "pages": 1,
+    "elapsed_seconds": 157.9
+  },
+  {
+    "fixture": "34-newsletter",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/34-newsletter.html",
+    "bytes": 2650,
+    "pages": 3,
+    "elapsed_seconds": 405.9
+  },
+  {
+    "fixture": "35-technical-doc",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/35-technical-doc.html",
+    "bytes": 6233,
+    "pages": 7,
+    "elapsed_seconds": 983.2
+  },
+  {
+    "fixture": "36-form-layout",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/36-form-layout.html",
+    "bytes": 1155,
+    "pages": 2,
+    "elapsed_seconds": 268.5
+  },
+  {
+    "fixture": "37-hanging-indent",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/37-hanging-indent.html",
+    "bytes": 1788,
+    "pages": 1,
+    "elapsed_seconds": 156.6
+  },
+  {
+    "fixture": "38-business-letter",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/38-business-letter.html",
+    "bytes": 1925,
+    "pages": 2,
+    "elapsed_seconds": 275.1
+  },
+  {
+    "fixture": "39-legal-document",
+    "status": "done",
+    "output": "/home/user/pdf-to-html/experiments/glm-ocr/output/39-legal-document.html",
+    "bytes": 5537,
+    "pages": 4,
+    "elapsed_seconds": 584.7
+  }
+]

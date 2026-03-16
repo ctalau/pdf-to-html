@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>35-technical-doc</title></head>
+<body>
+<ol>
+<li>Introduction</li>
+</ul>
+<p>Welcome to the DataSync API documentation. DataSync is a powerful, RESTful API that enables real-time data synchronization across distributed systems. This documentation provides comprehensive guidance for integrating DataSync into your applications and managing data workflows at scale.</p>
+<p>DataSync supports multiple data formats, provides robust error handling, and includes built-in retry mechanisms. With support for webhooks and real-time notifications, you can build responsive applications that stay synchronized with your data sources.</p>
+<p>Getting Started</p>
+<p>New to DataSync? Start with the Installation section to set up your first connection, then review the Configuration section to customize your sync behavior.</p>
+<ol>
+<li>Installation</li>
+</ul>
+<p>Installing DataSync is straightforward and supports multiple deployment environments including Docker, Kubernetes, and traditional server setups.</p>
+<p>Docker Installation</p>
+<p>The easiest way to get started is using the official Docker image:</p>
+<p><code>`</code>bash</p>
+<p>docker pull datasync:latest</p>
+<p>docker run -d \</p>
+<p>  -p 8080:8080 \</p>
+<p>  -e API_KEY=your-api-key \</p>
+<p>  -e DB_URL=postgresql://user:pass@db:5432/sync \</p>
+<p> datasync:latest</p>
+<p><code>`</code></p>
+<p>Kubernetes Deployment</p>
+<p>For Kubernetes environments, use the official Helm chart:</p>
+<p><code>`</code>bash</p>
+<p>helm repo add datasync https://charts.datasync.io</p>
+<p>helm install datasync datasync/datasync \</p>
+<p>  --set apiKey=your-api-key \</p>
+<p>  --set database.url=postgresql://db:5432/sync</p>
+<p><code>`</code></p>
+<p>Security Warning</p>
+<p>Never commit API keys to version control. Use environment variables or secrets management systems like HashiCorp Vault, AWS Secrets Manager, or Kubernetes Secrets.</p>
+<ol>
+<li>Configuration</li>
+</ul>
+<p>DataSync configuration is managed through environment variables and YAML configuration files. The system supports hot-reload of non-critical settings without service interruption.</p>
+<p>Environment Variables</p>
+<p>Key configuration environment variables:</p>
+<p>• API_KEY - Authentication token for API access (required)</p>
+<p>• DB_URL - Database connection string (required)</p>
+<p>• SYNC_INTERVAL - Sync check interval in seconds (default: 30)</p>
+<p>• MAX_RETRIES - Maximum retry attempts (default: 3)</p>
+<p>• WEBHOOK_TIMEOUT - Webhook request timeout in seconds (default: 30)</p>
+<p>• LOG_LEVEL - Logging level: DEBUG, INFO, WARN, ERROR (default: INFO)</p>
+<p>YAML Configuration</p>
+<p>For advanced configuration, create a <code>datasync.yaml</code> file:</p>
+<p><table><thead><tr><th>server:</th></tr></thead><tbody><tr><td>port: 8080</td></tr><tr><td>timeout: 30s</td></tr><tr><td>database:</td></tr><tr><td>url: postgresql://localhost/datasync</td></tr><tr><td>pool:</td></tr><tr><td>min: 5</td></tr><tr><td>max: 20</td></tr><tr><td>sync:</td></tr><tr><td>interval: 30s</td></tr><tr><td>maxRetries: 3</td></tr><tr><td>backoff: exponential</td></tr><tr><td>webhook:</td></tr><tr><td>timeout: 30s</td></tr><tr><td>retries: 3</td></tr></tbody></table></p>
+<ol>
+<li>API Reference</li>
+</ul>
+<p>The DataSync API provides endpoints for managing synchronization tasks, monitoring status, and retrieving sync results. All requests require authentication via API key in the Authorization header.</p>
+<p>Authentication</p>
+<p>Include your API key in the Authorization header for all requests:</p>
+<p>Authorization: Bearer your<em>api</em>key_here</p>
+<p>Endpoints</p>
+<p>Method Path Description Response</p>
+<p>POST /api/v1/sync Create a new synchronization task 201 Created with sync ID</p>
+<p>GET /api/v1/sync/{id} Retrieve sync task details and status 200 OK with task object</p>
+<p>GET /api/v1/sync/{id}/status Get real-time sync status updates 200 OK with status object</p>
+<p>PATCH /api/v1/sync/{id} Update synchronization configuration 200 OK with updated task</p>
+<p>DELETE /api/v1/sync/{id} Cancel an active synchronization task 204 No Content</p>
+<p>Example Request/Response</p>
+<p>Create Sync Task</p>
+<p>Request:</p>
+<p><code>`</code>json</p>
+<p>POST /api/v1/sync HTTP/1.1</p>
+<p>Host: api.datasync.io</p>
+<p>Authorization: Bearer your<em>api</em>key</p>
+<p>Content-Type: application/json</p>
+<p>{</p>
+<p>  "source": {</p>
+<p>    "type": "postgresql",</p>
+<p>    "url": "postgresql://source-db:5432/mydb"</p>
+<p>  },</p>
+<p>  "destination": {</p>
+<p>    "type": "postgresql",</p>
+<p>    "url": "postgresql://dest-db:5432/mydb"</p>
+<p>  },</p>
+<p>  "tables": ["users", "transactions"],</p>
+<p>  "syncInterval": "30s"</p>
+<p>}</p>
+<p><code>`</code></p>
+<p>Response (201 Created):</p>
+<p>{</p>
+<p>  "id": "sync_abc123xyz789",</p>
+<p>  "status": "running",</p>
+<p>  "progress": 0,</p>
+<p>  "createdAt": "2026-02-21T10:30:00Z",</p>
+<p>  "source": {...},</p>
+<p>  "destination": {...},</p>
+<p>  "tables": ["users", "transactions"],</p>
+<p>  "estimatedDuration": "2m45s"</p>
+<p>}</p>
+<p><code>`</code></p>
+<p>API Rate Limits</p>
+<p>DataSync API enforces rate limits of 1000 requests per minute per API key.</p>
+<p>Responses include X-RateLimit-Remaining and X-RateLimit-</p>
+<ol>
+<li>Troubleshooting</li>
+</ul>
+<p>Common issues and their solutions:</p>
+<p>Connection Timeout</p>
+<p>If sync tasks timeout, increase the WEBHOOK_TIMEOUT environment variable and check network connectivity between services. Ensure firewall rules allow communication on required ports.</p>
+<p>Authentication Errors</p>
+<p>Verify your API key is correct and hasn't expired. Check that the key is included in the Authorization header with the format Bearer <key>.</p>
+<p>Database Connection Issues</p>
+<p>Test database connectivity using standard database clients. Verify credentials, hostname, and port in the connection string. Check that the database user has appropriate permissions for read/write operations.</p>
+<p>Performance Considerations</p>
+<p>For large datasets exceeding 1GB, consider implementing incremental sync strategies and enabling compression. Monitor resource usage during sync operations to prevent service degradation.</p>
+</body>
+</html>
