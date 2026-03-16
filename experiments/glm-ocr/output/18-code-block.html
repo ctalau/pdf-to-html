@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>18-code-block</title></head>
+<body>
+<p>Advanced JavaScript Patterns</p>
+<p>Higher-Order Functions</p>
+<p>Higher-order functions are a powerful paradigm in functional programming that allow you to write more abstract and reusable code. A higher-order function is one that takes other functions as arguments or returns a function as its result. This capability enables you to create flexible abstractions that can be adapted to many different use cases. The following example demonstrates a simple higher-order function that applies a given function to each element of an array.</p>
+<p><code>`</code>javascript</p>
+<p>function map(array, transform) {</p>
+<p>  const result = [];</p>
+<p>  for (let i = 0; i < array.length; i++) {</p>
+<p>    result.push(transform(array[i]));</p>
+<p>  }</p>
+<p>  return result;</p>
+<p>}</p>
+<p>This implementation shows how a function can accept another function as a parameter. By passing different transform functions, you can implement various operations like doubling numbers, extracting properties from objects, or applying complex calculations. This abstraction makes the code more modular and testable.</p>
+<p>Nested Control Flow</p>
+<p>When dealing with complex data processing tasks, you often need to combine multiple control structures such as conditional statements and loops. The following example demonstrates a more sophisticated pattern that uses nested conditionals and loops to filter and process data with multiple criteria.</p>
+<p><code>`</code>javascript</p>
+<p>function processUserData(users, minAge, departments) {</p>
+<p>  const results = [];</p>
+<p>  for (let i = 0; i < users.length; i++) {</p>
+<p>    const user = users[i];</p>
+<p>    if (user.active === true) {</p>
+<p>      if (user.age >= minAge) {</p>
+<p>        let matched = false;</p>
+<p>        for (let j = 0; j < departments.length; j++) {</p>
+<p>          while (departments[j].length > 0) {</p>
+<p>            const dept = departments[j].pop();</p>
+<p>            if (user.department === dept) {</p>
+<p>              matched = true;</p>
+<p>              break;</p>
+<p>            }</p>
+<p>          }</p>
+<p>        }</p>
+<p>      }</p>
+<p>    }</p>
+<p>  }</p>
+<p>}</p>
+<p><code>`</code></p>
+<p>This function demonstrates proper whitespace preservation with indentation, nested conditional blocks, and multiple loop structures. When printing such code to PDF, maintaining consistent spacing and alignment is critical for readability and correctness verification.</p>
+</body>
+</html>
