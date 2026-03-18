@@ -1,0 +1,402 @@
+[
+  {
+    "fixture": "01-basic-paragraphs",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.0%"
+  },
+  {
+    "fixture": "02-headings",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.6%, headings: 5/6"
+  },
+  {
+    "fixture": "03-inline-emphasis",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 95.9%, headings: 6/1"
+  },
+  {
+    "fixture": "04-unordered-list",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 1,
+    "score": 7.5,
+    "notes": "Word overlap: 99.4%, headings: 3/3"
+  },
+  {
+    "fixture": "05-ordered-list",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.7%, headings: 3/3"
+  },
+  {
+    "fixture": "06-nested-lists",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 96.7%, headings: 1/1"
+  },
+  {
+    "fixture": "07-definition-list",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.5%, headings: 1/1"
+  },
+  {
+    "fixture": "08-simple-table",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.1%, headings: 1/1, tables: 1/1"
+  },
+  {
+    "fixture": "09-table-colspan",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.7%, headings: 1/1, tables: 1/1"
+  },
+  {
+    "fixture": "10-table-rowspan",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.2%, headings: 1/1, tables: 1/1"
+  },
+  {
+    "fixture": "11-table-colspan-rowspan",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.5%, headings: 1/1, tables: 2/1"
+  },
+  {
+    "fixture": "12-lists-in-table",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 1,
+    "score": 7.5,
+    "notes": "Word overlap: 94.2%, headings: 1/1, tables: 1/1"
+  },
+  {
+    "fixture": "13-nested-tables",
+    "text_fidelity": 2,
+    "structure": 2,
+    "formatting": 0,
+    "score": 5.0,
+    "notes": "Word overlap: 84.7%, headings: 1/1, tables: 1/2"
+  },
+  {
+    "fixture": "14-inline-image",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.5%, headings: 1/1"
+  },
+  {
+    "fixture": "15-figure-figcaption",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.8%, headings: 1/1"
+  },
+  {
+    "fixture": "16-blockquote",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.4%, headings: 1/1"
+  },
+  {
+    "fixture": "17-inline-code",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 98.5%, headings: 1/1"
+  },
+  {
+    "fixture": "18-code-block",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 98.9%, headings: 3/3"
+  },
+  {
+    "fixture": "19-page-header-footer",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.6%, headings: 5/5"
+  },
+  {
+    "fixture": "20-footnotes",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 97.7%, headings: 2/2"
+  },
+  {
+    "fixture": "21-watermark",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.8%, headings: 5/5"
+  },
+  {
+    "fixture": "22-warning-callout",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.6%, headings: 4/1"
+  },
+  {
+    "fixture": "23-info-note-callout",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 99.1%, headings: 1/1"
+  },
+  {
+    "fixture": "24-two-column-layout",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.9%, headings: 2/2"
+  },
+  {
+    "fixture": "25-three-column-layout",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.9%, headings: 4/3"
+  },
+  {
+    "fixture": "26-pull-quote",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.2%, headings: 6/1"
+  },
+  {
+    "fixture": "27-sidebar",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.4%, headings: 2/4"
+  },
+  {
+    "fixture": "28-drop-cap",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 98.5%, headings: 4/4"
+  },
+  {
+    "fixture": "29-table-of-contents",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 1,
+    "score": 7.5,
+    "notes": "Word overlap: 99.5%, headings: 15/15"
+  },
+  {
+    "fixture": "30-academic-paper",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 94.1%, headings: 13/16"
+  },
+  {
+    "fixture": "31-invoice-layout",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.2,
+    "notes": "Word overlap: 99.4%, headings: 5/3, tables: 0/1"
+  },
+  {
+    "fixture": "32-recipe",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.2%, headings: 4/4"
+  },
+  {
+    "fixture": "33-resume-cv",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 1,
+    "score": 7.5,
+    "notes": "Word overlap: 99.4%, headings: 10/9"
+  },
+  {
+    "fixture": "34-newsletter",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 1,
+    "score": 7.5,
+    "notes": "Word overlap: 99.6%, headings: 8/7"
+  },
+  {
+    "fixture": "35-technical-doc",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 98.7%, headings: 24/21, tables: 1/1"
+  },
+  {
+    "fixture": "36-form-layout",
+    "text_fidelity": 2,
+    "structure": 3,
+    "formatting": 0,
+    "score": 6.2,
+    "notes": "Word overlap: 77.6%, headings: 5/1"
+  },
+  {
+    "fixture": "37-hanging-indent",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 1,
+    "score": 7.5,
+    "notes": "Word overlap: 98.8%, headings: 3/3"
+  },
+  {
+    "fixture": "38-business-letter",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.5%"
+  },
+  {
+    "fixture": "39-legal-document",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.2,
+    "notes": "Word overlap: 99.3%, headings: 4/1, tables: 0/1"
+  },
+  {
+    "fixture": "40-long-multipage",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 99.8%, headings: 13/14, tables: 4/1"
+  },
+  {
+    "fixture": "41-mixed-inline-formatting",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 94.7%, headings: 1/1"
+  },
+  {
+    "fixture": "42-image-alignment",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.6%, headings: 4/4"
+  },
+  {
+    "fixture": "43-multiline-header-footer",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 99.9%, headings: 16/16, tables: 1/1"
+  },
+  {
+    "fixture": "44-horizontal-rule",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 99.7%, headings: 6/6"
+  },
+  {
+    "fixture": "45-superscript-subscript",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 98.0%, headings: 6/5"
+  },
+  {
+    "fixture": "46-address-contact",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 0,
+    "score": 7.5,
+    "notes": "Word overlap: 93.0%, headings: 8/8"
+  },
+  {
+    "fixture": "47-data-table-numeric",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 1,
+    "score": 7.5,
+    "notes": "Word overlap: 99.2%, headings: 3/1, tables: 0/1"
+  },
+  {
+    "fixture": "48-multicol-heading-break",
+    "text_fidelity": 3,
+    "structure": 3,
+    "formatting": 1,
+    "score": 8.8,
+    "notes": "Word overlap: 99.5%, headings: 4/4"
+  },
+  {
+    "fixture": "49-rtl-text",
+    "text_fidelity": 2,
+    "structure": 3,
+    "formatting": 0,
+    "score": 6.2,
+    "notes": "Word overlap: 77.8%, headings: 6/1"
+  },
+  {
+    "fixture": "50-comprehensive-mixed",
+    "text_fidelity": 3,
+    "structure": 2,
+    "formatting": 0,
+    "score": 6.2,
+    "notes": "Word overlap: 99.3%, headings: 38/24, tables: 0/3"
+  }
+]
