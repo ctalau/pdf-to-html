@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>43-multiline-header-footer</title>
+</head>
+<body>
+<h1>ACME Corporation Technical Reference Manual</h1>
+<p>Version 2.1 | February 2026 | Document ID: TRM-2026-021</p>
+<h2>Overview and Introduction</h2>
+<p>The ACME Corporation Technical Reference Manual serves as a comprehensive guide to system architecture, configuration options, and operational procedures. This document is intended for system administrators, technical staff, and integrators who require detailed knowledge of ACME systems. All information herein is considered proprietary and confidential.</p>
+<p>This manual is organized into logical sections covering system fundamentals, installation procedures, configuration guidelines, and troubleshooting methodologies. Each section is designed to be self-contained while maintaining cross-references to related topics. Users are encouraged to reference the table of contents and index when seeking information on specific topics.</p>
+<p>The following conventions are used throughout this document: system names appear in</p>
+<p>monospaced font , user actions are indicated with bold text, and important notes are highlighted with special formatting.</p>
+<h2>System Architecture</h2>
+<h3>Core Components</h3>
+<p>The ACME system architecture comprises five primary components that work in concert to deliver enterprise-grade functionality. The integration of these components creates a robust, scalable platform suitable for organizations of varying sizes.</p>
+<p>Component specifications are outlined in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Version</th>
+<th>Memory (GB)</th>
+<th>Storage</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Central Controller</td>
+<td>3.2.1</td>
+<td>32</td>
+<td>2TB SSD</td>
+<td>Primary orchestration and management</td>
+</tr>
+<tr>
+<td>Processing Node A</td>
+<td>3.2.1</td>
+<td>64</td>
+<td>4TB SSD</td>
+<td>Computational workload processing</td>
+</tr>
+<tr>
+<td>Processing Node B</td>
+<td>3.2.1</td>
+<td>64</td>
+<td>4TB SSD</td>
+<td>Redundant computational capacity</td>
+</tr>
+<tr>
+<td>Storage Gateway</td>
+<td>2.8.4</td>
+<td>16</td>
+<td>10TB HDD</td>
+<td>Data archival and retrieval</td>
+</tr>
+<tr>
+<td>Monitor Agent</td>
+<td>1.5.2</td>
+<td>8</td>
+<td>500GB SSD</td>
+<td>System health and telemetry</td>
+</tr>
+</tbody></table>
+<h3>Network Configuration</h3>
+<p>Network connectivity is critical to system performance. All components communicate via dedicated Gigabit Ethernet connections with redundancy provided through dual network paths. The system supports both IPv4 and IPv6 protocols. VLANs are configured to segregate management, operational, and backup traffic.</p>
+<p>The following network segments are defined:</p>
+<p>Management VLAN (192.168.1.0/24): Administrative access and system management</p>
+<p>Operations VLAN (192.168.2.0/24): Primary data processing and inter-component communication</p>
+<p>Backup VLAN (192.168.3.0/24): Redundant connections and failover mechanisms External VLAN (192.168.4.0/24): Client-facing interfaces and external connectivity</p>
+<h2>Installation and Configuration</h2>
+<h3>Prerequisites</h3>
+<p>Before beginning installation, ensure the following prerequisites are met. Failure to meet these requirements may result in system instability or degraded performance.</p>
+<p>Required hardware includes:</p>
+<ul>
+<li><ol>
+<li>Minimum 4 dedicated physical servers with IPMI support</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>Dedicated network switch with VLAN capability</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>Uninterruptible Power Supply (UPS) with minimum 30-minute runtime</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>Climate-controlled data center environment (15-25°C, 30-70% humidity)</li>
+</ol>
+</li>
+<li><ol start="5">
+<li>Backup storage system with redundant connectivity</li>
+</ol>
+</li>
+</ul>
+<h3>Installation Procedures</h3>
+<p>The installation process requires approximately 4-6 hours depending on environment complexity. Each step must be completed in the specified order to ensure proper system initialization and component recognition.</p>
+<p>Step-by-step installation includes physical component placement, network configuration, software deployment, and system validation. After each major phase, system diagnostics should be executed to verify proper operation before proceeding to the next phase.</p>
+<h2>Operations and Monitoring</h2>
+<h3>Daily Operations</h3>
+<p>Daily operational tasks include system health checks, performance monitoring, and log review. The monitoring dashboard provides real-time visibility into all critical metrics. Operators should establish a regular review schedule to ensure proactive identification of potential issues.</p>
+<p>Key operational metrics to monitor include CPU utilization, memory availability, disk I/O performance, network throughput, and component health status. Thresholds should be configured to generate alerts when metrics exceed acceptable parameters.</p>
+<h3>Performance Optimization</h3>
+<p>System performance can be optimized through careful tuning of configuration parameters. The most significant performance improvements are typically realized through database query optimization and network bandwidth management. Regular capacity planning assessments should be conducted to ensure resources remain adequate for operational requirements.</p>
+<p>Performance tuning should be approached methodically, with changes implemented one at a time and results documented. This approach simplifies troubleshooting if unexpected behavior occurs after optimization attempts.</p>
+<h2>Troubleshooting and Support</h2>
+<h3>Common Issues and Solutions</h3>
+<p>This section addresses the most frequently encountered problems and their resolution procedures. For issues not covered here, consult the detailed error code reference in Appendix A.</p>
+<p>Most operational issues can be resolved through systematic troubleshooting:</p>
+<ul>
+<li><ol>
+<li>Verify network connectivity between all components</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>Check system logs for error messages and warnings</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>Validate configuration settings against documentation</li>
+</ol>
+</li>
+<li><ol start="4">
+<li>Execute diagnostic utilities to identify component failures</li>
+</ol>
+</li>
+<li><ol start="5">
+<li>Escalate to engineering support if issue persists</li>
+</ol>
+</li>
+</ul>
+<h3>Escalation Procedures</h3>
+<p>When issues cannot be resolved through standard troubleshooting, escalation to ACME support is available. Escalation should include detailed system logs, configuration export, and reproduction steps. Premium support contracts provide expedited response times and dedicated engineering support.</p>
+<h2>Maintenance and Updates</h2>
+<p>Regular maintenance is essential for system reliability and security. Software updates should be applied within 30 days of release, with emergency security patches applied immediately. Hardware maintenance follows manufacturer guidelines with routine component replacement performed during scheduled maintenance windows.</p>
+<p>The system supports rolling updates without requiring complete shutdown, allowing maintenance to be performed during standard business hours. Detailed procedures for updates are documented in the Operations Guide with step-by-step instructions and rollback procedures.</p>
+<h2>Security Considerations</h2>
+<p>System security is paramount in any production environment. ACME systems implement multiple layers of security controls including authentication, encryption, access controls, and audit logging. All data in transit is encrypted using industry-standard protocols, and data at rest is protected through encrypted storage volumes.</p>
+<p>Access to the system is controlled through role-based access controls (RBAC) with users assigned specific permissions based on job function. Regular security audits should be conducted to verify compliance with organizational security policies and regulatory requirements.</p>
+<p>This concludes the technical reference manual. For additional information, please contact ACME Support at <a href="mailto:support@acme.example.com">support@acme.example.com</a> or call 1-800-ACME-SUPPORT.</p>
+
+</body>
+</html>
